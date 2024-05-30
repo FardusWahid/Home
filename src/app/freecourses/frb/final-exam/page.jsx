@@ -1,12 +1,11 @@
 import { EExam } from "@/components/data"
-import Navbar from "@/components/header"
 import { FaPenToSquare } from "react-icons/fa6";
 
 export default function Exam(){
     return(
         <div>
-            <Navbar/>
-            <h1 className="text-center mb-3 font-sans italic text-2xl md:text-4xl font-extrabold">FINAL EXAM</h1>
+        
+            <h1 className="text-center mb-3 mt-2 md:mt-0 font-sans italic text-2xl md:text-4xl font-extrabold">FINAL EXAM</h1>
 
             <div className="grid items-center justify-center">
       {Object.entries(EExam).map(([subject, chapters]) => (
