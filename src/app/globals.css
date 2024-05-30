@@ -2,7 +2,6 @@
   @tailwind components;
   @tailwind utilities;
   @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poetsen+One&display=swap');  
-  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merienda:wght@300..900&family=Poetsen+One&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Merienda:wght@300..900&family=Poetsen+One&display=swap');
   
   
@@ -22,11 +21,7 @@
   }
   
 
-  .bree{
-    font-family: "Bree Serif", serif;
-    font-weight: 800;
-    font-style: normal;
-  }
+ 
   .tag{
     @apply bg-[#FCDC73] rounded-lg px-1 ring-1 shadow-inner  font-extrabold py-1 text-black hover:bg-[#cdb155]
   }
