@@ -63,8 +63,8 @@ bg-gradient-to-r from-[#62ff0007] to-[#18072d] ring-1 hover:ring-yellow-400 hove
        </section>
 
             </div>
-            <section className="w-9/12 m-auto md:w-[410px] mt-2 p-1">
- <p> <a className="text-[15px] flex justify-center poet font-extrabold gap-2  md:px-16 py-2 rounded-md text-yellow-500 bg-gradient-to-r from-purple-900 via-blue-800 to-lime-950 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-lime-300 " href="https://tinyurl.com/frb244" target="_blank"> Lecture & Practice sheets <GrDocumentPdf size={22} color="yellow"/>
+            <section className="w-9/12 m-auto md:w-1/4 mt-2 p-2">
+ <p> <a className="text-[15px] flex justify-center poet font-extrabold gap-2  md:px-17 md:text-[16px] ring-1 ring-yellow-700 py-2 rounded-md text-yellow-500 bg-gradient-to-r from-purple-900 via-blue-800 to-lime-950 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-lime-300 " href="https://tinyurl.com/frb244" target="_blank"> Lecture & Practice sheets <GrDocumentPdf size={22} color="yellow"/>
  </a></p> 
  </section>
 
