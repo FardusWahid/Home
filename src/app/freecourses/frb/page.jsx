@@ -63,19 +63,26 @@ bg-gradient-to-r from-[#62ff0007] to-[#18072d] ring-1 hover:ring-yellow-400 hove
        </section>
 
             </div>
+            <section className="w-9/12 m-auto md:w-[410px] mt-2 p-1">
+ <p> <a className="text-[15px] flex justify-center poet font-extrabold gap-2  md:px-16 py-2 rounded-md text-yellow-500 bg-gradient-to-r from-purple-900 via-blue-800 to-lime-950 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-lime-300 " href="https://tinyurl.com/frb244" target="_blank"> Lecture & Practice sheets <GrDocumentPdf size={22} color="yellow"/>
+ </a></p> 
+ </section>
 
             <section className="w-9/12 mt-4 m-auto flex md:w-1/4 p-2 justify-center
 bg-gradient-to-r from-[#3d7f25af] to-[#05577c] ring-1 hover:ring-yellow-400 hover:tracking-wider rounded-lg shadow-lg shadow-blue-950 transition ease-in duration-300">
-         <a className="flex gap-4 text-gray-200 hover:text-yellow-200 active:text-yellow-200 active:tracking-widest"
-          href="/freecourses/frb/final-exam"><h1 className="font-mono font-extrabold ">Final Exam</h1> <FaPenToSquare size={23}  /></a>
+         <a className="flex gap-5 text-gray-200 hover:text-yellow-200 active:text-yellow-200 active:tracking-widest"
+          href="/freecourses/frb/final-exam"><h1 className="font-mono font-extrabold ">Practice Exams</h1> <FaPenToSquare size={23}  /></a>
        </section>
 
 
-            <br />
- <section className="w-9/12 m-auto md:w-[410px] p-2">
- <p> <a className="text-sm flex justify-center font-mono font-extrabold gap-2  md:px-16 py-1 rounded-md text-black bg-gradient-to-r from-blue-500 via-orange-700 to-pink-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-lime-300 " href="https://tinyurl.com/frb244" target="_blank"> Lecture & Practice sheets <GrDocumentPdf size={22} />
- </a></p> 
- </section>
+       
+
+
+ <section className="w-9/12 mt-4 m-auto flex md:w-1/4 p-2 justify-center
+bg-gradient-to-r from-[#62ff0007] to-[#18072d] ring-1 hover:ring-yellow-400 hover:tracking-wider rounded-lg shadow-lg shadow-blue-950 transition ease-in duration-300">
+         <a className="flex gap-2 text-gray-200 hover:text-yellow-200 active:text-yellow-200 active:tracking-widest"
+          href="/admission"><h1 className="font-mono font-extrabold tracking-tighter ">ACS Engineering 2024</h1> <GrNext size={25} /></a>
+       </section>
 
 
        
