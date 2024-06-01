@@ -33,7 +33,7 @@ function Caru() {
 
       <Link href="/h26">
         <Image src="/cc1.webp" width={1280} height={700} className="w-full  rounded-t-md object-cover" />
-        <h1 className='text-center bg-purple-950 rounded-b-md py-2 font-extrabold font-sans tracking-wider text-lg'>Enroll For 299</h1>
+        <h1 className='text-center bg-purple-950 rounded-b-md py-2 font-extrabold font-sans tracking-wider text-lg'>Enroll For 250</h1>
     </Link>
 
       </CarouselItem>

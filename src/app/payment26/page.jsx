@@ -78,11 +78,12 @@ export default function Pam() {
  
  <p className="font-bold text-[#a3fda1]">&nbsp;&nbsp;To Continue this course</p>  
  <ol className="font-extrabold font-sans text-[#c8f560]">
-  <li>&nbsp;&nbsp;&nbsp;1. Click on copy</li>
-  <li>&nbsp;&nbsp;&nbsp;2. Go to inbox now</li>
-  <li>&nbsp;&nbsp;&nbsp;3. Send the message you copied</li>
-  <li>&nbsp;&nbsp;&nbsp;4. Pay with bkash</li>
-  <li>&nbsp;&nbsp;&nbsp;5. Get login password with Life time access</li>
+ <li>&nbsp;&nbsp;&nbsp;1. Click on Inbox now.</li>
+  <li>&nbsp;&nbsp;&nbsp;2. Message Apple Courses.</li>
+  <li>&nbsp;&nbsp;&nbsp;3. Say the course name you want to buy.</li>
+  <li>&nbsp;&nbsp;&nbsp;4. Pay with bkash.</li>
+  <li>&nbsp;&nbsp;&nbsp;5. Get login password with Life time access.</li>
+  <li>&nbsp;&nbsp;&nbsp;6. Refer this course to someone and get 50 taka Cashback.</li>
 
  </ol><br /><br />
  

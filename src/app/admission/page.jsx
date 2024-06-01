@@ -16,7 +16,7 @@ title="ACS Engineering Private Batch 2024"
 classamount="140"
 price="499"
 alt="eng24"
-link="/payment"
+link="/payment24"
     />
 <Outlet    
      image="/med.webp"
@@ -24,7 +24,7 @@ link="/payment"
      classamount="120"
      price="499"
      alt="med" 
-     link="/payment"         
+     link="/payment24"         
      />
 
 <Outlet    
@@ -39,9 +39,9 @@ link="/payment"
      image="/eng23.jpg"
      title="ACS Engineering 2023"
      classamount="120"
-     price="299"
+     price="199"
      alt="23"
-     link="https://www.facebook.com/free.courses.vercel/"         
+     link="/payment24"
           
      />
      </section>

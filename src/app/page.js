@@ -189,7 +189,7 @@ link="https://programmingherro.netlify.app"
      classamount="120"
      price="499"
      alt="med" 
-     link="/payment"         
+     link="/payment24"         
      />
 
 
@@ -210,9 +210,9 @@ link="https://programmingherro.netlify.app"
      image="/eng23.jpg"
      title="ACS Engineering 2023"
      classamount="120"
-     price="299"
+     price="199"
      alt="23"
-     link="https://www.facebook.com/free.courses.vercel/"         
+     link="/payment24"         
           
      />
 
@@ -223,7 +223,9 @@ link="https://programmingherro.netlify.app"
      </section>
      
      <section>
-      <p className="text-center text-white mt-16"> &copy;2024</p>
+      <p className="text-center text-white mt-16"> &copy;Apple developer 2024</p>
+      <p className="text-center text-white my-1 text-[15px] tracking-wider  anton"> <a href="/">Hire us for a project</a> </p>
+
      </section>
 
     </div>
