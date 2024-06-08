@@ -20,7 +20,7 @@ export default function Home(props) {
 </div>
 
 
-<h1 className="text-center md:hidden  mt-5 text-lime-400 text-[17px] md:text-[22px] beca"> Select Category</h1>
+<h1 className="text-center md:hidden font-sans font-thin  mt-5 text-white italic text-[18px] "> Select Category</h1>
     <div className="w-11/12 m-auto  md:w-1/2 lg:w-[550px] md:mx-3 flex flex-wrap justify-between mt-1    ">
     <Topic link="/add2.webp"
           title="ADMISSION"
@@ -53,7 +53,7 @@ export default function Home(props) {
 
 
 <div className="mt-7 flex justify-center ">
-  <Link className=" active:tracking-widest shadow-inner shadow-white flex mb-1 w-[320px]  justify-center rounded-lg  tracking-wider bg-blue-200 hover:bg-blue-300  text-xl font-extrabold font-sans px-6  py-2 md:hidden text-black" href="/freecourses">Free Courses &nbsp;<IoChevronForwardCircleSharp size={31} />
+  <Link className="shadow-inner shadow-white flex mb-1 w-[320px]  justify-center rounded-lg bg-blue-200 hover:bg-blue-300 hover:tracking-wide transition-all ease-in duration-150  text-xl font-extrabold font-sans px-6  py-2 md:hidden text-black" href="/freecourses">Free Courses &nbsp;<IoChevronForwardCircleSharp size={31} />
 
 </Link>    
   </div>
@@ -75,7 +75,7 @@ link="/payment24"
 
      <Outlet     
 image="/ict26.webp"
-title="ACS ICT DeCoder 2026"
+title="APPLE ICT DeCoder 2026"
 classamount="140"
 price="299"
 alt="ict26"
@@ -84,7 +84,7 @@ link="/payment26"
 
 <Outlet     
 image="/c1.jpg"
-title="ACS 2026 Math Cycle 1"
+title="APPLE 2026 Math Cycle 1"
 classamount="60"
 price="250"
 alt="math1"
@@ -93,7 +93,7 @@ link="/payment26"
 
 <Outlet     
 image="/pc1.jpg"
-title="ACS 2026 Physics Cycle 1"
+title="APPLE 2026 Physics Cycle 1"
 classamount="55"
 price="250"
 alt="phy1"
@@ -104,7 +104,7 @@ link="/payment26"
 
 <Outlet     
 image="/cc1.webp"
-title="ACS 2026 Chemistry Cycle 1"
+title="APPLE 2026 Chemistry Cycle 1"
 classamount="57"
 price="250"
 alt="phy1"
@@ -114,7 +114,7 @@ link="/payment26"
 
 <Outlet
 image="/chee1.jpg"
-title="ACS 2025 Chemistry All Cycles "
+title="APPLE 2025 Chemistry All Cycles "
 classamount="120"
 price="499"
 alt="che"
@@ -133,20 +133,13 @@ link="freecourses/frb"
     
      <Outlet     
 image="/eng24.webp"
-title="ACS Engineering Private Batch 2024"
+title="APPLE Engineering Private Batch 2024"
 classamount="140"
 price="499"
 alt="eng24"
 link="/payment24"
     />
-    <Outlet
-image="/HSC-25.webp"
-title="ACS 2025 Math ALL Cycles"
-classamount="80"
-price="499"
-alt="math"
-link="/payment25"
-/>
+
 
 <Outlet    
      image="/ict.jpg"
@@ -160,39 +153,12 @@ link="/payment25"
 
 <Outlet
 image="/HSC-25.webp"
-title="ACS 2025 Physics ALL Cycles "
+title="APPLE 2025 Physics ALL Cycles "
 classamount="80"
 price="499"
 alt="physics"
 link="/payment25"
 />
-
-         <Outlet     
-image="/code.png"
-title="Complete WebDev -Programming Hero"
-classamount="400"
-price="299"
-alt="code ur career"
-link="https://programmingherro.netlify.app"
-    />
-
-
-
-
-
-    
-
-
-<Outlet    
-     image="/med.webp"
-     title="ACS Medical Private Batch 2024"
-     classamount="120"
-     price="499"
-     alt="med" 
-     link="/payment24"         
-     />
-
-
 
 
 
@@ -200,7 +166,7 @@ link="https://programmingherro.netlify.app"
 
 <Outlet    
      image="/DU.jpg"
-     title="ACS varsity admission 2023"
+     title="APPLE varsity admission 2023"
      classamount="140"
      price="299"
      alt="23" 
@@ -208,7 +174,7 @@ link="https://programmingherro.netlify.app"
      />
    <Outlet    
      image="/eng23.jpg"
-     title="ACS Engineering 2023"
+     title="APPLE Engineering 2023"
      classamount="120"
      price="199"
      alt="23"
@@ -224,7 +190,7 @@ link="https://programmingherro.netlify.app"
      
      <section>
       <p className="text-center text-white mt-16"> &copy;Apple developer 2024</p>
-      <p className="text-center text-white my-1 text-[15px] tracking-wider  anton"> <a href="/">Hire us for a project</a> </p>
+      <p className="text-center text-white my-1 text-[15px] tracking-wider  anton"> <a href="applebyte87@gmail.com">Hire me for a project</a> </p>
 
      </section>
 

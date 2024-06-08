@@ -6,7 +6,7 @@ export default function Ict(){
         <div>
         
             <div>
-            <h2 className="text-center font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-sky-200 to-blue-900 text-[33px] md:text-5xl">ICT DE-CODER 2025</h2><br />
+            <h2 className="text-center font-sans mt-3 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-sky-200 to-blue-900 text-[33px] md:text-5xl">ICT DE-CODER 2025</h2><br />
 
 
 <section className="w-[260px] mt-4 m-auto flex md:w-1/4 px-3 py-2 justify-center active:tracking-wide

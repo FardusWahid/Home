@@ -35,7 +35,7 @@ export function Inbox() {
           </div>
         </div>
         <DialogFooter>
-          <Link className="bg-black anton py-[6px] text-center m-auto rounded-sm w-[200px]" href="https://www.facebook.com/free.courses.vercel">Go to Facebook</Link>
+          <Link className="bg-black anton py-[10px] text-center m-auto rounded-md text-lg w-[200px]" href="https://www.facebook.com/free.courses.vercel">Go to Facebook</Link>
         </DialogFooter>
       </DialogContent>
     </Dialog>

@@ -2,9 +2,6 @@
 import Link from "next/link"
 import { useState } from 'react';
 import { FaSquareFacebook } from "react-icons/fa6";
-
-import { FaCopy } from "react-icons/fa";
-import { ImYoutube2 } from "react-icons/im";
 import { IoLogInOutline } from "react-icons/io5";
 import MediaQuery from 'react-responsive';
 import { Inbox } from "@/components/inbox";
@@ -63,7 +60,7 @@ export default function Pam() {
 </section>
 
 
-<p className="text-start beca text-sm mt-2"> Before you proceed further, Make sure your account has enough balance to purchase this course!</p>
+<p className="text-start beca text-sm mt-2"> If you are well funded and can afford to pay the full price then please buy it from the respective owner of this course, OR else</p>
 <div className="flex justify-center">
 
 <Inbox className="bg-[#c8f560] shadow-inner shadow-yellow-700 anton  py-2 mt-4 w-2/3 text-black rounded-lg flex justify-center font-extrabold text-xl mb-14" />
@@ -108,7 +105,6 @@ We have dedicated webapp support to all of our courses.<br /><br /> YES, you can
     <a className="mx-5 flex  w-[60px]" href="https://www.facebook.com/free.courses.vercel/" target="_blank"><FaSquareFacebook size={50} color="blue"/></a>
 
 
-<a className="mx-5 flex  w-[60px]" href="https://www.youtube.com/channel/UCtAJJtWtY3Lsd3pVAgVxsfw" target="_blank"><ImYoutube2 size={70} color="red" />  </a>            
     
       
       </div>

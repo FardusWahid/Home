@@ -9,14 +9,15 @@ import {
   } from "@/components/ui/carousel"
 import Image from "next/image"
 import Link from "next/link"
+import Slide from "./slide"
   
 
-function Caru() {
+function Caru(props) {
 
     
 
   return (
-    <div className="w-11/12   md:w-full  lg:w-[550px]  gap-2  m-auto mt-0 mx-5">
+    <div className="w-11/12  md:w-full bg-black lg:w-[550px] rounded-md  gap-2  m-auto mt-0 mx-5">
         <Carousel 
           plugins={[
             Autoplay({
@@ -24,51 +25,61 @@ function Caru() {
             }),
           ]}>
     <CarouselContent>
-      <CarouselItem><Link href="/h24">
-        <Image src="/eng24.webp" width={1280} height={700} className="w-full  rounded-t-md object-cover" />
-        <h1 className='text-center bg-lime-400 text-black rounded-b-md py-2 font-extrabold font-sans tracking-wider text-lg'>Enroll For 499</h1>
-    </Link></CarouselItem>
-
-      <CarouselItem>
-
-      <Link href="/h26">
-        <Image src="/cc1.webp" width={1280} height={700} className="w-full  rounded-t-md object-cover" />
-        <h1 className='text-center bg-purple-950 rounded-b-md py-2 font-extrabold font-sans tracking-wider text-lg'>Enroll For 250</h1>
-    </Link>
-
-      </CarouselItem>
-      <CarouselItem>
-      <Link href="/h24">
-        <Image src="/med.webp" width={1280} height={700} className="w-full   rounded-t-md" />
-        <h1 className='text-center bg-orange-500 text-black rounded-b-md py-2 font-extrabold font-sans tracking-wider text-lg'>Enroll For 499</h1>
-    </Link>
-
-      </CarouselItem>
 
 
+    <CarouselItem> 
+      <Slide 
+      src="/eng24.webp"
+      line="Enroll For 499 bdt" 
+      go="/h24"
+      />
+      
+    </CarouselItem>
 
 
-      <CarouselItem>
-      <Link href="/h25">
-        <Image src="/HSC-25.webp" width={1280} height={700} className="w-full  rounded-t-md" />
-        <h1 className='text-center bg-purple-900 rounded-b-md py-2 font-extrabold font-sans tracking-wider text-lg'>Enroll For 499</h1>
-    </Link>
+    <CarouselItem> 
+      <Slide 
+      src="/cc1.webp"
+      line="250 bdt per Cycle"
+      go='/h26'
+       />
+     
+    </CarouselItem>
 
-      </CarouselItem>
+
+    <CarouselItem> 
+      <Slide 
+      src="/HSC-25.webp"
+      line="499 bdt per Subject"
+      go='/h25'
+       />
+     
+    </CarouselItem>
 
 
-      <CarouselItem>
-      <Link href="/make-money">
-        <Image src="/makemoo.webp" width={1280} height={700} className="w-full  rounded-t-md" />
-        <h1 className='text-center bg-gray-900-950 rounded-b-md py-2 font-extrabold font-sans tracking-wider text-lg'>Make money with us</h1>
-    </Link>
 
-      </CarouselItem>
+    <CarouselItem> 
+      <Slide 
+      src="/ict26.webp"
+      line="Enroll for 299"
+      go='/h26'
+       />
+     
+    </CarouselItem>
+
+    <CarouselItem> 
+      <Slide 
+      src="/makemoo.webp"
+      line="Make money with us"
+      go='/make-money'
+       />
+     
+    </CarouselItem>
+
     </CarouselContent>
+</Carousel> 
 
-
-  
-  </Carousel></div>
+</div>
   )
 }
 

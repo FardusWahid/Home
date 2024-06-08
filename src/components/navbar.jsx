@@ -6,7 +6,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <div>
-      <nav className="w-full flex flex-wrap items-center justify-between px-3 py-1 bg-black fixed mb-3 z-10 shadow-md shadow-gray-800">
+      <nav className="w-full flex flex-wrap items-center justify-between px-3 py-1 bg-black fixed mb-3 z-10 shadow-lg shadow-gray-800">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
@@ -36,26 +36,26 @@ export default function Navbar({ fixed }) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase leading-snug text-white transition-all rounded-lg ease-in-out duration-150 font-extrabold hover:bg-gray-900"
                   href="/freecourses"
                 >
-                <span className="ml-2 tracking-wider">free courses</span>
+                <span className="ml-2 tracking-wider hover:tracking-widest transition-all ease-in-out duration-150">free courses</span>
                 </a>
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 hover:bg-red-950"
+                  className="px-3 py-2 flex items-center text-xs uppercase leading-snug text-white transition-all rounded-lg ease-in-out duration-150 font-extrabold hover:bg-gray-900"
                   href="https://www.facebook.com/groups/1451996508764221"
                 >
-                  <span className="ml-2 tracking-wider">facebook group</span>
+                  <span className="ml-2 tracking-wider hover:tracking-widest transition-all ease-in-out duration-150">facebook group</span>
                 </a>
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase leading-snug text-white transition-all rounded-lg ease-in-out duration-150 font-extrabold hover:bg-gray-900"
                   href="https://www.facebook.com/free.courses.vercel/"
                 >
-                <span className="ml-2 tracking-wider">Facebook page</span>
+                <span className="ml-2 tracking-wider hover:tracking-widest transition-all ease-in-out duration-150">Facebook page</span>
                 </a>
               </li>
             </ul>

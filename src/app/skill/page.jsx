@@ -10,14 +10,6 @@ export default function  Name(props){
 
 
 
-<Outlet     
-image="/code.png"
-title="Complete WebDev -Programming Hero"
-classamount="400"
-price="299"
-alt="code ur career"
-link="https://programmingherro.netlify.app"
-    />
 
 
      </section>

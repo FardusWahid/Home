@@ -17,14 +17,7 @@ alt="py"
 link="/payment25"
 />
 
-<Outlet
-image="/HSC-25.webp"
-title="ACS 2025 Math ALL Cycles"
-classamount="80"
-price="499"
-alt="math"
-link="/payment25"
-/>
+
 
 <Outlet
 image="/chee1.jpg"

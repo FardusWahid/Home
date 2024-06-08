@@ -5,15 +5,15 @@ export default function Exam(){
     return(
         <div>
         
-            <h1 className="text-center mb-3 mt-2 md:mt-0 font-sans italic text-2xl md:text-4xl font-extrabold">FINAL EXAM</h1>
+            <h1 className="text-center mb-3 mt-3 md:mt-0 font-serif md:tracking-wider italic text-2xl md:text-4xl font-extrabold">PRACTICE EXAM</h1>
 
             <div className="grid items-center justify-center">
       {Object.entries(EExam).map(([subject, chapters]) => (
         <div key={subject}>
-          <h2 className=" text-center bg-[#C8F560] text-black font-extrabold font-serif py-1 rounded-md shadow-inner shadow-yellow-700 m-2">{subject}</h2>
+          <h2 className=" text-center bg-[#C8F560] text-black py-1 rounded-md font-sans font-extrabold text-lg m-2">{subject}</h2>
           {chapters.map(({ title, link }) => (
             <p key={link}>
-              <a className="font-mono m-5 md:text-xl md:tracking-wide ring-1 ring-yellow-900 rounded-md bg-gray-800 px-2 tracking-tighter flex justify-center gap-2" href={`https://${link}`}>{title} <FaPenToSquare size={20} />
+              <a className="font-sans font-thin  m-5 md:text-xl md:tracking-wide ring-1 ring-yellow-900 rounded-md bg-gray-800 shadow-inner shadow-gray-900 px-3 hover:px-2 py-2 hover:font-semibold flex justify-center gap-2 transition-all ease-in-out duration-150 " href={`https://${link}`}>{title} <FaPenToSquare size={25} />
 </a>
             </p>
           ))}
