@@ -20,7 +20,7 @@ export default function Home(props) {
 </div>
 
 
-<h1 className="text-center md:hidden font-sans font-thin  mt-5 text-white italic text-[18px] "> Select Category</h1>
+<h1 className="text-center md:hidden font-serif font-semibold mt-5 text-white italic text-[18px] "> Select Category</h1>
     <div className="w-11/12 m-auto  md:w-1/2 lg:w-[550px] md:mx-3 flex flex-wrap justify-between mt-1    ">
     <Topic link="/add2.webp"
           title="ADMISSION"
