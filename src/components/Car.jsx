@@ -27,6 +27,34 @@ function Caru(props) {
     <CarouselContent>
 
 
+
+    <CarouselItem> 
+      <Slide 
+      src="/oor.webp"
+      line="Go to Telegram" 
+      go="https://t.me/applecourses"
+      />
+      
+    </CarouselItem>
+
+    <CarouselItem> 
+      <Slide 
+      src="/oor.webp"
+      line="Go to Telegram" 
+      go="https://t.me/applecourses"
+      />
+      
+    </CarouselItem>
+
+    <CarouselItem> 
+      <Slide 
+      src="/oor.webp"
+      line="Go to Telegram" 
+      go="https://t.me/applecourses"
+      />
+      
+    </CarouselItem>
+
     <CarouselItem> 
       <Slide 
       src="/eng24.webp"

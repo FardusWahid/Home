@@ -24,6 +24,8 @@ export function Inbox() {
            <p className="my-2"> 1. We only accept payment through Bkash.</p> 
            <p className="my-2"> 2. This link will take you to our Facebook page.</p> 
             <p className="mt-2">3. Once you are done paying you will be redirect to the Course Webapp!</p> 
+         <p className="text-center mt-2 text-lg italic">**Alert**</p>
+         <p className="text-sm tracking-tighter">আমাদের Facebook ৩ দিনের জন্য বন্ধ রাখা হয়েছ। Reply পেতে kindly Telegram এ যোগাযোগ করে করো </p>
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
@@ -35,7 +37,10 @@ export function Inbox() {
           </div>
         </div>
         <DialogFooter>
-          <Link className="bg-black anton py-[10px] text-center m-auto rounded-md text-lg w-[200px]" href="https://www.facebook.com/free.courses.vercel">Go to Facebook</Link>
+          <section className="flex justify-center gap-1">
+          <Link className="bg-black anton py-[10px] text-center w-2/5 m-auto rounded-md text-lg md:w-[200px]" href="https://www.facebook.com/free.courses.vercel">Facebook</Link>
+          <Link className="bg-black anton py-[10px] text-center w-2/5 m-auto rounded-md text-lg md:w-[200px]" href="https://t.me/applecourses">Telegram</Link>
+          </section>
         </DialogFooter>
       </DialogContent>
     </Dialog>
