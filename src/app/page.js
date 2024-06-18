@@ -45,9 +45,9 @@ export default function Home(props) {
           title="Skill Dev.."
           route="/skill" />
 
-<Topic link="/mone.jpg"
-          title="Earn"
-          route="/make-money" />
+<Topic link="/pdf.png"
+          title="E-books"
+          route="/ebook" />
   </div>
 </div>
 
@@ -189,8 +189,9 @@ link="/payment25"
      </section>
      
      <section>
-      <p className="text-center text-white mt-16"> &copy;Apple developer 2024</p>
-      <p className="text-center text-white my-1 text-[15px] tracking-wider  anton"> <a href="applebyte87@gmail.com">Hire me for a project</a> </p>
+     <p className="text-center text-white mt-16 text-[15px] tracking-wider underline font-bold"> <a href="/copyright">Read &copy;Copyright</a> </p>
+
+      <p className="text-center text-white font-extrabold italic mt-1 mb-1">Apple developer 2024</p>
 
      </section>
 
