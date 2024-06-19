@@ -1,5 +1,6 @@
 import Caru from "@/components/Car";
 import Outlet from "@/components/course";
+import Custom from "@/components/custom";
 import Topic from "@/components/topic";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,9 +11,9 @@ import { IoChevronForwardCircleSharp } from "react-icons/io5";
 
 export default function Home(props) {
   return (
-    <div>
+    <div className="select-none">
 
-<div className="md:flex md:flex-row-reverse justify-between  w-full ">
+<div className="md:flex md:flex-row-reverse justify-between  w-full">
 
 <div className="w-full bg-black mt-4  text-white flex md:w-1/2 lg:w-[600px]  justify-center">
 
@@ -62,6 +63,22 @@ export default function Home(props) {
  
 <p className="bg-pink-900 shadow-inner shadow-pink-500 w-[120px] mx-4 md:mx-10 py-1 px-2 rounded-xl flex justify-center">Latest add<GoDotFill size={23} color="red" /></p>
      <section className="flex flex-wrap gap-4 m-1 mt-0 md:m-10 justify-between">
+
+
+
+
+
+
+     <Custom     
+image="/bio.webp"
+title="APPLE Biomission 26 Cycle 1"
+one="Classes 60"
+two="Webapp recorded"
+three="2025 archive"
+price="299"
+alt="bio1"
+link="/payment26"
+    />
 
 
      <Outlet     

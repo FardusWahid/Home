@@ -1,7 +1,7 @@
 import Outlet from '@/components/course'
 export default function  Name(props){
     return(
-        <div>
+        <div className='select-none'>
         
 
           <h1 className="font-extrabold text-2xl text-center from-yellow-200 mt-2 md:mt-0 md:text-3xl">HSC -2024 </h1>
