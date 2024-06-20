@@ -37,7 +37,7 @@ bg-gradient-to-r from-[#5e0f0f]  to-[#030239] shadow-md shadow-blue-900 ring-1 r
        <section className="w-[259px] mt-6 m-auto flex md:w-1/4 px-3 py-3 justify-center
 bg-gradient-to-r from-[#0e1058] to-[#3f2904] shadow-inner shadow-blue-800 rounded-lg ring-1 hover:ring-yellow-400 transition ease-in duration-300">
          <a className="flex text-gray-200 tracking-tighter hover:text-yellow-200 truncate"
-          href="https://www.facebook.com/free.courses.vercel/" target="_blank"><h1 className="text-[14px] md:text-[16px] tracking-tighter font-extrabold flex gap-1  "><FaUnlockKeyhole size={20} />lecture & practice sheets for 100</h1></a>
+          href="https://www.facebook.com/apple.courses.netlify.app.3.0/" target="_blank"><h1 className="text-[14px] md:text-[16px] tracking-tighter font-extrabold flex gap-1  "><FaUnlockKeyhole size={20} />lecture & practice sheets for 100</h1></a>
        </section>
 
             </div>

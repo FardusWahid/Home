@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button"
+import { PiMessengerLogoBold } from "react-icons/pi";
+
 import {
   Dialog,
   DialogContent,
@@ -19,28 +21,17 @@ export function Inbox() {
       </DialogTrigger>
       <DialogContent className="w-11/12 md:w-[450px]">
         <DialogHeader>
-          <DialogTitle className="text-black">Payment details:</DialogTitle>
-          <DialogDescription className='text-black anton text-start'>
-           <p className="my-2"> 1. We only accept payment through Bkash.</p> 
-           <p className="my-2"> 2. This link will take you to our Facebook page.</p> 
-            <p className="mt-2">3. Once you are done paying you will be redirect to the Course Webapp!</p> 
-         <p className="text-center mt-2 text-lg italic">**Alert**</p>
-         <p className="text-sm tracking-tighter">আমাদের Facebook ৩ দিনের জন্য বন্ধ রাখা হয়েছ। Reply পেতে kindly Telegram এ যোগাযোগ করে করো </p>
+          <DialogTitle className="text-black my-2 text-xl font-extrabold font-serif italic">Payment Process</DialogTitle>
+          <DialogDescription className='text-black text-[16px] font-extrabold tracking-wide text-start'>
+           <p className="my-3"> We only accept payment through Bkash.</p> 
+           <p className="my-3">This link will take you to our Facebook page.</p> 
+            <p className="mt-3">Once you are done paying, 5mins এর মধ্যে তোমাকে access সহ webapp mail করে পাঠিয়ে দেয়া হবে।</p> 
           </DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            
-          </div>
-        </div>
+
         <DialogFooter>
-          <section className="flex justify-center gap-1">
-          <Link className="bg-black anton py-[10px] text-center w-2/5 m-auto rounded-md text-lg md:w-[200px]" href="https://www.facebook.com/free.courses.vercel">Facebook</Link>
-          <Link className="bg-black anton py-[10px] text-center w-2/5 m-auto rounded-md text-lg md:w-[200px]" href="https://t.me/applecourses">Telegram</Link>
-          </section>
+          <Link className="bg-black w-[200px] px-2 anton py-[12px] text-center m-auto rounded-md text-lg hover:text-[20px] mt-4 flex gap-1 justify-center transition-all ease-in-out duration-100" href="https://www.facebook.com/apple.courses.netlify.app.3.0/"><PiMessengerLogoBold color="white" size={28}/>Facebook</Link>
+   
         </DialogFooter>
       </DialogContent>
     </Dialog>

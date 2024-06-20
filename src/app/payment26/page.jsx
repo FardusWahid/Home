@@ -102,7 +102,7 @@ We have dedicated webapp support to all of our courses.<br /><br /> YES, you can
    <br /><br /><br /> <br /><br /><br />
     <p>Follow us on:</p><br />  
     <div className="flex"> 
-    <a className="mx-5 flex  w-[60px]" href="https://www.facebook.com/free.courses.vercel/" target="_blank"><FaSquareFacebook size={50} color="blue"/></a>
+    <a className="mx-5 flex  w-[60px]" href="https://www.facebook.com/apple.courses.netlify.app.3.0/" target="_blank"><FaSquareFacebook size={50} color="blue"/></a>
 
 
     

@@ -53,7 +53,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase leading-snug text-white transition-all rounded-lg ease-in-out duration-150 font-extrabold hover:bg-gray-900"
-                  href="https://www.facebook.com/free.courses.vercel/"
+                  href="https://www.facebook.com/apple.courses.netlify.app.3.0/"
                 >
                 <span className="ml-2 tracking-wider hover:tracking-widest transition-all ease-in-out duration-150">Facebook page</span>
                 </a>

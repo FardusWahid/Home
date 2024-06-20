@@ -21,7 +21,7 @@ function Caru(props) {
         <Carousel 
           plugins={[
             Autoplay({
-              delay: 2000,
+              delay: 2500,
             }),
           ]}>
     <CarouselContent>
@@ -32,9 +32,9 @@ function Caru(props) {
 
     <CarouselItem> 
       <Slide 
-      src="/oor.webp"
-      line="Go to Telegram" 
-      go="https://t.me/applecourses"
+      src="/betterfb.webp"
+      line="Follow New Facebook page" 
+      go="https://www.facebook.com/apple.courses.netlify.app.3.0/"
       />
       
     </CarouselItem>
