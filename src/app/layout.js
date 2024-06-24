@@ -13,8 +13,9 @@ const fontSans = FontSans({
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Apple Courses",
-  description: "Apple Academic & Admission",
+  title: "Apple Courses - Academic & Admission Bangladesh",
+  description: "HSC Free & Premium Course Bangladesh ",
+  keywords: "Apple courses, Apple course, Apple HSC, Apple admission, Bangladesh, Apple HSC 2025, Apple BD, BD",
 };
 
 export default function RootLayout({ children }) {
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="google-site-verification" content="pzjPH8_CD-6eaqtuSfa0LLyheyNR-_h681efe85itDc" />
       <meta name="description" content={metadata.description} />
       <meta name="keywords" content={metadata.keywords} />
       <title>{metadata.title}</title>
