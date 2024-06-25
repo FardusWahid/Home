@@ -13,8 +13,8 @@ const fontSans = FontSans({
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Apple Courses - Academic & Admission Bangladesh",
-  description: "HSC Free & Premium Course Bangladesh ",
+  title: "Apple Courses - Academic & Admission",
+  description: "HSC Free & Premium Courses Bangladesh",
   keywords: "Apple courses, Apple course, Apple HSC, Apple admission, Bangladesh, Apple HSC 2025, Apple BD, BD",
 };
 
