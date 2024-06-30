@@ -10,7 +10,7 @@ export default function  Name(props){
 
 <Outlet     
 image="/eng24.webp"
-title="ACS Engineering Private Batch 2024"
+title="Engineering Private Batch 2024"
 classamount="140"
 price="499"
 alt="eng24"
@@ -39,17 +39,17 @@ link="/payment24"
 
 <Outlet    
      image="/DU.jpg"
-     title="ACS varsity admission 2023"
+     title="ACS varsity admission 2023 [Free with varsity 24]"
      classamount="140"
-     price="299"
+     price="499"
      alt="23" 
      link="payment24"         
      />
    <Outlet    
      image="/eng23.jpg"
-     title="ACS Engineering 2023"
+     title="ACS Engineering 2023 [Free with Engineering 24]"
      classamount="120"
-     price="299"
+     price="499"
      alt="23"
      link="payment24"         
           

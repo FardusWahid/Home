@@ -131,7 +131,7 @@ link="/payment26"
 
 <Outlet
 image="/chee1.jpg"
-title="APPLE 2025 Chemistry All Cycles "
+title="APPLE 2025 Chemistry All Cycles"
 classamount="120"
 price="499"
 alt="che"
@@ -150,7 +150,7 @@ link="freecourses/frb"
     
      <Outlet     
 image="/eng24.webp"
-title="APPLE Engineering Private Batch 2024"
+title="Engineering Private Batch 2024 & archive"
 classamount="140"
 price="499"
 alt="eng24"
@@ -170,7 +170,7 @@ link="/payment24"
 
 <Outlet
 image="/HSC-25.webp"
-title="APPLE 2025 Physics ALL Cycles "
+title="APPLE 2025 Physics ALL Cycles"
 classamount="80"
 price="499"
 alt="physics"
@@ -183,17 +183,17 @@ link="/payment25"
 
 <Outlet    
      image="/DU.jpg"
-     title="APPLE varsity admission 2023"
+     title="APPLE varsity admission 2023 [Free with varsity 24]"
      classamount="140"
-     price="299"
+     price="499"
      alt="23" 
      link="https://www.facebook.com/apple.courses.netlify.app.3.0/"         
      />
    <Outlet    
      image="/eng23.jpg"
-     title="APPLE Engineering 2023"
+     title="APPLE Engineering 2023 [Free with Engineering 2024]"
      classamount="120"
-     price="199"
+     price="499"
      alt="23"
      link="/payment24"         
           

@@ -71,6 +71,7 @@ export default function Pam() {
 
 
 <div className="mt-16 m-3 w-11/12 md:w-[590px] lg:mt-5">
+<a href="https://youtu.be/24NmpM6iJTA?feature=shared" className="text-[16px] font-sans font-extrabold ring-[.5px] px-2 py-[5px] ring-pink-600 rounded-md uppercase hover:text-[17px] hover:py-[6px] hover:ring-1 hover:italic bg-gray-800 transition-all ease-in-out duration-100">watch a demo video</a>
   <h1 className="text-[24px] font-bold font-sans">Description:</h1>
  
  <p className="font-bold text-[#a3fda1]">&nbsp;&nbsp;To Continue this course</p>  
