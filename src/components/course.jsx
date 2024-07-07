@@ -20,8 +20,8 @@ export default function Outlet(props){
             className="p-1 rounded-xl" />
 
             <h1 className="anton text-white text-shadow text-[18px] text-center my-2">{props.title}</h1>
-             <span className="flex space-x-3 beca text-sm "><p className="tag flex gap-1"><FaVideo size={20} color='black' />Classes {props.classamount}+</p><p className="tag3 flex">🌐Webapp recorded</p></span>
-            <span className=" flex beca space-x-2 mt-2 text-sm  "><p className="tag4 flex gap-1"><MdOutlineWatchLater  size={19} color='white' />Exam website</p><p className="tag2 flex ">Study Materials<MdPictureAsPdf size={20} color='black' /></p></span>
+             <span className="flex space-x-3 beca  text-sm "><p className="tag flex gap-1"><FaVideo size={20} color='black' />Classes {props.classamount}+</p><p className="tag3 flex">🌐Webapp recorded</p></span>
+            <span className=" flex beca  space-x-2 mt-2 text-sm  "><p className="tag4 flex gap-1"><MdOutlineWatchLater  size={19} color='white' />Exam website</p><p className="tag2 flex ">Study Materials<MdPictureAsPdf size={20} color='black' /></p></span>
             <h1 className="text-xl my-1 text-white">price:  <span className="font-sans font-extrabold tracking-wide text-2xl text-shadow" > {props.price}</span>BDT </h1>
            
 

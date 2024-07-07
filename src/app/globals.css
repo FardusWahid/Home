@@ -1,16 +1,13 @@
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
-  @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poetsen+One&display=swap');  
-  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Merienda:wght@300..900&family=Poetsen+One&display=swap');
-  
-  
+ 
   body{
     @apply bg-black text-white
   }
 
   .beca{
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Poetsen", sans-serif;
     font-weight: 600;
     font-style:normal;
   }
@@ -36,7 +33,3 @@
     @apply bg-[#86003C] hover:bg-[#86003cc0]  rounded-lg p-1 font-extrabold text-white px-2 py-1
   }
 
-  .card{
-    background: #000000;
-    box-shadow: 5px 5px 14px #3a0b0b, -5px -5px 14px #2e0101;
-    }

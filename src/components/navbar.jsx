@@ -45,7 +45,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase leading-snug text-white transition-all rounded-lg ease-in-out duration-150 font-extrabold hover:bg-gray-900"
-                  href="https://www.facebook.com/groups/1451996508764221"
+                  href="https://www.facebook.com/groups/applecourses/"
                 >
                   <span className="ml-2 tracking-wider hover:tracking-widest transition-all ease-in-out duration-150">facebook group</span>
                 </a>

@@ -4,9 +4,10 @@ import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
+
 const API_KEY = 'AIzaSyBRxPt8NOlqBUKrNvUtHeuCjs9Z3MWUzrs';
 const videosPerPage = 9; 
-function Neeo(props) {
+function Neo(props) {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -28,8 +29,7 @@ function Neeo(props) {
         setVideos(data.items);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching playlist data:', error);
-        setError('Failed to fetch data');
+        setError('Not Found. Chapter hasnt Started yet');
         setLoading(false);
       }
     };
@@ -43,28 +43,28 @@ function Neeo(props) {
   const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
   const currentVideos = videos.slice(indexOfFirstVideo, indexOfLastVideo);
   return (
-    <div>
-      <h1 className='text-center font-bold mt-2 md:mt-0 text-2xl'>{props.chapter} </h1><br />
+    <div className='select-none'>
+
+      <h1 className='text-center font-extrabold mt-1 md:mt-0 text-2xl'>{props.chapter} </h1><br />
 
       {loading && <p className=" flex justify-center items-center font-extrabold tracking-tight text-lg text-white">Loading...</p>}
       {error && <p>Error: {error}</p>}
       {!loading && !error && (
-        <div className="w-full h-full flex flex-wrap justify-center gap-5  ">
+        <div className="w-full flex flex-wrap justify-center 2xl:w-[1490px] 2xl:m-auto 2xl:justify-start  gap-5  ">
           {currentVideos.map(video => (
 
             <div key={video.id} >
-                <p className=' text-center m-auto text-white text-[12px]  font-semibold font-sans w-[350px] lg:w-[479px]'>{video.snippet.title}</p>
+  <p className='m-auto text-center text-[13px] tracking-tighter font-bold font-sans w-[350px] lg:w-[480px]'>{video.snippet.title}</p>
 
 
 
-<div className="card  lg:w-[480px]">
-              <section className='w-full flex justify-center '>
+<div className="bg-black  lg:w-[480px]">
+              <section className='w-full flex justify-center'>
                 <ReactPlayer
                   url={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
                   controls={true}
-                  width={isLargeScreen ? 475 : 340}
+                  width={isLargeScreen ? 475 : 344}
                   height={isLargeScreen ? 290 : 230}
-                  lazy={true} 
                   light={`https://img.youtube.com/vi/${video.snippet.resourceId.videoId}/hqdefault.jpg`}
                  playing={true}
                  
@@ -78,9 +78,9 @@ function Neeo(props) {
         </div>
       )}
       {/* Pagination */}
-      <div className="flex justify-center m-8 gap-3">
+      <div className="flex justify-center m-8 gap-2">
         {[...Array(Math.ceil(videos.length / videosPerPage))].map((_, index) => (
-          <button key={index} onClick={() => paginate(index + 1)} className={`mx-1 italic  shadow-inner shadow-gray-600 px-3 py-1 rounded-xl ${currentPage === index + 1 ? 'bg-cyan-300 text-black font-extrabold' : 'bg-purple-500 text-black font-extrabold'}`}>
+          <button key={index} onClick={() => paginate(index + 1)} className={`mx-1 italic  shadow-inner shadow-gray-600 px-3 py-1 rounded-[9px] ${currentPage === index + 1 ? 'bg-cyan-300 text-black font-extrabold' : 'bg-purple-500 text-black font-extrabold'}`}>
             {index + 1}
           </button>
         ))}
@@ -89,4 +89,4 @@ function Neeo(props) {
   );
 }
 
-export default Neeo;
+export default Neo;

@@ -27,22 +27,22 @@ function Caru(props) {
     <CarouselContent>
 
 
-
-
-
     <CarouselItem> 
       <Slide 
-      src="/betterfb.webp"
-      line="Follow New Facebook page" 
-      go="https://www.facebook.com/apple.courses.netlify.app.3.0/"
-      />
-      
+      src="/HSC-25.webp"
+      line="499 per Subject"
+      go='/h25'
+       />
+     
     </CarouselItem>
+
+
+
 
     <CarouselItem> 
       <Slide 
       src="/eng24.webp"
-      line="Enroll For 499 bdt" 
+      line="Enroll For 499" 
       go="/h24"
       />
       
@@ -52,31 +52,32 @@ function Caru(props) {
     <CarouselItem> 
       <Slide 
       src="/cc1.webp"
-      line="250 bdt per Cycle"
+      line="250 Per Cycle"
       go='/h26'
        />
      
     </CarouselItem>
 
 
-    <CarouselItem> 
-      <Slide 
-      src="/HSC-25.webp"
-      line="499 bdt per Subject"
-      go='/h25'
-       />
-     
-    </CarouselItem>
 
 
 
     <CarouselItem> 
       <Slide 
       src="/ict26.webp"
-      line="Enroll for 299"
-      go='/h26'
+      line="Enroll for FREE"
+      go='https://apple26.netlify.app/'
        />
      
+    </CarouselItem>
+
+    <CarouselItem> 
+      <Slide 
+      src="/betterfb.webp"
+      line="Follow New Facebook page" 
+      go="https://www.facebook.com/apple.courses.netlify.app.3.0/"
+      />
+      
     </CarouselItem>
 
     <CarouselItem> 
