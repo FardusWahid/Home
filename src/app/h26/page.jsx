@@ -13,11 +13,11 @@ export default function  Name(props){
 
 <Outlet     
 image="/ict26.webp"
-title="ACS ICT DeCoder 2026"
+title="APPLE ICT DeCoder 2026"
 classamount="140"
-price="299"
+price="FREE "
 alt="ict26"
-link="/payment26"
+link="https://tinyurl.com/apple2026"
     />
 
 <Custom     
@@ -48,7 +48,7 @@ title="APPLE Biomission 26 Cycle 1"
 one="Classes 60"
 two="Webapp recorded"
 three="2025 archive"
-price="299"
+price="450"
 alt="bio1"
 link="/payment26"
     />

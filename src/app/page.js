@@ -66,19 +66,15 @@ export default function Home(props) {
 
 
 
-
-
-
-     <Custom     
-image="/bio.webp"
-title="APPLE Biomission 26 Cycle 1"
-one="Classes 60"
-two="Webapp recorded"
-three="2025 archive"
-price="299"
-alt="bio1"
-link="/payment26"
+     <Outlet     
+image="/ict26.webp"
+title="APPLE ICT DeCoder 2026"
+classamount="140"
+price="FREE "
+alt="ict26"
+link="https://tinyurl.com/apple2026"
     />
+
 
 
      <Outlet     
@@ -90,14 +86,7 @@ alt="dar"
 link="/payment24"
     />
 
-     <Outlet     
-image="/ict26.webp"
-title="APPLE ICT DeCoder 2026"
-classamount="140"
-price="299"
-alt="ict26"
-link="/payment26"
-    />
+
 
 <Outlet     
 image="/c1.jpg"
@@ -105,6 +94,17 @@ title="APPLE 2026 Math Cycle 1"
 classamount="60"
 price="250"
 alt="math1"
+link="/payment26"
+    />
+
+<Custom     
+image="/bio.webp"
+title="APPLE Biomission 26 Cycle 1"
+one="Classes 60"
+two="Webapp recorded"
+three="2025 archive"
+price="450"
+alt="bio1"
 link="/payment26"
     />
 

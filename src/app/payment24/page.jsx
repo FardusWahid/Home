@@ -26,7 +26,7 @@ export default function Pam() {
  <br />
 
    <div className="flex justify-end mx-7 md:mx-12">
-    <h1 className="font-sans my-3 md:mt-0 md:mb-3 font-bold">Paid already? <Link className="bg-yellow-500 px-2 py-1 rounded-md text-black font-sans font-extrabold shadow-inner shadow-yellow-300 active:tracking-tight" href="https://apple24.vercel.app/">Login</Link></h1>
+    <h1 className="font-sans my-3 md:mt-0 md:mb-3 font-bold">Paid already? <Link className="bg-yellow-500 px-2 py-1 rounded-md text-black font-sans font-extrabold shadow-inner shadow-yellow-300 active:tracking-tight" href="https://apple2024.netlify.app/">Login</Link></h1>
     </div>                
 
 <div>
@@ -60,7 +60,7 @@ export default function Pam() {
 </section>
 
 
-<p className="text-start beca text-sm mt-2">If you are well funded and can afford to pay the full price then please buy it from the respective owner of this course, OR else</p>
+<p className="text-start font-sans font-semibold text-sm mt-2">If you are well funded and can afford to pay the full price then please buy it from the respective owner of this course, OR else</p>
 <div className="flex justify-center">
 
 <Inbox className="bg-[#c8f560] shadow-inner shadow-yellow-700 anton  py-2 mt-4 w-2/3 text-black rounded-lg flex justify-center font-extrabold text-xl mb-14" />

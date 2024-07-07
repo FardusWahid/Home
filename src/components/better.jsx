@@ -53,7 +53,7 @@ function Neeo(props) {
           {currentVideos.map(video => (
 
             <div key={video.id} >
-                <p className=' text-center m-auto text-white text-[12px]  font-semibold beca w-[350px] lg:w-[479px]'>{video.snippet.title}</p>
+                <p className=' text-center m-auto text-white text-[12px]  font-semibold font-sans w-[350px] lg:w-[479px]'>{video.snippet.title}</p>
 
 
 

@@ -7,6 +7,14 @@ export default function Free(){
     <h1 className=" text-2xl text-center from-yellow-200 mt-3 md:mt-0  to-blue-700 bg-gradient-to-r anton bg-clip-text text-transparent md:text-3xl">FREE COURSES</h1>
 
 <section className="flex flex-wrap gap-4 m-1 md:m-10 justify-between">
+<Outlet     
+image="/ict26.webp"
+title="APPLE ICT DeCoder 2026"
+classamount="140"
+price="FREE "
+alt="ict26"
+link="https://tinyurl.com/apple2026"
+    />
 
 <Outlet     
 image="/frb.webp"

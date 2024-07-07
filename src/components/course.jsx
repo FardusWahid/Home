@@ -15,7 +15,7 @@ export default function Outlet(props){
     
         <card className=" flex justify-center items-center flex-col shadow-lg shadow-red-900  rounded-xl ring-1 w-11/12">
 
-            <Image src={props.image} alt={props.alt} width={1280} height={700}
+            <Image src={props.image} alt={props.alt} width={780} height={500}
               
             className="p-1 rounded-xl" />
 
