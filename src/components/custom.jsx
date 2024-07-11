@@ -15,7 +15,7 @@ export default function Custom(props){
     
         <card className=" flex justify-center items-center flex-col shadow-lg shadow-red-900  rounded-xl ring-1 w-11/12">
 
-            <Image src={props.image} alt={props.alt} width={780} height={700}
+            <Image src={props.image} alt={props.alt} width={780} height={350}
               
             className="p-1 rounded-xl" />
 
@@ -30,7 +30,7 @@ export default function Custom(props){
         class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
     </div>
     <a href={props.link} title="Get quote now"
-        class="relative inline-flex items-center ring-1 ring-gray-700 justify-center px-5 py-2 text-lg font-bold text-white transition-all duration-150 bg-gray-900 rounded-xl focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-900"
+        class="relative inline-flex items-center ring-1 ring-gray-700 justify-center px-5 py-2 text-lg font-bold text-white transition-all duration-150 bg-gray-900 rounded-xl  focus:ring-1 focus:ring-purple-950 "
         role="button">Get it now
     </a>
 </div>
