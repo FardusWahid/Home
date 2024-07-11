@@ -32,4 +32,7 @@
   .tag4{
     @apply bg-[#86003C] hover:bg-[#86003cc0]  rounded-lg p-1 font-extrabold text-white px-2 py-1
   }
-
+  
+.wd{
+  width: 98%;
+}

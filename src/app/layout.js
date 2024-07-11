@@ -33,7 +33,9 @@ export default function RootLayout({ children }) {
     
     <body className={inter.className}>
       <Navbar/><br/><br/><br/> <br className="max-sm:hidden"/>
+     <div className="select-none">
       {children}
+      </div> 
       </body>
   
     </html>

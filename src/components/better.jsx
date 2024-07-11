@@ -64,7 +64,7 @@ function Neo(props) {
                   url={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
                   controls={true}
                   width={isLargeScreen ? 475 : 344}
-                  height={isLargeScreen ? 290 : 230}
+                  height={isLargeScreen ? 290 : 220}
                   light={`https://img.youtube.com/vi/${video.snippet.resourceId.videoId}/hqdefault.jpg`}
                  playing={true}
                  
@@ -80,7 +80,7 @@ function Neo(props) {
       {/* Pagination */}
       <div className="flex justify-center m-8 gap-2">
         {[...Array(Math.ceil(videos.length / videosPerPage))].map((_, index) => (
-          <button key={index} onClick={() => paginate(index + 1)} className={`mx-1 italic  shadow-inner shadow-gray-600 px-3 py-1 rounded-[9px] ${currentPage === index + 1 ? 'bg-cyan-300 text-black font-extrabold' : 'bg-purple-500 text-black font-extrabold'}`}>
+          <button key={index} onClick={() => paginate(index + 1)} className={`mx-1 italic px-3 py-1 shadow-lg shadow-cyan-800 rounded-sm ${currentPage === index + 1 ? 'bg-cyan-50 ring-1 ring-black text-black font-extrabold' : 'bg-gray-800 text-white ring-1 ring-white font-extrabold'}`}>
             {index + 1}
           </button>
         ))}

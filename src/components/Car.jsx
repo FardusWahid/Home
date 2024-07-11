@@ -4,11 +4,8 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
   } from "@/components/ui/carousel"
-import Image from "next/image"
-import Link from "next/link"
+
 import Slide from "./slide"
   
 
@@ -26,19 +23,26 @@ function Caru(props) {
           ]}>
     <CarouselContent>
 
+    <CarouselItem> 
+      <Slide 
+      src="/ict26.webp"
+      line="Enroll for FREE"
+      go='https://apple26.netlify.app/'
+       />
+     
+    </CarouselItem>
 
     <CarouselItem> 
       <Slide 
-      src="/HSC-25.webp"
-      line="499 per Subject"
-      go='/h25'
+      src="/cc1.webp"
+      line="250 Per Cycle"
+      go='/h26'
        />
      
     </CarouselItem>
 
 
-
-
+    
     <CarouselItem> 
       <Slide 
       src="/eng24.webp"
@@ -51,34 +55,23 @@ function Caru(props) {
 
     <CarouselItem> 
       <Slide 
-      src="/cc1.webp"
-      line="250 Per Cycle"
-      go='/h26'
+      src="/HSC-25.webp"
+      line="499 per Subject"
+      go='/h25'
        />
      
     </CarouselItem>
 
 
-
-
-
     <CarouselItem> 
       <Slide 
-      src="/ict26.webp"
-      line="Enroll for FREE"
-      go='https://apple26.netlify.app/'
+      src="/frb.webp"
+      line="FREE FRB 2024"
+      go='/freecourses/frb'
        />
      
     </CarouselItem>
 
-    <CarouselItem> 
-      <Slide 
-      src="/betterfb.webp"
-      line="Follow New Facebook page" 
-      go="https://www.facebook.com/apple.courses.netlify.app.3.0/"
-      />
-      
-    </CarouselItem>
 
     <CarouselItem> 
       <Slide 

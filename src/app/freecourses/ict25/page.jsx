@@ -1,44 +1,43 @@
 
 import { GrNext } from "react-icons/gr";
 import { FaUnlockKeyhole } from "react-icons/fa6";
+import Link from "next/link";
+
+function Page({name, route}){
+
+    return(
+       <div>
+       <section className="w-9/12 mt-4 text-lg  hover:text-xl text-cyan-100 italic ring-1 hover:ring-yellow-300 hover:ring-[.5px]  hover:text-purple-200 m-auto md:w-1/4 p-[10px] 
+   rounded-lg transition-all ease-in duration-100 font-extrabold ">
+ 
+          <Link className="flex justify-center gap-3 md:gap-4 w-full"
+           href={route}>{name} <GrNext size={27} /></Link>
+        </section>
+ 
+       </div>
+    )
+ }
+
 export default function Ict(){
     return(
         <div>
         
             <div>
-            <h2 className="text-center font-sans mt-3 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-sky-200 to-blue-900 text-[33px] md:text-5xl">ICT DE-CODER 2025</h2><br />
+            <h2 className="text-center font-sans mt-2 md:mt-0 font-extrabold text-cyan-400 tracking-tighter md:tracking-normal text-[36px] md:text-5xl">ICT DE-CODER 2025</h2><br className="max-sm:hidden" />
+
+<Page name="Chapter 1 & 2" route="/freecourses/ict25/chap12" />
+<Page name="Chapter 3" route="/freecourses/ict25/chap3" />
+<Page name="Chapter 4   " route="/freecourses/ict25/chap4" />
+<Page name="Chapter 5" route="/freecourses/ict25/chap5" />
+<Page name="ICT DeCoder 2026" route="https://tinyurl.com/apple2026" />
+<Page name="Physics cycles 25 " route="https://apple25.netlify.app" />
+<Page name="Chemistry cycles 25 " route="https://apple25.netlify.app" />
+<Page name="Facebook Group" route="https://www.facebook.com/groups/applecourses" />
 
 
-<section className="w-[260px] mt-4 m-auto flex md:w-1/4 px-3 py-2 justify-center active:tracking-wide
-bg-gradient-to-r from-[#120b48]  to-[#590218] shadow-inner shadow-yellow-800 ring-1 ring-blue-950 hover:ring-yellow-400 rounded-lg transition ease-in duration-300">
-         <a className="flex gap-6 text-gray-200 hover:text-yellow-300 truncate"
-          href="/freecourses/ict25/chap12"><h1 className="text-lg font-extrabold ">Chapter 1 & 2</h1> <GrNext size={25} /></a>
-       </section>
 
+<br />
 
-       <section className="w-[260px] mt-4 m-auto flex md:w-1/4 px-3 py-2 justify-center active:tracking-wide
-bg-gradient-to-r from-[#0c0319]  to-[#332b2a] shadow-inner shadow-red-800 ring-1 ring-blue-950 hover:ring-yellow-400 rounded-lg transition ease-in duration-300">
-         <a className="flex gap-10 text-gray-200 hover:text-yellow-300 truncate"
-          href="/freecourses/ict25/chap3"><h1 className="text-lg font-extrabold ">Chapter 3</h1> <GrNext size={25} /></a>
-       </section>
-
-       <section className="w-[260px] mt-4 m-auto flex md:w-1/4 px-3 py-2 justify-center active:tracking-wide
-bg-gradient-to-r from-[#4f090d]  to-[#43007dcc] shadow-inner shadow-pink-800 ring-1 ring-blue-950 hover:ring-yellow-400 rounded-lg transition ease-in duration-300">
-         <a className="flex gap-10 text-gray-200 hover:text-yellow-300 truncate"
-          href="/freecourses/ict25/chap4"><h1 className="text-lg font-extrabold ">Chapter 4</h1> <GrNext size={25} /></a>
-       </section>
-
-       <section className="w-[260px] mt-4 m-auto flex md:w-1/4 px-3 py-2 justify-center active:tracking-wide
-bg-gradient-to-r from-[#5e0f0f]  to-[#030239] shadow-md shadow-blue-900 ring-1 ring-red-950 hover:ring-yellow-400 rounded-lg transition ease-in duration-300">
-         <a className="flex gap-12 text-gray-200 hover:text-yellow-300 truncate"
-          href="/freecourses/ict25/chap5"><h1 className="text-lg font-extrabold ">Chapter 5</h1> <GrNext size={25} /></a>
-       </section>
-
-       <section className="w-[259px] mt-6 m-auto flex md:w-1/4 px-3 py-3 justify-center
-bg-gradient-to-r from-[#0e1058] to-[#3f2904] shadow-inner shadow-blue-800 rounded-lg ring-1 hover:ring-yellow-400 transition ease-in duration-300">
-         <a className="flex text-gray-200 tracking-tighter hover:text-yellow-200 truncate"
-          href="https://www.facebook.com/apple.courses.netlify.app.3.0/" target="_blank"><h1 className="text-[14px] md:text-[16px] tracking-tighter font-extrabold flex gap-1  "><FaUnlockKeyhole size={20} />lecture & practice sheets for 100</h1></a>
-       </section>
 
             </div>
         </div>

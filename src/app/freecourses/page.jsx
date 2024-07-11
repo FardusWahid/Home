@@ -4,12 +4,12 @@ export default function Free(){
     return(
 <div>
    
-    <h1 className=" text-2xl text-center from-yellow-200 mt-3 md:mt-0  to-blue-700 bg-gradient-to-r anton bg-clip-text text-transparent md:text-3xl">FREE COURSES</h1>
+    <h1 className=" text-3xl text-center  mt-3 md:mt-0  font-extrabold tracking-tighter text-cyan-200 italic md:text-3xl">FREE COURSES</h1>
 
 <section className="flex flex-wrap gap-4 m-1 md:m-10 justify-between">
 <Outlet     
 image="/ict26.webp"
-title="APPLE ICT DeCoder 2026"
+title="ICT DE-CODER HSC - 2026"
 classamount="140"
 price="FREE "
 alt="ict26"
