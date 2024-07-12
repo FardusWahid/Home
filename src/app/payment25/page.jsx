@@ -1,9 +1,6 @@
 'use client'
 import Link from "next/link"
-import { useState } from 'react';
 import { FaSquareFacebook } from "react-icons/fa6";
-import { IoLogInOutline } from "react-icons/io5";
-import MediaQuery from 'react-responsive';
 import { Inbox } from "@/components/inbox";
 
 
@@ -50,7 +47,7 @@ export default function Pam() {
 
 
 
-<div className="flex justify-center mt-5 lg:mt-0">
+<div className="flex justify-center mt-5 lg:mt-0 p-1 md:ring-[.2px] md:ring-white rounded-lg  bg-gray-950">
   <main className=" checkout  w-11/12 justify-center md:w-[550px]">
 
 <section className="p-2 w-full ">
@@ -60,8 +57,8 @@ export default function Pam() {
 </section>
 
 
-<p className="text-start font-semibold font-sans text-sm mt-2">If you are well funded and can afford to pay the full price then please buy it from the respective owner of this course, OR else</p>
-<div className="flex justify-center">
+<p className="text-start font-bold font-sans text-sm md:text-[15px] italic mt-4 md:mt-5 md:px-4">If you are well funded and can afford to pay the full price then please buy it from the respective owner of this course, OR else</p>
+<div className="flex justify-center mt-5">
 
 <Inbox className="bg-[#c8f560] shadow-inner shadow-yellow-700 anton  py-2 mt-4 w-2/3 text-black rounded-lg flex justify-center font-extrabold text-xl mb-14" />
 
@@ -71,7 +68,7 @@ export default function Pam() {
 
 
 <div className="mt-16 m-3 w-11/12 md:w-[590px] lg:mt-5">
-<a href="https://youtu.be/24NmpM6iJTA?feature=shared" className="text-[16px] font-sans font-extrabold ring-[.5px] px-2 py-[5px] ring-pink-600 rounded-md uppercase hover:text-[17px] hover:py-[6px] hover:ring-1 hover:italic bg-gray-800 transition-all ease-in-out duration-100">watch a demo video</a>
+<a href="https://www.youtube.com/playlist?list=PLjo9h8F7l8RCANxDhnisxvsUd4tSG8v0B" className="text-[16px] anton bg-[#c8f560] shadow-inner shadow- text-black rounded-sm px-1 py-[5px] animate-pulse">WATCH Demo on YouTube</a>
 
   <h1 className="text-[24px] font-bold font-sans">Description:</h1>
  

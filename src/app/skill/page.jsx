@@ -20,6 +20,7 @@ link="/payment24"
 
 
 
+
      </section>
         </div>
     )

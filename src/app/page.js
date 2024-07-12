@@ -21,7 +21,7 @@ export default function Home(props) {
 
 
 <h1 className="text-center md:hidden font-serif font-thin tracking-widest mt-5 text-white italic text-[16px]"> Select Category</h1>
-    <div className="wd m-auto  md:w-1/2 lg:w-[550px] md:mx-3 flex flex-wrap justify-between mt-1 xl: xl:mx-12 xl:mt-5">
+    <div className="wd m-auto bg-black  md:w-1/2 lg:w-[550px] md:mx-3 flex flex-wrap justify-between mt-1 xl: xl:mx-12 xl:mt-5">
     <Topic link="/adastra.png"
           title="ADMISSION"
           route="/admission"/>
@@ -66,7 +66,7 @@ export default function Home(props) {
 
      <Outlet     
 image="/ict26.webp"
-title="APPLE ICT DE-CODER HSC - 2026"
+title="ACS ICT DeCoder 2026"
 classamount="140"
 price="FREE "
 alt="ict26"
@@ -75,7 +75,7 @@ link="https://tinyurl.com/apple2026"
 
 <Outlet     
 image="/c1.jpg"
-title="APPLE 2026 Math Cycle 1"
+title="ACS 2026 Math Cycle -01"
 classamount="60"
 price="250"
 alt="math1"
@@ -84,7 +84,7 @@ link="/payment26"
 
 <Outlet     
 image="/pc1.jpg"
-title="APPLE 2026 Physics Cycle 1"
+title="ACS 2026 Physics Cycle -01"
 classamount="55"
 price="250"
 alt="phy1"
@@ -102,8 +102,8 @@ link="/payment24"
 
 <Outlet
 image="/HSC-25.webp"
-title="APPLE 2025 Physics ALL Cycles"
-classamount="80"
+title="ACS 2025 Physics All Cycles [Full subject]"
+classamount="130"
 price="499"
 alt="physics"
 link="/payment25"
@@ -111,7 +111,7 @@ link="/payment25"
 
 <Outlet
 image="/chee1.jpg"
-title="APPLE 2025 Chemistry All Cycles"
+title="ACS 2025 Chemistry All Cycles [Full subject] "
 classamount="120"
 price="499"
 alt="che"
@@ -123,7 +123,7 @@ link="/payment25"
 image="/dar.jpg"
 title="Darpan Academy OneShots 2024"
 classamount="97"
-price="299 "
+price="299"
 alt="dar"
 link="/payment24"
     />
@@ -134,7 +134,7 @@ link="/payment24"
 
 <Custom     
 image="/bio.webp"
-title="APPLE Biomission 26 Cycle 1"
+title="ACS 2026 Biomission Cycle -01"
 one="Classes 60"
 two="Webapp recorded"
 three="2025 archive"
@@ -149,7 +149,7 @@ link="/payment26"
 
 <Outlet     
 image="/cc1.webp"
-title="APPLE 2026 Chemistry Cycle 1"
+title="ACS 2026 Chemistry Cycle -01"
 classamount="57"
 price="250"
 alt="phy1"
@@ -172,7 +172,7 @@ link="freecourses/frb"
 
 <Outlet    
      image="/ict.jpg"
-     title="ICT DE-CODER 2025"
+     title="ACS ICT DeCoder 2025"
      classamount="60"
      price="FREE"
      alt="ict" 
@@ -187,7 +187,7 @@ link="freecourses/frb"
 
 <Outlet    
      image="/DU.jpg"
-     title="APPLE varsity admission 2023 [Free with varsity 24]"
+     title="ACS varsity admission 23 [Free with varsity 24]"
      classamount="140"
      price="499"
      alt="23" 
@@ -195,7 +195,7 @@ link="freecourses/frb"
      />
    <Outlet    
      image="/eng23.jpg"
-     title="APPLE Engineering 2023 [Free with Engineering 2024]"
+     title="ACS Engineering 23 [Free with Engineering 2024]"
      classamount="120"
      price="499"
      alt="23"

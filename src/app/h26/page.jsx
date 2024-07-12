@@ -13,7 +13,7 @@ export default function  Name(props){
 
 <Outlet     
 image="/ict26.webp"
-title="APPLE ICT DE-CODER HSC - 2026"
+title="ACS ICT DeCoder HSC 2026"
 classamount="140"
 price="FREE "
 alt="ict26"
@@ -22,7 +22,7 @@ link="https://tinyurl.com/apple2026"
 
 <Custom     
 image="/c1.jpg"
-title="ACS Math Cycle 1"
+title="ACS 2026 Math Cycle -01"
 one="Classes 57"
 two="Webapp recorded"
 three="2025 archive"
@@ -33,7 +33,7 @@ link="/payment26"
 
 <Custom     
 image="/pc1.jpg"
-title="ACS Physics Cycle 1"
+title="ACS 2026 Physics Cycle -01"
 one="Classes 57"
 two="Webapp recorded"
 three="2025 archive"
@@ -44,7 +44,7 @@ link="/payment26"
 
 <Custom     
 image="/bio.webp"
-title="APPLE Biomission 26 Cycle 1"
+title="ACS 2026 Biomission Cycle -01"
 one="Classes 60"
 two="Webapp recorded"
 three="2025 archive"
@@ -55,7 +55,7 @@ link="/payment26"
 
 <Custom     
 image="/cc1.webp"
-title="ACS Chemistry Cycle 1"
+title="ACS 2026 Chemistry Cycle -01"
 one="Classes 57"
 two="Webapp recorded"
 three="2025 archive"

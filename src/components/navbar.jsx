@@ -55,7 +55,7 @@ export default function Navbar({ fixed }) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li>
                 <Link
-                  className="px-3 py-2 flex items-center   text-xs  uppercase leading-snug text-cyan-200 transition-all rounded-md ease-in-out duration-300 font-extrabold ml-2 tracking-wider hover:tracking-widest hover:bg-[#C8F560] hover:text-black"
+                  className="px-3 py-2 flex items-center  text-xs lg:text-sm lg:tracking-[0px]   uppercase leading-snug text-cyan-200 transition-all rounded-sm ease-in-out duration-300 font-extrabold ml-2 hover:tracking-widest hover:bg-pink-400 hover:text-black"
                   href="/freecourses"
                 >
                   free courses
@@ -63,7 +63,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <Link
-                  className="px-3 py-2 flex items-center text-xs uppercase ripple-container leading-snug text-cyan-200 transition-all rounded-lg ease-in-out duration-300 font-extrabold ml-2 tracking-wider hover:tracking-widest hover:bg-[#C8F560] hover:text-black"
+                  className="px-3 py-2 flex items-center text-xs lg:text-sm lg:tracking-[0px]  uppercase ripple-container leading-snug text-cyan-200 transition-all rounded-sm ease-in-out duration-300 font-extrabold ml-2 tracking-wider hover:tracking-widest hover:bg-[#C8F560] hover:text-black"
                   href="https://www.facebook.com/groups/applecourses/"
                 >
                   facebook group
@@ -71,7 +71,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <Link
-                  className="px-3 py-2 flex items-center text-xs ripple-container uppercase leading-snug text-cyan-200 transition-all rounded-lg ease-in-out duration-300 font-extrabold ml-2 tracking-wider hover:tracking-widest hover:bg-[#C8F560] hover:text-black"
+                  className="px-3 py-2 flex items-center text-xs lg:text-sm lg:tracking-[0px]   ripple-container uppercase leading-snug text-cyan-200 transition-all rounded-sm ease-in-out duration-300 font-extrabold ml-2 tracking-wider hover:tracking-widest hover:bg-yellow-950 hover:text-purple-200"
                   href="https://www.facebook.com/apple.courses.netlify.app.3.0/"
                 >
                   Facebook page

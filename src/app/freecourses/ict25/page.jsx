@@ -1,14 +1,12 @@
-
 import { GrNext } from "react-icons/gr";
-import { FaUnlockKeyhole } from "react-icons/fa6";
 import Link from "next/link";
 
 function Page({name, route}){
 
     return(
        <div>
-       <section className="w-9/12 mt-4 text-lg  hover:text-xl text-cyan-100 italic ring-1 hover:ring-yellow-300 hover:ring-[.5px]  hover:text-purple-200 m-auto md:w-1/4 p-[10px] 
-   rounded-lg transition-all ease-in duration-100 font-extrabold ">
+       <section className="w-9/12 mt-4 italic hover:text-[17px] text-cyan-100 hover:bg-pink-950 ring-[.4px] ring-pink-500  hover:ring-1 hover:ring-pink-950  hover:text-purple-200 m-auto md:w-1/4 p-[10px] 
+  rounded-lg transition-all ease-in duration-100">
  
           <Link className="flex justify-center gap-3 md:gap-4 w-full"
            href={route}>{name} <GrNext size={27} /></Link>
