@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
-import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 
 const API_KEY = 'AIzaSyBRxPt8NOlqBUKrNvUtHeuCjs9Z3MWUzrs';
@@ -63,13 +62,13 @@ function Neo(props) {
                 <ReactPlayer
                   url={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
                   controls={true}
-                  width={isLargeScreen ? 475 : 344}
-                  height={isLargeScreen ? 290 : 220}
+  
                   light={`https://img.youtube.com/vi/${video.snippet.resourceId.videoId}/hqdefault.jpg`}
                  playing={true}
-                 
+                 width={isLargeScreen ? 475 : 344}
+                 height={isLargeScreen ? 290 : 220}
 
-                
+                className="ring-1 ring-gray-700"
                 />
 
               </section></div>
@@ -80,7 +79,7 @@ function Neo(props) {
       {/* Pagination */}
       <div className="flex justify-center m-8 gap-2">
         {[...Array(Math.ceil(videos.length / videosPerPage))].map((_, index) => (
-          <button key={index} onClick={() => paginate(index + 1)} className={`mx-1 italic px-3 py-1 shadow-lg shadow-cyan-800 rounded-sm ${currentPage === index + 1 ? 'bg-cyan-50 ring-1 ring-black text-black font-extrabold' : 'bg-gray-800 text-white ring-1 ring-white font-extrabold'}`}>
+          <button key={index} onClick={() => paginate(index + 1)} className={`mx-1 italic px-3 py-1 shadow-lg shadow-cyan-800 rounded-md ${currentPage === index + 1 ? 'bg-cyan-50 ring-1 ring-black text-black font-extrabold' : 'bg-gray-800 text-white ring-1 ring-white font-extrabold'}`}>
             {index + 1}
           </button>
         ))}
