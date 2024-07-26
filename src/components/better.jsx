@@ -68,7 +68,7 @@ function Neo(props) {
                  width={isLargeScreen ? 475 : 344}
                  height={isLargeScreen ? 290 : 220}
 
-                className="ring-1 ring-gray-700"
+                className="ring-[.6px] ring-gray-800"
                 />
 
               </section></div>
