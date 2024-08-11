@@ -20,6 +20,15 @@ alt="ict26"
 link="https://tinyurl.com/apple2026"
     />
 
+<Outlet    
+     image="/bpc266.webp"
+     title="BP Chemistry 1st paper 26"
+     classamount="60"
+     price="450"
+     alt="chem26" 
+     link="/payment26"         
+     />
+
 <Custom     
 image="/c1.jpg"
 title="ACS 2026 Math Cycle -01"

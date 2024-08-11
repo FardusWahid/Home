@@ -62,7 +62,14 @@ export default function Home(props) {
 <p className="bg-[#C8F560] text-black font-sans font-extrabold italic mt-1 shadow-inner shadow-white w-[145px] mx-4 md:mx-10 py-1 px-2 rounded-lg flex justify-center">latest add<GoDotFill size={25} color="black" /></p>
      <section className="flex flex-wrap gap-4 m-1 mt-0 md:m-5 justify-between">
 
-
+     <Outlet    
+     image="/bpc266.webp"
+     title="BP Chemistry 1st paper 26"
+     classamount="60"
+     price="450"
+     alt="chem26" 
+     link="/payment26"         
+     />
 
      <Outlet     
 image="/ict26.webp"

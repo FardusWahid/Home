@@ -17,7 +17,7 @@ export function Inbox() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="default" className='bg-[#C8F560] w-[200px] md:w-[210px] shadow-inner rounded-md shadow-yellow-200 hover:bg-[#aade57] text-black anton text-[16px] my-3'>Inbox Now</Button>
+        <Button variant="default" className='bg-orange-500 w-[200px] md:w-[210px] shadow-inner rounded-md shadow-yellow-400 hover:bg-[#aade57] text-black anton text-[16px] my-3'>Inbox Now</Button>
       </DialogTrigger>
       <DialogContent className="wd md:w-[450px] selection:bg-yellow-400 selection:text-black">
         <DialogHeader>

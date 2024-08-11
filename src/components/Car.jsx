@@ -52,6 +52,15 @@ function Caru(props) {
       
     </CarouselItem>
 
+    <CarouselItem> 
+      <Slide 
+      src="/bpc266.webp"
+      line="Enroll For 450" 
+      go="/h26"
+      />
+      
+    </CarouselItem>
+
 
     <CarouselItem> 
       <Slide 

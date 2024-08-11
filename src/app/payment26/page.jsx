@@ -1,4 +1,3 @@
-'use client'
 import Link from "next/link"
 import { FaSquareFacebook } from "react-icons/fa6";
 import { Inbox } from "@/components/inbox";
@@ -68,7 +67,7 @@ export default function Pam() {
 
 
 <div className="mt-16 m-3 w-11/12 md:w-[590px] lg:mt-5">
-<a href="https://www.youtube.com/playlist?list=PLjo9h8F7l8RCANxDhnisxvsUd4tSG8v0B" className="text-[16px] anton bg-[#c8f560] shadow-inner shadow- text-black rounded-sm px-1 py-[5px] animate-pulse">WATCH Demo on YouTube</a>
+<a href="https://www.youtube.com/playlist?list=PLjo9h8F7l8RCANxDhnisxvsUd4tSG8v0B" className="text-[16px] font-mono font-extrabold tracking-tighter">Watch Demo on <span className="font-sans tracking-normal  bg-blue-600 shadow-inner shadow-blue-500 hover:bg-blue-500 text-black rounded-md px-[5px] py-[2px]">YouTube</span></a>
   <h1 className="text-[24px] font-bold font-sans">Description:</h1>
  
  <p className="font-bold text-[#a3fda1]">&nbsp;&nbsp;To Continue this course</p>  

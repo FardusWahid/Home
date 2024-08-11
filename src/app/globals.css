@@ -19,6 +19,13 @@
 }
   
 
+  .chapter{
+    @apply wd  md:w-1/2 lg:w-1/3 xl:w-[390px] m-auto  mt-5 py-[9.6px] lg:py-[11px] px-0 text-[17px] lg:text-[18px] font-sans italic
+    rounded-md text-cyan-200 hover:bg-cyan-100 bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950
+    font-bold hover:ring-yellow-800 hover:tracking-wider transition-all ease-in-out duration-150
+ ring-1 ring-gray-700
+  }
+
  
   .tag{
     @apply bg-[#cfc64c] rounded-lg px-1 ring-1 shadow-inner  font-extrabold py-1 text-black hover:bg-[#cdb155]

@@ -1,4 +1,3 @@
-"use client"
 import { GrDocumentPdf } from "react-icons/gr";
 import { FaPenToSquare } from "react-icons/fa6";
 import { GrNext } from "react-icons/gr";
@@ -9,12 +8,8 @@ function Page({name, route}){
 
    return(
       <div>
-      <section className="w-9/12 mt-4 hover:text-[17px] text-cyan-100 hover:bg-pink-950 ring-[.4px] ring-pink-500  hover:ring-1 hover:ring-pink-950  hover:text-purple-200 m-auto md:w-1/4 p-[10px] 
-  rounded-lg transition-all ease-in duration-100">
-
-         <Link className="flex justify-center gap-3  font-semibold w-full"
-          href={route}>{name} <GrNext size={25} /></Link>
-       </section>
+<Link href={route} className="chapter flex justify-center gap-2 transition-all ease-in duration-100">{name}<GrNext size={27}/>
+</Link> 
 
       </div>
    )
@@ -38,8 +33,6 @@ export default function Ict(){
 <Page name="Chemistry 1st paper" route="/freecourses/frb/chem/1st" />
 <Page name="Chemistry 2nd paper" route="/freecourses/frb/chem/2nd" />
 <Page name="BP English winner 2.0" route="/freecourses/frb/bio"/>
-<Page name="ACS Engineering 2024" route="https://apple2024.netlify.app"/>
-
  
  <section className="w-5/6 mt-4 text-lg bg-pink-950 hover:text-xl text-cyan-100 italic ring-1 hover:ring-yellow-300 hover:ring-[.5px]  hover:text-purple-200 m-auto md:w-1/4 xl:w-[399px] p-[10px] 
   rounded-lg transition-all ease-in duration-100">

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { FaVideo } from "react-icons/fa";
-import { FaApple } from "react-icons/fa";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { MdPictureAsPdf } from "react-icons/md";
 

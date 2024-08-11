@@ -9,7 +9,7 @@ export default function Outlet(props){
         <div className='w-full lg:w-[400px] flex justify-center mt-5'>
           <card className=" flex justify-center items-center flex-col shadow-lg shadow-red-900  rounded-xl ring-1 w-11/12">
              <Image src={props.image} alt={props.alt} width={780} height={350} loading='lazy'
-               className="px-1 rounded-xl" />
+               className="p-1 rounded-xl" />
 
             <h1 className="anton text-white text-shadow capitalize text-[18px] text-center my-2">{props.title}</h1>
              <span className="flex space-x-3 beca  text-sm "><p className="tag flex gap-1"><FaVideo size={20} color='black' />Classes {props.classamount}+</p><p className="tag3 flex">🌐Webapp recorded</p></span>
