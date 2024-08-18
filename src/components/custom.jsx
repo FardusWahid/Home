@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import { FaVideo } from "react-icons/fa";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { MdPictureAsPdf } from "react-icons/md";
@@ -22,9 +23,9 @@ export default function Custom(props){
     <div className="relative inline-flex  group mb-3">
     <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
     </div>
-        <a href={props.link} title="Purchase now"
+        <Link href={props.link} title="Purchase now"
           className="relative inline-flex items-center ring-1 ring-gray-700 justify-center px-5 py-2 text-lg font-bold text-white transition-all duration-150 bg-gray-900 rounded-xl  focus:ring-purple-950 "
-            role="button">Buy now </a>
+            role="button">Buy now </Link>
 </div>
 </card>
 </div>)}

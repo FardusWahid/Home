@@ -62,6 +62,25 @@ export default function Home(props) {
 <p className="bg-[#C8F560] text-black font-sans font-extrabold italic mt-1 shadow-inner shadow-white w-[145px] mx-4 md:mx-10 py-1 px-2 rounded-lg flex justify-center">latest add<GoDotFill size={25} color="black" /></p>
      <section className="flex flex-wrap gap-4 m-1 mt-0 md:m-5 justify-between">
 
+
+     <Outlet    
+     image="/var.webp"
+     title="ACS varsity admission 2024 & archive"
+     classamount="170"
+     price="499"
+     alt="var24"
+     link="/payment24"         
+     />
+
+<Outlet     
+image="/eng24.webp"
+title="Engineering Private Batch 2024 & archive"
+classamount="140"
+price="499"
+alt="eng24"
+link="/payment24"
+    />
+
      <Outlet    
      image="/bpc266.webp"
      title="BP Chemistry 1st paper 26"
@@ -98,14 +117,6 @@ alt="phy1"
 link="/payment26"
     />
 
-<Outlet     
-image="/eng24.webp"
-title="Engineering Private Batch 2024 & archive"
-classamount="140"
-price="499"
-alt="eng24"
-link="/payment24"
-    />
 
 <Outlet
 image="/HSC-25.webp"
@@ -179,39 +190,12 @@ link="freecourses/frb"
 
 <Outlet    
      image="/ict.jpg"
-     title="ACS ICT DeCoder 2025"
+     title="ACS ICT DECoder 2025"
      classamount="60"
      price="FREE"
      alt="ict" 
      link="/freecourses/ict25"         
      />
-
-
-
-
-
-
-
-<Outlet    
-     image="/DU.jpg"
-     title="ACS varsity admission 23 [Free with varsity 24]"
-     classamount="140"
-     price="499"
-     alt="23" 
-     link="https://www.facebook.com/apple.courses.netlify.app.3.0/"         
-     />
-   <Outlet    
-     image="/eng23.jpg"
-     title="ACS Engineering 23 [Free with Engineering 2024]"
-     classamount="120"
-     price="499"
-     alt="23"
-     link="/payment24"         
-          
-     />
-
-
-
 
 
      </section>

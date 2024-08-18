@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import { FaVideo } from "react-icons/fa";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { MdPictureAsPdf } from "react-icons/md";
@@ -7,7 +8,7 @@ import { MdPictureAsPdf } from "react-icons/md";
 export default function Outlet(props){
     return(
         <div className='w-full lg:w-[400px] flex justify-center mt-5'>
-          <card className=" flex justify-center items-center flex-col shadow-lg shadow-red-900  rounded-xl ring-1 w-11/12">
+          <card className=" flex justify-center items-center flex-col bg-black shadow-lg shadow-blue-950  rounded-xl ring-1 ring-purple-950 w-11/12">
              <Image src={props.image} alt={props.alt} width={780} height={350} loading='lazy'
                className="p-1 rounded-xl" />
 
@@ -20,10 +21,10 @@ export default function Outlet(props){
             <div className="relative inline-flex  group mb-3">
     <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
     </div>
-    <a href={props.link} title="Purchase Now"
+    <Link href={props.link} title="Purchase Now"
         className="relative inline-flex items-center ring-1 ring-gray-700 justify-center px-5 py-2 text-lg font-bold text-white transition-all duration-150 bg-gray-900 rounded-xl focus:outline-none  focus:ring-purple-950"
         role="button">Buy now
-    </a>
+    </Link>
 </div>
 
 
@@ -39,7 +40,7 @@ export default function Outlet(props){
     }
     
     Outlet.defaultProps={
-        image: "/var23.jpg",
+        image: "/var.webp",
         alt: "ai image",
         title: "AI IS GONNA TAKE OVER THE WORLD",
         classamount: "null",

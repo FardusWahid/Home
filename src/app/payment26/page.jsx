@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { FaSquareFacebook } from "react-icons/fa6";
 import { Inbox } from "@/components/inbox";
+import Image from "next/image";
 
 
 
@@ -19,11 +20,10 @@ export default function Pam() {
 <div>
 
 
- <br />
-
-   <div className="flex justify-end mx-7 md:mx-12">
-    <h1 className="font-sans my-3 md:mt-0 md:mb-3 font-bold">Paid already? <Link className="bg-yellow-500 px-2 py-1 rounded-md text-black font-sans font-extrabold shadow-inner shadow-yellow-300 active:tracking-tight" href="https://apple26.netlify.app/">Login</Link></h1>
+<div>
+    <h1 className="flex justify-end mx-5 mb-2 text-[17px] gap-2 md:gap-4 md:mx-12 mt-5 font-sans  md:mt-0 font-bold">Paid already? <Link className="bg-gray-900 text-white ring-[.5px] ring-cyan-200 px-4 py-[3px] rounded-[2px] hover:bg-white text-[16px] hover:rounded-sm  tracking-widest transition-all ease-in duration-200 hover:text-black font-sans font-extrabold" href="https://apple26.netlify.app">Login</Link></h1>
     </div>                
+                
 
 <div>
   <h1 className="text-3xl font-extrabold italic text-center pt-1 lg:pt-0 ">Payment Getway 2026</h1>
@@ -46,11 +46,11 @@ export default function Pam() {
 
 
 
-<div className="flex justify-center mt-5 lg:mt-0 p-1 md:ring-[.2px] md:ring-white rounded-lg  bg-gray-950">
-  <main className=" checkout w-11/12  justify-center md:w-[550px] ">
+<div className="flex justify-center mt-5 lg:w-1/2 xl:w-2/5 lg:mt-0 p-1 md:ring-[.2px] md:mx-10 lg:mx-0 md:ring-white rounded-lg  bg-gray-950">
+  <main className=" checkout  w-11/12 justify-center ">
 
-<section className="p-2 w-full ">
-  <img src="./h6.webp" alt="billing"
+<section className="p-1 w-full flex justify-center ">
+  <Image src="/h6.webp" width={700} height={700} alt="billing"
    className="rounded-md "/>
 
 </section>
@@ -66,23 +66,23 @@ export default function Pam() {
 </div>
 
 
-<div className="mt-16 m-3 w-11/12 md:w-[590px] lg:mt-5">
+<div className="mt-16 m-3 w-11/12 lg:w-5/12 xl:w-1/2 lg:mt-5">
 <a href="https://www.youtube.com/playlist?list=PLjo9h8F7l8RCANxDhnisxvsUd4tSG8v0B" className="text-[16px] font-mono font-extrabold tracking-tighter">Watch Demo on <span className="font-sans tracking-normal  bg-blue-600 shadow-inner shadow-blue-500 hover:bg-blue-500 text-black rounded-md px-[5px] py-[2px]">YouTube</span></a>
   <h1 className="text-[24px] font-bold font-sans">Description:</h1>
  
- <p className="font-bold text-[#a3fda1]">&nbsp;&nbsp;To Continue this course</p>  
+  <p className="font-bold text-[#a3fda1]">&nbsp;&nbsp;To Continue this course</p>  
  <ol className="font-extrabold font-sans text-[#c8f560]">
  <li>&nbsp;&nbsp;&nbsp;1. Click on Inbox now.</li>
   <li>&nbsp;&nbsp;&nbsp;2. Message Apple Courses.</li>
   <li>&nbsp;&nbsp;&nbsp;3. Say the course name you want to buy.</li>
   <li>&nbsp;&nbsp;&nbsp;4. Pay with bkash.</li>
-  <li>&nbsp;&nbsp;&nbsp;5. Get login password with Life time access.</li>
-  <li>&nbsp;&nbsp;&nbsp;6. Refer this course to someone and get 50 taka Cashback.</li>
+  <li>&nbsp;&nbsp;&nbsp;5. Get access within 5mins.</li>
+
 
  </ol><br /><br />
  
- <p className=" font-extrabold font-mono tracking-tighter"><span>This course contains all the Classes and Study Materials from the Original Course.</span><br /><br />
-We have dedicated webapp support to all of our courses.<br /><br /> YES, you can Download classes & Sheets and watch it Offline! <br /><br />
+ <p className=" font-extrabold font-mono tracking-tighter"><span>This course contains all the Classes, Lecture Sheets,  Practice Sheets & other Study Materials from the Original Course.</span><br /><br />
+ সাথে পাবে 2025 এর Archive সম্পূর্ণ FREE.<br /><br /> YES, you can Download classes & Sheets and watch it Offline! <br /><br />
   <span>This course comes with a dedicated Facebook Support Group where u can post all the potential problems you might have. <br />
   </span> </p>
  

@@ -12,7 +12,7 @@ export default function  Name(props){
 
 <Outlet     
 image="/eng24.webp"
-title="ACS Engineering Private Batch 2024"
+title="ACS Engineering Private Batch 2024 & archive"
 classamount="140"
 price="499"
 alt="eng24"
@@ -21,22 +21,14 @@ link="/payment24"
 
 
 <Outlet    
-     image="/DU.jpg"
-     title="ACS varsity admission 2023 [Free with 2024 varsity]"
-     classamount="140"
+     image="/var.webp"
+     title="ACS varsity admission 2024 & archive"
+     classamount="170"
      price="499"
-     alt="23" 
-     link="https://www.facebook.com/apple.courses.netlify.app.3.0/"         
+     alt="var24" 
+     link="/payment24"         
      />
-   <Outlet    
-     image="/eng23.jpg"
-     title="ACS Engineering 2023 [FREE with 24 Engineering]"
-     classamount="120"
-     price="499"
-     alt="23"
-     link="/payment24"
-          
-     />
+
      </section>
         </div>
     )

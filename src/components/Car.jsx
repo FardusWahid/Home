@@ -18,7 +18,7 @@ function Caru(props) {
         <Carousel 
           plugins={[
             Autoplay({
-              delay: 2500,
+              delay: 2000,
             }),
           ]}>
     <CarouselContent>
@@ -28,6 +28,16 @@ function Caru(props) {
       src="/ict26.webp"
       line="Enroll for FREE"
       go='https://apple26.netlify.app/'
+       />
+     
+    </CarouselItem>
+
+
+    <CarouselItem> 
+      <Slide 
+      src="/var.webp"
+      line="Enroll for 499"
+      go='/admission'
        />
      
     </CarouselItem>
