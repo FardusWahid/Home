@@ -23,15 +23,15 @@ function Caru(props) {
           ]}>
     <CarouselContent>
 
+
     <CarouselItem> 
       <Slide 
-      src="/ict26.webp"
-      line="Enroll for FREE"
-      go='https://apple26.netlify.app/'
-       />
-     
+      src="/eng24.webp"
+      line="Enroll For 499" 
+      go="/admission"
+      />
+      
     </CarouselItem>
-
 
     <CarouselItem> 
       <Slide 
@@ -44,6 +44,18 @@ function Caru(props) {
 
     <CarouselItem> 
       <Slide 
+      src="/ict26.webp"
+      line="Enroll for FREE"
+      go='https://apple26.netlify.app/'
+       />
+     
+    </CarouselItem>
+
+
+
+
+    <CarouselItem> 
+      <Slide 
       src="/cc1.webp"
       line="250 Per Cycle"
       go='/h26'
@@ -53,14 +65,7 @@ function Caru(props) {
 
 
     
-    <CarouselItem> 
-      <Slide 
-      src="/eng24.webp"
-      line="Enroll For 499" 
-      go="/h24"
-      />
-      
-    </CarouselItem>
+  
 
     <CarouselItem> 
       <Slide 
