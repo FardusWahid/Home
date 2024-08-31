@@ -1,4 +1,5 @@
 import Outlet from '@/components/course'
+import Custom from '@/components/custom'
 export default function  Name(props){
     return(
         <div className='select-none'>
@@ -16,6 +17,17 @@ price="499"
 alt="py"
 link="/payment25"
 />
+
+<Custom     
+image="/e4.webp"
+title="BP English Winner 4.0"
+one="Classes 60"
+two="Webapp recorded"
+three="3.0 archive"
+price="299"
+alt="e4"
+link="/payment26"
+    />
 
 
 

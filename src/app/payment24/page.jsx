@@ -55,7 +55,7 @@ export default function Pam() {
 </section>
 
 
-<p className="text-start font-bold font-sans text-sm md:text-[15px] italic mt-4 md:mt-5 md:px-4">If you are well funded and can afford to pay the full price then please buy it from the respective owner of this course, OR else</p>
+<p className="text-start font-bold font-sans text-sm md:text-[15px] italic mt-4 md:mt-5 md:px-4">If you are well funded and can afford to pay the full price then please buy it from the Original owner, OR else</p>
 <div className="flex justify-center mt-5">
 
 <Inbox className="bg-[#c8f560] shadow-inner shadow-yellow-700 anton  py-2 mt-4 w-2/3 text-black rounded-lg flex justify-center font-extrabold text-xl mb-14" />
@@ -66,18 +66,26 @@ export default function Pam() {
 
 
 <div className="mt-16 m-3 w-11/12 lg:w-5/12 xl:w-1/2 lg:mt-5">
-<a href="https://www.youtube.com/playlist?list=PLjo9h8F7l8RCANxDhnisxvsUd4tSG8v0B" className="text-[16px] font-mono font-extrabold tracking-tighter">Watch Demo on <span className="font-sans tracking-normal  bg-blue-600 shadow-inner shadow-blue-500 hover:bg-blue-500 text-black rounded-md px-[5px] py-[2px]">YouTube</span></a>
-  <h1 className="text-[24px] font-bold font-sans">Description:</h1>
+<a href="https://www.youtube.com/playlist?list=PLjo9h8F7l8RCANxDhnisxvsUd4tSG8v0B" 
+   className="text-[17px] font-sans font-extrabold tracking-tight">
+  Watch Demo on 
+  <span className="relative font-sans ml-2 px-3 py-1 tracking-normal hover:bg-pink-950">
+    YouTube
+    <span className="absolute inset-0 border-2 rounded-sm border-solid border-animation"></span>
+  </span>
+</a>
+
+  <h1 className="text-[24px] text-lime-300 font-bold font-sans ex">Description:</h1>
  
- <p className="font-bold text-[#a3fda1]">&nbsp;&nbsp;To Continue this course</p>  
- <ol className="font-extrabold font-sans text-[#c8f560]">
- <li>&nbsp;&nbsp;&nbsp;1. Click on Inbox now.</li>
-  <li>&nbsp;&nbsp;&nbsp;2. Message Apple Courses.</li>
-  <li>&nbsp;&nbsp;&nbsp;3. Say the course name you want to buy.</li>
-  <li>&nbsp;&nbsp;&nbsp;4. Pay with bkash.</li>
-  <li>&nbsp;&nbsp;&nbsp;5. Get access within 5mins.</li>
-
-
+ <p className="font-bold text-pink-400 font-sans text-[19px]">&nbsp;&nbsp;Details infromation about this course</p>  
+ <ol className="font-extrabold font-sans  select-text selection:bg-yellow-300 selection:text-black text-blue-200 ex">
+ <li>&nbsp;&nbsp;&nbsp;1. Live Class করতে পারবে না।</li>
+  <li>&nbsp;&nbsp;&nbsp;2. ACS এর Exams গুলো দিতে পারবে না</li>
+  <li className="text-[14px] font-mono mb-1 tracking-tighter">&nbsp;&nbsp;&nbsp;এছাড়া বাকি সব 100% ACS এর মতো থাকবে।</li>
+  <li>&nbsp;&nbsp;&nbsp;3. Class Download করতে পারবে।</li>
+  <li>&nbsp;&nbsp;&nbsp;4. Pay করার 3mins এর মধ্যে access.</li>
+  <li>&nbsp;&nbsp;&nbsp;5. 24/7 support on Facebook messenger.</li>
+  <li className="mt-1 text-[17px] tracking-tight">&nbsp;&nbsp;&nbsp;6. সকল Course Content Webapp এ থাকবে So, social media তে সময় নষ্ট হওয়ার Chance নেই।</li>
  </ol><br /><br />
  
  <p className=" font-extrabold font-mono tracking-tighter"><span>This course contains all the Classes, Lecture Sheets,  Practice Sheets & other Study Materials from the Original Course.</span><br /><br />
@@ -130,8 +138,8 @@ export default function Pam() {
         <br />&copy;2024</p>
     
     </footer> 
+     
 
-           
 </div>
   )
 }

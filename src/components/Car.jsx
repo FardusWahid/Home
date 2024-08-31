@@ -35,6 +35,15 @@ function Caru(props) {
 
     <CarouselItem> 
       <Slide 
+      src="/med24.webp"
+      line="Enroll For 599" 
+      go="/admission"
+      />
+      
+    </CarouselItem>
+
+    <CarouselItem> 
+      <Slide 
       src="/var.webp"
       line="Enroll for 499"
       go='/admission'

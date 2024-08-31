@@ -52,16 +52,28 @@ export default function Home(props) {
 </div>
 
 
-<div className="mt-6 flex justify-center ">
-  <Link className="shadow-inner shadow-white flex mb-1 w-[320px]  justify-center rounded-lg bg-blue-200 hover:bg-blue-300 hover:tracking-wide transition-all ease-in duration-150  text-xl font-extrabold font-sans px-6  py-2 md:hidden text-black" href="/freecourses">Free Courses &nbsp;<IoChevronForwardCircleSharp size={31} />
+<div className="mt-6 w-full flex justify-center md:hidden">
+<Link href="/freecourses" className="w-11/12" >
+  <span className=" font-sans font-extrabold text-xl shadow-inner shadow-black text-cyan-400 hover:tracking-widest tracking-wide py-2 flex rounded-md justify-center inset-0 border-[1px] hover:border-[1.6px]  border-solid border-animation transition-all ease-in duration-100">
+  Free Courses &nbsp;<IoChevronForwardCircleSharp size={31} color="green" />
+  </span>
 </Link>    
   </div>
 
 <br className="md:hidden"/>
  
-<p className="bg-[#C8F560] text-black font-sans font-extrabold italic mt-1 shadow-inner shadow-white w-[145px] mx-4 md:mx-10 py-1 px-2 rounded-lg flex justify-center">latest add<GoDotFill size={25} color="black" /></p>
+<p className="bg-gray-900 text-cyan-200 font-sans font-semibold italic mt-1 shadow-inner shadow-purple-800 w-[145px] mx-4 md:mx-10 py-1 px-2 rounded-lg flex justify-center">latest add<GoDotFill size={25} color="pink" /></p>
      <section className="flex flex-wrap gap-4 m-1 mt-0 md:m-5 justify-between">
 
+
+     <Outlet    
+     image="/med24.webp"
+     title="ACS Medical admission 2024"
+     classamount="180"
+     price="599"
+     alt="med24"
+     link="/payment24"         
+     />
 
      <Outlet    
      image="/var.webp"
@@ -81,6 +93,15 @@ alt="eng24"
 link="/payment24"
     />
 
+<Outlet    
+     image="/td.webp"
+     title="BP Target DU 3.0 [2023]"
+     classamount="180"
+     price="350"
+     alt="du3"
+     link="/payment24"         
+     />
+
      <Outlet    
      image="/bpc266.webp"
      title="BP Chemistry 1st paper 26"
@@ -89,6 +110,17 @@ link="/payment24"
      alt="chem26" 
      link="/payment26"         
      />
+
+<Custom     
+image="/e4.webp"
+title="BP English Winner 4.0"
+one="Classes 60"
+two="Webapp recorded"
+three="3.0 archive"
+price="299"
+alt="e4"
+link="/payment26"
+    />
 
      <Outlet     
 image="/ict26.webp"

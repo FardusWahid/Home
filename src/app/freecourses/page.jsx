@@ -7,14 +7,7 @@ export default function Free(){
     <h1 className=" text-3xl text-center  mt-3 md:mt-0  font-extrabold tracking-tighter text-cyan-200 italic md:text-3xl">FREE COURSES</h1>
 
 <section className="flex flex-wrap gap-4 m-1 md:m-10 justify-between">
-<Outlet     
-image="/ict26.webp"
-title="ICT DE-CODER HSC - 2026"
-classamount="140"
-price="FREE "
-alt="ict26"
-link="https://tinyurl.com/apple2026"
-    />
+
 
 <Outlet     
 image="/frb.webp"
@@ -33,6 +26,15 @@ link="freecourses/frb"
      alt="ict"
      link="/freecourses/ict25"          
      />
+
+<Outlet     
+image="/ict26.webp"
+title="ICT DE-CODER HSC - 2026"
+classamount="140"
+price="FREE "
+alt="ict26"
+link="https://tinyurl.com/apple2026"
+    />
      </section>
 </div>
     )

@@ -19,6 +19,15 @@ alt="eng24"
 link="/payment24"
     />
 
+<Outlet    
+     image="/med24.webp"
+     title="ACS Medical admission 2024"
+     classamount="180"
+     price="599"
+     alt="var24"
+     link="/payment24"         
+     />
+
 
 <Outlet    
      image="/var.webp"
@@ -26,6 +35,15 @@ link="/payment24"
      classamount="170"
      price="499"
      alt="var24" 
+     link="/payment24"         
+     />
+
+<Outlet    
+     image="/td.webp"
+     title="BP Target DU 3.0 [2023]"
+     classamount="180"
+     price="350"
+     alt="du3"
      link="/payment24"         
      />
 

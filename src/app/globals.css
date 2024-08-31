@@ -46,3 +46,29 @@
 .wd{
   width: 98%;
 }
+
+.ex{
+  text-shadow: 0 0 5px rgba(90, 255, 2, 0.69);
+}
+
+@keyframes border-color-change {
+  0% {
+    border-color: rgb(255, 26, 87) rgb(196, 206, 59) rgb(255, 0, 0) rgb(131, 131, 7);
+  }
+  25% {
+    border-color: rgb(106, 91, 44) rgb(249, 2, 249) rgb(216, 97, 115) rgba(255, 192, 203, 0.599);
+  }
+  50% {
+    border-color: purple rgb(104, 40, 255) pink orange;
+  }
+  75% {
+    border-color: rgb(155, 155, 46) pink orange rgb(255, 3, 255);
+  }
+  100% {
+    border-color: pink orange rgb(144, 227, 9) rgba(174, 7, 35, 0.941);
+  }
+}
+
+.border-animation {
+  animation: border-color-change 2s linear alternate infinite;
+}
