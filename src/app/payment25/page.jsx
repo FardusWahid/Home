@@ -77,7 +77,7 @@ export default function Pam() {
 
   <h1 className="text-[24px] text-lime-300 font-bold font-sans ex">Description:</h1>
  
- <p className="font-bold text-pink-400 font-sans text-[19px]">&nbsp;&nbsp;Details infromation about this course</p>  
+ <p className="font-bold text-pink-400 font-sans text-[19px] tracking-tight">&nbsp;&nbsp;Infromation about this course</p>  
  <ol className="font-extrabold font-sans  select-text selection:bg-yellow-300 selection:text-black text-blue-200 ex">
  <li>&nbsp;&nbsp;&nbsp;1. Live Class করতে পারবে না।</li>
   <li>&nbsp;&nbsp;&nbsp;2. ACS এর Exams গুলো দিতে পারবে না</li>
