@@ -69,27 +69,27 @@ export default function Pam() {
 <a href="https://www.youtube.com/playlist?list=PLjo9h8F7l8RCANxDhnisxvsUd4tSG8v0B" 
    className="text-[17px] font-sans font-extrabold tracking-tight">
   Watch Demo on 
-  <span className="relative font-sans ml-2 px-3 py-1 tracking-normal hover:bg-pink-950">
+  <span className="relative font-sans ml-2 px-3 py-1 tracking-normal bg-gray-900  text-blue-300">
     YouTube
-    <span className="absolute inset-0 border-2 rounded-sm border-solid border-animation"></span>
+    <span className="absolute inset-0 border-[1px] rounded-sm border-solid border-animation"></span>
   </span>
 </a>
 
   <h1 className="text-[24px] text-lime-300 font-bold font-sans ex">Description:</h1>
  
-  <p className="font-bold text-pink-400 font-sans text-[19px] tracking-tight">&nbsp;&nbsp;Infromation about this course</p>  
-  <ol className="font-extrabold font-sans  select-text selection:bg-yellow-300 selection:text-black text-blue-200 ex">
- <li>&nbsp;&nbsp;&nbsp;1. Live Class করতে পারবে না।</li>
-  <li>&nbsp;&nbsp;&nbsp;2. ACS এর Exams গুলো দিতে পারবে না</li>
-  <li className="text-[14px] font-mono mb-1 tracking-tighter">&nbsp;&nbsp;&nbsp;এছাড়া বাকি সব 100% ACS এর মতো থাকবে।</li>
-  <li>&nbsp;&nbsp;&nbsp;3. Class Download করতে পারবে।</li>
-  <li>&nbsp;&nbsp;&nbsp;4. Pay করার 3mins এর মধ্যে access.</li>
-  <li>&nbsp;&nbsp;&nbsp;5. 24/7 support on Facebook messenger.</li>
-  <li className="mt-1 text-[17px] tracking-tight">&nbsp;&nbsp;&nbsp;6. সকল Course Content Webapp এ থাকবে So, social media তে সময় নষ্ট হওয়ার Chance নেই।</li>
- </ol><br /><br />
+  <p className="font-bold text-pink-400 text-[19px] tracking-tight">Infromation about this course</p>  
+  <ol className="font-extrabold font-sans select-text selection:bg-yellow-300 selection:text-black text-blue-200 ex">
+ <li>1. Live Class করতে পারবে না।</li>
+  <li>2. Course এর Exams গুলো দিতে পারবে না</li>
+  <li className="text-[13px] font-mono mb-1 tracking-tighter">এছাড়া বাকি সব 100% Original Course এর মতো থাকবে।</li>
+  <li>3. Class Download করতে পারবে।</li>
+  <li>4. Pay করার 3mins এর মধ্যে access.</li>
+  <li>5. 24/7 support on Facebook messenger.</li>
+  <li className="mt-1 text-[17px] tracking-tight">6. সকল Course Content Webapp এ থাকবে So, social media তে সময় নষ্ট হওয়ার Chance নেই।</li>
+ </ol><br />
  
- <p className=" font-extrabold font-mono tracking-tighter"><span>This course contains all the Classes, Lecture Sheets,  Practice Sheets & other Study Materials from the Original Course.</span><br /><br />
- সাথে পাবে 2023 এর Archive & Darpan Academy Oneshots 2024 Course সম্পূর্ণ FREE .<br /><br /> YES, you can Download classes & Sheets and watch it Offline! <br /><br />
+ <p className=" font-extrabold font-mono tracking-tighter text-pink-300"><span>This course contains all the Classes, Lecture Sheets,  Practice Sheets & other Study Materials from the Original Course.</span><br /><br />
+ সাথে পাবে 2023 এর Archive & Darpan Academy Oneshots 2024 Course সম্পূর্ণ FREE<br /><br /> YES, you can Download classes & Sheets and watch it Offline! <br /><br />
   <span>This course comes with a dedicated Facebook Support Group where u can post all the potential problems you might have. <br />
   </span> </p>
  
@@ -103,7 +103,7 @@ export default function Pam() {
 
 
 
-   <br /><br /><br /> <br /><br /><br />
+   <br /><br />
     <p>Follow us on:</p><br />  
     <div className="flex"> 
     <a className="mx-5 flex  w-[60px]" href="https://www.facebook.com/apple.courses.netlify.app.3.0/" target="_blank"><FaSquareFacebook size={50} color="blue"/></a>

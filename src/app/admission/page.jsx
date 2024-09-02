@@ -19,11 +19,21 @@ alt="eng24"
 link="/payment24"
     />
 
+<Outlet     
+image="/akan.webp"
+title="ব্যাচ আকাঙ্ক্ষা season 2 HSC 2026"
+classamount="70"
+price="399"
+alt="akan"
+link="/payment24"
+    />
+
+
 <Outlet    
      image="/med24.webp"
      title="ACS Medical admission 2024"
      classamount="180"
-     price="599"
+     price="699"
      alt="var24"
      link="/payment24"         
      />

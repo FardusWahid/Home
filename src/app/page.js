@@ -53,27 +53,29 @@ export default function Home(props) {
 
 
 <div className="mt-6 w-full flex justify-center md:hidden">
-<Link href="/freecourses" className="w-11/12" >
-  <span className=" font-sans font-extrabold text-xl shadow-inner shadow-black text-cyan-400 hover:tracking-widest tracking-wide py-2 flex rounded-md justify-center inset-0 border-[1px] hover:border-[1.6px]  border-solid border-animation transition-all ease-in duration-100">
-  Free Courses &nbsp;<IoChevronForwardCircleSharp size={31} color="green" />
+<Link href="/freecourses" className="wd bg-gray-900" >
+  <span className=" font-sans font-extrabold text-xl  text-cyan-400 hover:tracking-widest tracking-wide py-2
+   flex rounded-[4px] justify-center inset-0 border-[1px]  border-solid border-animation
+    transition-all ease-in duration-100 hover:scale-95">
+  Free Courses &nbsp;<IoChevronForwardCircleSharp size={31} color="lime" />
   </span>
 </Link>    
   </div>
 
 <br className="md:hidden"/>
  
-<p className="bg-gray-900 text-cyan-200 font-sans font-semibold italic mt-1 shadow-inner shadow-purple-800 w-[145px] mx-4 md:mx-10 py-1 px-2 rounded-lg flex justify-center">latest add<GoDotFill size={25} color="pink" /></p>
+<p className="bg-gray-900 text-cyan-200 font-sans font-semibold italic mt-1 shadow-inner shadow-pink-950 w-[145px] mx-4 md:mx-10 py-1 px-2 rounded-lg flex justify-center">latest add<GoDotFill size={25} color="pink" /></p>
      <section className="flex flex-wrap gap-4 m-1 mt-0 md:m-5 justify-between">
 
 
-     <Outlet    
-     image="/med24.webp"
-     title="ACS Medical admission 2024"
-     classamount="180"
-     price="599"
-     alt="med24"
-     link="/payment24"         
-     />
+     <Outlet     
+image="/eng24.webp"
+title="Engineering Private Batch 2024 & archive"
+classamount="140"
+price="499"
+alt="eng24"
+link="/payment24"
+    />
 
      <Outlet    
      image="/var.webp"
@@ -84,14 +86,27 @@ export default function Home(props) {
      link="/payment24"         
      />
 
+
+
 <Outlet     
-image="/eng24.webp"
-title="Engineering Private Batch 2024 & archive"
-classamount="140"
-price="499"
-alt="eng24"
+image="/akan.webp"
+title="ব্যাচ আকাঙ্ক্ষা season 2 HSC 2026"
+classamount="70"
+price="399"
+alt="akan"
 link="/payment24"
     />
+
+
+
+<Outlet    
+     image="/med24.webp"
+     title="ACS Medical admission 2024"
+     classamount="180"
+     price="699"
+     alt="med24"
+     link="/payment24"         
+     />
 
 <Outlet    
      image="/td.webp"
