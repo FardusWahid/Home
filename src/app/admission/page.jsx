@@ -49,6 +49,23 @@ link="/payment24"
      />
 
 <Outlet    
+     image="/cps.webp"
+     title="CPS Engineering Physics 24"
+     classamount="120"
+     price="399"
+     alt="cps"
+     link="/payment24"         
+     />
+     <Outlet    
+     image="/BPengChem.webp"
+     title="BP Engineering Chemistry 24"
+     classamount="110"
+     price="399"
+     alt="cps"
+     link="/payment24"         
+     />
+
+<Outlet    
      image="/td.webp"
      title="BP Target DU 3.0 [2023]"
      classamount="180"

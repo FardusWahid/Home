@@ -176,26 +176,46 @@ link="/payment25"
 
 <Outlet
 image="/chee1.jpg"
-title="ACS 2025 Chemistry All Cycles [Full subject] "
+title="ACS 2025 Chemistry All Cycles [Full subject]"
 classamount="120"
 price="499"
 alt="che"
 link="/payment25"
 />
 
-
-     <Outlet     
-image="/dar.jpg"
-title="Darpan Academy OneShots 2024"
-classamount="97"
-price="299"
-alt="dar"
-link="/payment24"
+<Outlet     
+image="/doordie.webp"
+title="Do or die 2.0 [2025 & 2026]"
+classamount="150"
+price="450"
+alt="dodie"
+link="/payment25"
     />
-
-
-
-
+<Outlet     
+image="/BPorg2.webp"
+title="BP organic Chemistry 2.0"
+classamount="150"
+price="299"
+alt="dodie"
+link="/payment25"
+    />
+    
+<Outlet    
+     image="/cps.webp"
+     title="CPS Engineering Physics 24"
+     classamount="120"
+     price="399"
+     alt="cps"
+     link="/payment24"         
+     />
+     <Outlet    
+     image="/BPengChem.webp"
+     title="BP Engineering Chemistry 24"
+     classamount="110"
+     price="399"
+     alt="cps"
+     link="/payment24"         
+     />
 
 <Custom     
 image="/bio.webp"
@@ -210,8 +230,6 @@ link="/payment26"
 
 
 
-
-
 <Outlet     
 image="/cc1.webp"
 title="ACS 2026 Chemistry Cycle -01"
@@ -223,7 +241,7 @@ link="/payment26"
 
 
 
-     <Outlet     
+<Outlet     
 image="/frb.webp"
 title="HSC Final Revision 2024"
 classamount="150"
@@ -234,7 +252,6 @@ link="freecourses/frb"
 
     
 
-
 <Outlet    
      image="/ict.jpg"
      title="ACS ICT DECoder 2025"
@@ -243,6 +260,15 @@ link="freecourses/frb"
      alt="ict" 
      link="/freecourses/ict25"         
      />
+
+<Outlet     
+image="/dar.jpg"
+title="Darpan Academy OneShots 2024"
+classamount="97"
+price="299"
+alt="dar"
+link="/payment24"
+    />
 
 
      </section>

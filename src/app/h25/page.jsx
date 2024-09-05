@@ -18,6 +18,33 @@ alt="py"
 link="/payment25"
 />
 
+<Outlet
+image="/chee1.jpg"
+title="ACS 2025 Chemistry All Cycles "
+classamount="120"
+price="499"
+alt="che"
+link="/payment25"
+/>
+
+<Outlet     
+image="/doordie.webp"
+title="Do or die 2.0 [2025 & 2026]"
+classamount="150"
+price="450"
+alt="dodie"
+link="/payment25"
+    />
+
+<Outlet     
+image="/BPorg2.webp"
+title="BP organic Chemistry 2.0"
+classamount="150"
+price="299"
+alt="dodie"
+link="/payment25"
+    />
+
 <Custom     
 image="/e4.webp"
 title="BP English Winner 4.0"
@@ -31,14 +58,7 @@ link="/payment26"
 
 
 
-<Outlet
-image="/chee1.jpg"
-title="ACS 2025 Chemistry All Cycles "
-classamount="120"
-price="499"
-alt="che"
-link="/payment25"
-/>
+
 
 <Outlet    
      image="/ict.jpg"
