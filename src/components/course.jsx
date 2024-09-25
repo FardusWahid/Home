@@ -4,27 +4,40 @@ import { FaVideo } from "react-icons/fa";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { MdPictureAsPdf } from "react-icons/md";
 
-
 export default function Outlet(props){
     return(
         <div className='w-full lg:w-[400px] flex justify-center mt-5'>
-          <card className=" flex justify-center items-center flex-col bg-black shadow-lg shadow-blue-950  rounded-xl ring-1 ring-purple-950 w-11/12">
-             <Image src={props.image} alt={props.alt} width={780} height={350} loading='lazy'
+          <card className=" flex justify-center items-center flex-col bg-slate-950 rounded-xl ring-1 shadow-lg shadow-pink-500 hover:shadow-lg hover:shadow-slate-800 ring-gray-950 wdd">
+             <Image src={props.image} alt={props.alt} width={700} height={400} loading='lazy'
                className="p-1 rounded-xl" />
+              <h1 className="font-sans font-extrabold italic text-cyan-100 capitalize text-[18px] text-center my-2">{props.title}</h1>
+             
+             
+  
+   <section className="flex space-x-3  text-sm">
+    <p className="tag flex gap-1"><FaVideo size={20} color='black' />Classes {props.classamount}+</p>
+    <p className="tag2 flex">🌐Webapp recorded</p>
+    </section>
 
-            <h1 className="anton text-white text-shadow capitalize text-[18px] text-center my-2">{props.title}</h1>
-             <span className="flex space-x-3 beca  text-sm "><p className="tag flex gap-1"><FaVideo size={20} color='black' />Classes {props.classamount}+</p><p className="tag3 flex">🌐Webapp recorded</p></span>
-              <span className=" flex beca  space-x-2 mt-2 text-sm  "><p className="tag4 flex gap-1"><MdOutlineWatchLater  size={19} color='white' />Exam website</p><p className="tag2 flex ">Study Materials<MdPictureAsPdf size={20} color='black' /></p></span>
-               <h1 className="text-xl my-1 text-white">price:  <span className="font-sans font-extrabold tracking-wide text-2xl text-shadow" > {props.price}</span>BDT </h1>
+    <section className="flex  space-x-3 mt-2 text-sm">
+        <p className="tag3 flex gap-1"><MdOutlineWatchLater  size={20} color='pink' />Exam website</p>
+        <p className="tag4 flex ">Study Materials<MdPictureAsPdf size={20} color='black' /></p>
+        </section>
+
+
+
+    <h1 className="text-xl my-1 tut font-extrabold text-white">Price:  <span className="font-sans font-extrabold tracking-wide text-2xl text-cyan-50 italic" > {props.price}</span>BDT </h1>
            
 
-            <div className="relative inline-flex  group mb-3">
-    <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+
+
+
+    <div className="relative inline-flex  group mb-3">
+    <div className="absolute transitiona-all duration-150 opacity-50 -inset-px  bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-150 animate-tilt">
     </div>
-    <Link href={props.link} title="Purchase Now"
-        className="relative inline-flex items-center ring-1 ring-gray-700 justify-center px-5 py-2 text-lg font-bold text-white transition-all duration-150 bg-gray-900 rounded-xl focus:outline-none  focus:ring-purple-950"
-        role="button">Buy now
-    </Link>
+        <Link href={props.link} 
+          className="relative hover:scale-110 inline-flex items-center ring-1 ring-gray-800 justify-center px-5 py-2 text-lg font-bold text-white transition-all ease-in duration-150 bg-gray-900 rounded-xl  focus:ring-purple-950 "
+            >Buy now </Link>
 </div>
 
 

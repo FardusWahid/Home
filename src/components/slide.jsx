@@ -1,15 +1,29 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 const Slide = (props) => {
   return (
-    <div>
-<Link href={props.go}>
-        <Image src={props.src} width={780} loading="lazy" height={350} className="w-full rounded-[3px] object-cover" />
-        <h1 className='text-center bg-gray-950 text-white py-[8px] font-extrabold font-sans text-lg mt-[0.5px] rounded-[4px]'>{props.line}</h1>
-    </Link>
+    <div className="rounded-[4px] overflow-hidden">
+      <Link href={props.go} passHref>
+       
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <Image 
+              src={props.src} 
+              alt={props.line} 
+              layout="fill" 
+              objectFit="cover" 
+              className="rounded-[3px]" 
+              loading={props.loading}
+              priority={props.priority} 
+            />
+          </div>
+          <h1 className="text-center bg-gradient-to-r shad from-gray-950 via-gray-900 to-gray-950 text-white py-[8px] font-extrabold font-sans text-lg rounded-[4px]">
+            {props.line}
+          </h1>
+       
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Slide
+export default Slide;

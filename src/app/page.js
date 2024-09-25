@@ -20,44 +20,45 @@ export default function Home(props) {
 </div>
 
 
-<h1 className="text-center md:hidden font-serif font-thin tracking-widest mt-5 text-white italic text-[16px]"> Select Category</h1>
+<h1 className="text-center md:hidden tut mt-5 text-cyan-200 italic text-[16px]"> Select Category</h1>
     <div className="wd m-auto bg-black  md:w-1/2 lg:w-[550px] md:mx-3 flex flex-wrap justify-between mt-1 xl: xl:mx-12 xl:mt-5">
-    <Topic link="/adastra.png"
-          title="ADMISSION"
+    <Topic
+          title="HSC- 2024"
           route="/admission"/>
 
-<Topic link="/kid.png"
+<Topic 
           title="HSC- 2026"
           route="/h26"
           />
 
-<Topic link="/wing.png"
+<Topic
           title="HSC- 2025"
           route="/h25"/>
 
 
  
-    <Topic link="/hack.png"
+    <Topic 
           title="Skill Dev.."
           route="/skill" />
+<Topic
+          title="Earn Cash"
+          route="/refer"/>
 
-<Topic link="/pdf.png"
-          title="E-books"
+<Topic
+          title="PDFs"
           route="/ebook" />
 
-<Topic link="/face.png"
-          title="Facebook"
-          route="https://www.facebook.com/apple.courses.netlify.app.3.0"/>
+
   </div>
 </div>
 
 
 <div className="mt-6 w-full flex justify-center md:hidden">
-<Link href="/freecourses" className="wd bg-gray-900" >
-  <span className=" font-sans font-extrabold text-xl  text-cyan-400 hover:tracking-widest tracking-wide py-2
-   flex rounded-[4px] justify-center inset-0 border-[1px]  border-solid border-animation
-    transition-all ease-in duration-100 hover:scale-95">
-  Free Courses &nbsp;<IoChevronForwardCircleSharp size={31} color="lime" />
+<Link href="/freecourses" className="wd" >
+  <span className=" font-sans font-extrabold text-xl  text-cyan-300 tracking-wide py-2
+   flex rounded-[4px] justify-center ring-1 ring-gray-800 bg-gradient-to-r from-gray-950 via-gray-800 to-gray-950
+    hover:via-gray-950 hover:ring-2 transition-all ease-in duration-100 hover:scale-90">
+  Free Courses &nbsp;<IoChevronForwardCircleSharp size={30}/>
   </span>
 </Link>    
   </div>
@@ -274,9 +275,9 @@ link="/payment24"
      </section>
      
      <section>
-     <p className="text-center text-white mt-16 text-[15px] tracking-wider underline font-bold"> <a href="/copyright">Read &copy;Copyright</a> </p>
+     <p className="text-center text-white mt-16 text-[15px] tut tracking-wider font-bold"> <a href="/copyright">Read &copy;<span className="underline">Copyright</span></a> </p>
 
-      <p className="text-center text-white font-extrabold italic mt-1 mb-1">Apple developer 2024</p>
+      <p className="text-center text-white tut font-extrabold italic mt-1 mb-1">Apple developer 2024</p>
 
      </section>
 

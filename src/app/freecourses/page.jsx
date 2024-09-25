@@ -4,9 +4,9 @@ export default function Free(){
     return(
 <div>
    
-    <h1 className=" text-3xl text-center  mt-3 md:mt-0  font-extrabold tracking-tighter text-cyan-200 italic md:text-3xl">FREE COURSES</h1>
+<h1 className="mt-3 md:mt-0 mx-7 font-mono bg-gray-900 w-fit px-3 py-[3px] rounded-md ring-[0.5px] text-sm shadow-inner shadow-black ring-blue-800 font-bold italic">All Free Courses</h1>
 
-<section className="flex flex-wrap gap-4 m-1 md:m-10 justify-between">
+<section className="flex flex-wrap gap-4 mx-1 md:mx-7 justify-between">
 
 
 <Outlet     

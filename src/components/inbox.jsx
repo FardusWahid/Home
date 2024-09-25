@@ -17,23 +17,28 @@ export function Inbox() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="default" className='bg-orange-500 w-[200px] md:w-[210px] shadow-inner rounded-md shadow-yellow-400 hover:bg-[#aade57] text-black anton text-[16px] my-3'>Inbox Now</Button>
+        <Button variant="default" className='bg-gray-950 w-[190px] md:w-[210px] ring-1 ring-gray-800 shadow-md rounded-[4px] shadow-pink-600  text-purple-200 hover:shadow-none anton text-[16px] my-3'>Inbox Now</Button>
       </DialogTrigger>
-      <DialogContent className="wd md:w-[450px] selection:bg-yellow-400 selection:text-black">
+      <DialogContent className="wdd md:w-[450px] rounded-[4px] selection:bg-yellow-400 selection:text-black">
         <DialogHeader>
-          <DialogTitle className="text-black my-2 text-xl text-center tracking-wide font-extrabold font-sans italic">Payment Process</DialogTitle>
-          <DialogDescription className='text-black text-[16px] tracking-tight font-extrabold font-sans  text-start'>
-           <p className="my-3"> We only accept payment through Bkash.</p> 
-           <p className="my-3">This link will take you to our Facebook page.</p> 
-           <p className="font-mono  italic">Steps:</p>
-           <p>1. Give us your Gmail.</p>
-           <p>2. proceed payment with bkash.</p>
-           <p>3. Check your Email after 3 to 5mins.</p>
+          <DialogTitle className="text-black my-2 text-[22px] text-center font-extrabold tut">Payment Process</DialogTitle>
+          <DialogDescription className='text-start'>
+            <ol className="list-decimal pl-5 font-mono  space-y-3 text-black tracking-tight font-extrabold text-[16px] md:text-lg">
+            
+              <li>Facebook message'e likho kon Course e enroll korbe.</li>
+              <li>tumar gmail address dao.</li>
+              <li>Bkash number e send-money/cash-in করে screenshot, or just 'Done' likho.</li>
+              <li>er por 5mins er মধ্যে tumar Gmail e Access soho Login link পাঠিয়ে দেয়া হবে।</li>
+
+            </ol>
+      
           </DialogDescription>
         </DialogHeader>
 
-        <DialogFooter>
-          <Link className="bg-purple-900 w-[150px] px-1  py-[9px] text-center m-auto rounded-md text-lg hover:text-[20px] mt-3 flex gap-1 justify-center italic font-serif transition-all ease-in-out duration-100" href="https://www.facebook.com/apple.courses.netlify.app.3.0/"><PiMessengerLogoBold color="white" size={27}/>Facebook</Link>
+        <DialogFooter className="mb-5">
+          <Link 
+          className="bg-gray-900 w-[150px] px-1  py-[9px] text-center m-auto rounded-[4px] shadow-lg shadow-gray-800 text-lg hover:text-[20px] mt-3 flex gap-1 justify-center italic font-serif transition-all ease-in-out duration-100" 
+          href="https://www.facebook.com/applecourses.pro"><PiMessengerLogoBold color="white" size={27}/>Facebook</Link>
    
         </DialogFooter>
       </DialogContent>

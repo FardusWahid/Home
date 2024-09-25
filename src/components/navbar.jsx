@@ -28,10 +28,10 @@ export default function Navbar({ fixed }) {
   return (
     <div className="select-none">
       <nav className="w-full flex flex-wrap items-center justify-between px-3 py-1 bg-black fixed mb-3 z-10 shadow-md shadow-gray-800 md:shadow-lg md:shadow-gray-800">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="container px-3 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
-              className="text-3xl md:text-4xl  font-extrabold tracking-wide leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-cyan-200 font-sans text-shadow"
+              className="text-4xl md:text-5xl font-extrabold tracking-tight leading-relaxed inline-block mr-4 py-[7px] lg:p-[9px] whitespace-nowrap text-slate-200 tut"
               href="/"
             >
               Apple<span className="tracking-normal text-[10px] font-semibold italic">Courses</span>
@@ -72,7 +72,7 @@ export default function Navbar({ fixed }) {
               <li>
                 <Link
                   className="px-3 py-2 flex items-center text-xs lg:text-sm lg:tracking-[0px]   ripple-container uppercase leading-snug text-cyan-200 transition-all rounded-sm ease-in-out duration-300 font-extrabold ml-2 tracking-wider hover:tracking-widest hover:bg-[#C8F560] hover:text-black"
-                  href="https://www.facebook.com/apple.courses.netlify.app.3.0/"
+                  href="https://www.facebook.com/applecourses.pro"
                 >
                   Facebook page
                 </Link>

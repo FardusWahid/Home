@@ -4,9 +4,9 @@ export default function  Name(props){
         <div>
          
 
-          <h1 className="font-extrabold text-3xl tracking-wider text-cyan-300 text-center mt-4 md:mt-0 md:text-3xl">Admission.. </h1>
+          <h1 className="mt-3 md:mt-0 mx-7 font-mono bg-gray-900 w-fit px-3 py-[3px] rounded-md ring-[0.5px] text-sm shadow-inner shadow-black ring-blue-800">Admission 2024</h1>
 
-<section className="flex flex-wrap gap-4 m-1 md:m-10 justify-between">
+<section className="flex flex-wrap gap-4 mx-1 md:mx-7 justify-between">
 
 
 
@@ -33,7 +33,7 @@ link="/payment24"
      image="/med24.webp"
      title="ACS Medical admission 2024"
      classamount="180"
-     price="699"
+     price="599"
      alt="var24"
      link="/payment24"         
      />

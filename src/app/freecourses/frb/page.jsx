@@ -34,12 +34,12 @@ export default function Ict(){
 <Page name="Chemistry 2nd paper" route="/freecourses/frb/chem/2nd" />
 <Page name="BP English winner 2.0" route="/freecourses/frb/bio"/>
  
- <section className="w-5/6 mt-4 text-lg bg-pink-950 hover:text-xl text-cyan-100 italic ring-1 hover:ring-yellow-300 hover:ring-[.5px]  hover:text-purple-200 m-auto md:w-1/4 xl:w-[399px] p-[10px] 
+ <section className="w-5/6 mt-4 text-lg bg-gray-800 hover:text-xl text-cyan-100 italic hover:ring-gray-800 hover:ring-[.5px]  hover:text-purple-200 m-auto md:w-1/4 xl:w-[399px] p-[8px] 
   rounded-lg transition-all ease-in duration-100">
          <Link className="flex gap-5 justify-center"
           href="/freecourses/frb/final-exam"><h1 className="font-sans tracking-wider font-extrabold ">Practice Exams</h1> <FaPenToSquare size={24}  /></Link>
        </section>
- <section className="w-5/6 mt-4 bg-pink-950 font-extrabold hover:text-[17px] text-white ring-1 hover:ring-yellow-300 hover:ring-[.5px]  hover:text-purple-200 m-auto md:w-1/4 xl:w-[399px] p-[10px] 
+ <section className="w-5/6 mt-4 bg-gray-800 font-extrabold hover:text-[17px] text-white  hover:ring-gray-700 hover:ring-[.5px]  hover:text-purple-200 m-auto md:w-1/4 xl:w-[399px] p-[10px] 
   rounded-lg transition-all ease-in duration-100">
   <Link className="w-full flex justify-center gap-1" href="https://tinyurl.com/frb244"> Lecture & Practice sheets <GrDocumentPdf size={25} color="white"/>
  </Link> 
