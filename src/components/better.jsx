@@ -69,7 +69,7 @@ function Neo({ playid, chapter }) {
         </div>
       )}
       
-      {/* Pagination */}
+      
       <div className="flex justify-center m-8 gap-2">
         {[...Array(Math.ceil(videos.length / videosPerPage))].map((_, index) => (
           <button
