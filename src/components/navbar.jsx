@@ -31,7 +31,7 @@ export default function Navbar({ fixed }) {
         <div className="container px-3 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
-              className="text-4xl md:text-5xl font-extrabold tracking-tight leading-relaxed inline-block mr-4 py-[7px] lg:p-[9px] whitespace-nowrap text-slate-200 tut"
+              className="text-3xl md:text-4xl  font-extrabold tracking-wide leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-slate-300 font-sans active:scale-110 transition-transform ease-in duration-100"
               href="/"
             >
               Apple<span className="tracking-normal text-[10px] font-semibold italic">Courses</span>
