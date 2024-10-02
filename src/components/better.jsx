@@ -59,7 +59,7 @@ function Neo({ playid, chapter }) {
                   width="100%"
                   height="100%"
                   light={`https://img.youtube.com/vi/${video.snippet.resourceId.videoId}/hqdefault.jpg`}
-                  playing
+                  playing={true}
                   className="absolute border-2 border-gray-900 rounded-md"
 
                 />
