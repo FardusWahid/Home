@@ -21,7 +21,7 @@ export default function Home(props) {
 
 
 <h1 className="text-center md:hidden tut mt-5 text-cyan-200 italic text-[16px]"> Select Category</h1>
-    <div className="wd m-auto bg-black  md:w-1/2 lg:w-[550px] md:mx-3 flex flex-wrap justify-between mt-1 xl: xl:mx-12 xl:mt-5">
+    <div className="w-[98%] m-auto bg-black  md:w-1/2 lg:w-[550px] md:mx-3 flex flex-wrap justify-around mt-1 xl: xl:mx-12 xl:mt-5">
     <Topic
           title="HSC- 2024"
           route="/admission"/>

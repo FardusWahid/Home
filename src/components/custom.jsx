@@ -10,17 +10,17 @@ import { MdPictureAsPdf } from "react-icons/md";
 export default function Custom(props){
     return(
       <div className='w-full lg:w-[400px] flex justify-center mt-5'>
-      <card className=" flex justify-center items-center flex-col bg-slate-950 rounded-xl ring-1 shadow-lg shadow-pink-500 hover:shadow-lg hover:shadow-slate-800 ring-gray-950 wdd">
+      <card className=" flex justify-center items-center flex-col bg-slate-950 rounded-xl ring-1 shadow-[0px_0px_25px] shadow-pink-800 ring-gray-950 wdd">
          <Image src={props.image} alt={props.alt} width={700} height={400} loading='lazy'
            className="p-1 rounded-xl" />
           <h1 className="font-sans font-extrabold italic text-cyan-100 capitalize text-[18px] text-center my-2">{props.title}</h1>
 
-          <section className="flex space-x-3  text-sm">
+          <section className="flex space-x-2 md:space-x-3  text-sm">
           <p className="tag flex gap-1"><FaVideo size={20} color='black' />{props.one}+</p>
               <p className="tag2 flex">🌐{props.two}</p>
               </section>
 
-              <section className="flex  space-x-3 mt-2 text-sm">
+              <section className="flex  space-x-2 md:space-x-3 mt-2 text-sm">
         <p className="tag3 flex gap-1"><MdOutlineWatchLater  size={19} color='white' />{props.three}</p>
                 <p className="tag4 flex ">Study Materials<MdPictureAsPdf size={20} color='black' /></p>
                 </section>

@@ -11,7 +11,6 @@ const Slide = (props) => {
               src={props.src} 
               alt={props.line} 
               layout="fill" 
-              objectFit="cover" 
               className="rounded-[3px]" 
               loading={props.loading}
               priority={props.priority} 
