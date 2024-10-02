@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
 import LoadingScreen from './loading';
 
 const API_KEY = 'AIzaSyBRxPt8NOlqBUKrNvUtHeuCjs9Z3MWUzrs';
@@ -55,11 +55,19 @@ function Neo({ playid, chapter }) {
               <div className="relative pb-[56.25%]">
                 <ReactPlayer
                   url={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
-                  controls
+                  controls={true}
                   width="100%"
                   height="100%"
                   light={`https://img.youtube.com/vi/${video.snippet.resourceId.videoId}/hqdefault.jpg`}
                   playing={true}
+                  config={{
+                youtube: {
+                 playerVars: {
+                 cc_load_policy: 0, 
+                 rel: 0 
+                    }
+                  }
+                  }}
                   className="absolute border-2 border-gray-900 rounded-md"
 
                 />
