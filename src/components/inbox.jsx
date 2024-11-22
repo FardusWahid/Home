@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { PiMessengerLogoBold } from "react-icons/pi";
-
 import {
   Dialog,
   DialogContent,
@@ -9,39 +6,65 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
-import Link from "next/link"
+} from "@/components/ui/dialog";
+import { one, space } from "@/lib/fonts";
+import clsx from "clsx";
+import { MessageCircleMore } from "lucide-react";
 
- 
 export function Inbox() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="default" className='bg-gray-950 w-[190px] md:w-[210px] ring-1 ring-gray-800 shadow-md rounded-[4px] shadow-pink-600  text-purple-200 hover:shadow-none anton text-[16px] my-3'>Inbox Now</Button>
+        <button
+          className={clsx(
+            one.className,
+            "uppercase bg-[#f0fafa] bn px-5 py-2 md:py-3 w-[52%] dark:bg-eight rounded-md"
+          )}
+        >
+          I am ready to buy
+        </button>
       </DialogTrigger>
-      <DialogContent className="wdd md:w-[450px] rounded-[4px] selection:bg-yellow-400 selection:text-black">
+      <DialogContent>
         <DialogHeader>
-          <DialogTitle className="text-black my-2 text-[22px] text-center font-extrabold tut">Payment Process</DialogTitle>
-          <DialogDescription className='text-start'>
-            <ol className="list-decimal pl-5 font-mono  space-y-3 text-black tracking-tight font-extrabold text-[16px] md:text-lg">
-            
-              <li>Facebook message'e likho kon Course e enroll korbe.</li>
-              <li>tumar gmail address dao.</li>
-              <li>Bkash number e send-money/cash-in করে screenshot, or just 'Done' likho.</li>
-              <li>er por 5mins er মধ্যে tumar Gmail e Access soho Login link পাঠিয়ে দেয়া হবে।</li>
-
-            </ol>
-      
+          <DialogTitle
+            className={clsx(space.className, "text-center text-[23px] py-2")}
+          >
+            Payment Process
+          </DialogTitle>
+          {/* Replace DialogDescription's default element */}
+          <DialogDescription
+            asChild
+            className="select-text selection:bg-yellow-400 selection:text-black text-start w-full"
+          >
+            <div>
+              <ol className="list-decimal pl-5 font-mono space-y-3 text-black dark:text-white tracking-tight font-extrabold text-[16px] md:text-lg">
+                <li>Facebook message e likho course name.</li>
+                <li>tumar gmail address dao.</li>
+                <li>
+                  Bkash number e send-money/cash-in করে likho 'Done Paying'
+                </li>
+                <li>
+                  then just ekhane othoba Facebook deya link e Login koro.
+                </li>
+                <li>That&apos;s it. You&apos;re all set.</li>
+              </ol>
+            </div>
           </DialogDescription>
         </DialogHeader>
 
         <DialogFooter className="mb-5">
-          <Link 
-          className="bg-gray-900 w-[150px] px-1  py-[9px] text-center m-auto rounded-[4px] shadow-lg shadow-gray-800 text-lg hover:text-[20px] mt-3 flex gap-1 justify-center italic font-serif transition-all ease-in-out duration-100" 
-          href="https://www.facebook.com/applecourses.pro"><PiMessengerLogoBold color="white" size={27}/>Facebook</Link>
-   
+          <a
+            className={clsx(
+              space.className,
+              " bn w-[190px] px-1  py-[9px] text-center m-auto rounded-[5px] text-lg flex gap-2 justify-center items-center font-bold"
+            )}
+            href="https://www.facebook.com/applecourses.pro"
+            target="_blank"
+          >
+            Inbox Now <MessageCircleMore />
+          </a>
         </DialogFooter>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

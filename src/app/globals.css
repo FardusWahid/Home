@@ -1,59 +1,66 @@
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
- 
-  body{
-    @apply bg-black text-cyan-100
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  .anton{
-   font-weight: 900;  
-   font-family:Arial, Helvetica, sans-serif;
-   font-style: normal;
-
-}
-.tut{
-  font-family: 'Courier New', Courier, monospace;
+body {
+  @apply dark:bg-[#0d1117];
 }
 
-  .chapter{
-    @apply wddd  md:w-1/2 lg:w-1/3 xl:w-[390px] m-auto  mt-5 py-[9.6px] lg:py-[11px] px-0 text-[17px] lg:text-[18px] font-sans italic
-    rounded-md text-cyan-200 hover:bg-cyan-100 bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950
-    font-bold hover:ring-pink-900 hover:ring-1 hover:scale-110 transition-all ease-in duration-150
- ring-[.7px] ring-gray-800
-  }
-
-  .wddd{
-    width: 79%;
-  }
- 
-  .tag{
-    @apply bg-pink-400 rounded-lg px-2 shadow-inner  font-extrabold py-1 text-black
-  }
-  .tag2{
-    @apply bg-purple-950  text-white font-extrabold rounded-lg px-2 py-1
-  }
-  .tag3{
-    @apply bg-gray-800   rounded-lg font-extrabold text-white px-2 py-1
-  }
-  .tag4{
-    @apply bg-yellow-500  text-black rounded-lg font-extrabold  px-2 py-1 
-
-  }
- 
-.log{
-  box-shadow: 1px 1px 15px 1px rgb(199, 3, 127),
-              5px 0px 25px 1px rgba(235, 94, 181, 0.83);
-}
-  
-.wd{
-  width: 98%;
+:root {
+  --radius: 0.5rem;
 }
 
-.wdd{
-  width: 95%;
+.t {
+  @apply py-[5px] shadow-[0px_0px_7px] bg-zinc-50 dark:bg-eight shadow-cyan-100 dark:shadow-gray-900 rounded-lg text-[14px] text-center flex gap-1 font-semibold justify-center items-center  md:hover:scale-125 capitalize truncate;
 }
 
-.shad{
-  text-shadow: 1px 1px 0 #0055ff;
+:is(.dark .bn) {
+  box-shadow: 5px 5px 0px 0px white, -5px -5px 0px 0px rgba(71, 85, 105, 0.8),
+    8px 8px 15px rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  position: relative;
+}
+
+:is(.dark .bn:hover) {
+  box-shadow: 3px 3px 0px 0px white, -3px -3px 0px 0px rgba(71, 85, 105, 0.8),
+    4px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+:is(.dark .bn:active) {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+.bn {
+  box-shadow: 5px 5px 0px 0px black, -5px -5px 0px 0px rgba(193, 218, 229, 0.8),
+    8px 8px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.17s ease-in-out;
+  border: 1px solid black;
+}
+
+.bn:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 3px 3px 0px 0px black, -3px -3px 0px 0px rgba(193, 218, 229, 0.8),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bn:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1d5f8;
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: hsl(240, 13%, 25%);
 }
