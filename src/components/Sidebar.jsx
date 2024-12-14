@@ -120,7 +120,7 @@ export default function Sidebar() {
                 </p>
                 <div className="flex flex-col py-1">
                   <a
-                    href="https://www.facebook.com/applecourses.pro"
+                    href="https://www.facebook.com/applecourses.netlify.app5"
                     target="_blank"
                   >
                     <Button variant="ghost" className="text-[15px] font-medium">
