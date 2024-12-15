@@ -85,7 +85,7 @@ export default function Sidebar() {
                   New premium site(v2)
                 </p>
                 <div className="flex flex-col  py-1">
-                  <a href="https://applepremium.netlify.app" target="_blank">
+                  <a href="https://ipremium.vercel.app" target="_blank">
                     <Button
                       variant="ghost"
                       className="text-[15px] flex items-center font-medium"
@@ -120,7 +120,7 @@ export default function Sidebar() {
                 </p>
                 <div className="flex flex-col py-1">
                   <a
-                    href="https://www.facebook.com/applecourses.pro"
+                    href="https://www.facebook.com/applecourses.netlify.app5"
                     target="_blank"
                   >
                     <Button variant="ghost" className="text-[15px] font-medium">

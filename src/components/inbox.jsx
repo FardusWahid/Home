@@ -18,7 +18,7 @@ export function Inbox() {
         <button
           className={clsx(
             one.className,
-            "uppercase bg-[#f0fafa] bn px-5 py-2 md:py-3 w-[52%] dark:bg-eight rounded-md"
+            "uppercase bg-[#f0fafa] bn px-5 py-2 md:py-3 md:w-[52%] dark:bg-eight rounded-md"
           )}
         >
           I am ready to buy
@@ -58,7 +58,7 @@ export function Inbox() {
               space.className,
               " bn w-[190px] px-1  py-[9px] text-center m-auto rounded-[5px] text-lg flex gap-2 justify-center items-center font-bold"
             )}
-            href="https://www.facebook.com/applecourses.pro"
+            href="https://www.facebook.com/applecourses.netlify.app5"
             target="_blank"
           >
             Inbox Now <MessageCircleMore />

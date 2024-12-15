@@ -50,7 +50,7 @@ export default async function Cool({ params }) {
             If you are well funded and can afford to pay the full price then
             please buy it from the original owner.
           </p>
-          <section className="flex justify-around gap-3 pt-4 pb-5">
+          <section className="flex justify-around md:justify-between gap-3 pt-4 pb-5">
             <Inbox />
             <Login />
           </section>
