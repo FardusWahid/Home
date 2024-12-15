@@ -46,13 +46,13 @@ export default function Login() {
             </ol>
             <div className="flex justify-start dark:text-gray-100 text-[16px] font-bold tracking-tighter px-3 pt-5 gap-7 pb-2">
               <a
-                href="/"
+                href="https://ipremium.vercel.app"
                 className="px-7 lg:px-9 lg:py-3 py-2 flex justify-center bn rounded-sm dark:bg-nine"
               >
                 Server 1
               </a>
               <a
-                href="/"
+                href="https://ipremium.vercel.app"
                 className="px-7 py-2 lg:px-9 lg:py-3 flex justify-center bn rounded-sm dark:bg-nine"
               >
                 Server 2
