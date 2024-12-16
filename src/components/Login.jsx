@@ -23,7 +23,9 @@ export default function Login() {
           LOG-IN <LogIn className="w-5 h-5" />
         </button>
       </DialogTrigger>
-      <DialogContent className={clsx(space.className, "py-5 border-b-0 border-t-0")}>
+      <DialogContent
+        className={clsx(space.className, "py-5 border-b-0 border-t-0")}
+      >
         <DialogHeader>
           <DialogTitle className="text-center text-lg pt-2 font-bold tracking-tighter capitalize lg:text-[19px]">
             SignIn Only if you are Enrolled
