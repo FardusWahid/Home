@@ -67,22 +67,22 @@ export default function Sidebar() {
             <div className="py-4 pl-[10px] font-sans mt-12">
               <section className="border-t border-zinc-100  dark:border-gray-800 py-2">
                 <div className="flex flex-col py-1">
-                  <p className="text-[16px] tracking-tighter font-semibold">
-                    Testifications
+                  <p className="text-[16px] tracking-tighter font-bold">
+                    FREE Courses
                   </p>
-                  <Link href="/showcase">
+                  <a href="https://ipremium.vercel.app/free" target="_blank">
                     <Button
                       variant="ghost"
                       className="text-[15px] flex items-center font-medium"
                     >
-                      View ScreenShots
+                      Access Free Courses
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </section>
               <section className="border-t border-zinc-100  dark:border-gray-800 py-2">
-                <p className="text-[16px] tracking-tighter font-semibold">
-                  New premium site(v2)
+                <p className="text-[16px] tracking-tighter font-bold">
+                  New premium site
                 </p>
                 <div className="flex flex-col  py-1">
                   <a href="https://ipremium.vercel.app" target="_blank">
@@ -97,8 +97,8 @@ export default function Sidebar() {
               </section>
 
               <section className="border-t border-zinc-100  dark:border-gray-800 py-2">
-                <p className="text-[16px] font-semibold tracking-tight">
-                  Previous sites (v1)
+                <p className="text-[16px] font-bold tracking-tight">
+                  Previous sites
                 </p>
                 <div className="flex flex-col  py-1">
                   {prevs.map((prev, index) => (
@@ -115,7 +115,7 @@ export default function Sidebar() {
               </section>
 
               <section className="border-t border-zinc-100  dark:border-gray-800 py-2">
-                <p className="text-[16px] font-semibold tracking-tight">
+                <p className="text-[16px] font-bold tracking-tight">
                   Important links
                 </p>
                 <div className="flex flex-col py-1">

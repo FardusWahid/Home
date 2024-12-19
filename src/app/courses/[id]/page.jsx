@@ -47,8 +47,7 @@ export default async function Cool({ params }) {
             />
           </section>
           <p className="text-start font-sans font-bold tracking-tighter text-[13px] dark:text-cyan-100 pl-1 md:text-[15px] py-3">
-            If you are well funded and can afford to pay the full price then
-            please buy it from the original owner.
+            If the course labeled as FREE then just hit the LOG-IN Button to Continue! 
           </p>
           <section className="flex justify-around md:justify-between gap-3 pt-4 pb-5">
             <Inbox />
