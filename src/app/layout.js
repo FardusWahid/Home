@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.webmanifest" />
+        <meta name="google-site-verification" content="5A6r0nl48WzkentBg3bhahhCZxhXM90Bl2_eQ6q9vzk" />
       </head>
       <body className={clsx(poppins.className, "select-none")}>
         <ThemeProvider
