@@ -9,7 +9,7 @@ export default function Navbar() {
     <div className="flex justify-between items-center p-2 px-0 md:px-2 w-full bg-white shadow-md shadow-zinc-50 dark:shadow-nine dark:bg-eight">
      <Link
         href="/"
-        className={clsx(oswald.className, "flex gap-0 group items-center md:ml-2 cool")}
+        className={clsx(oswald.className, "flex gap-0 group items-center md:ml-2 lg:scale-110 cool")}
       >
         <Image
           src="/applesv.svg"

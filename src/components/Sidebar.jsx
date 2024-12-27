@@ -11,16 +11,20 @@ export default function Sidebar() {
 
   const prevs = [
     {
-      name: "Apple 2024",
-      link: "https://apple2024.netlify.app",
+      name: "Facebook Page",
+      link: "https://www.facebook.com/applecourses.netlify.app5",
     },
     {
-      name: "Apple 2025",
-      link: "https://apple25.netlify.app",
+      name: "Facebook Group",
+      link: "https://www.facebook.com/groups/applecourses",
     },
     {
-      name: "Apple 2026",
-      link: "https://apple26.netlify.app",
+      name: "Apple Shop 01",
+      link: "https://applecourses.netlify.app",
+    },
+    {
+      name: "Apple Shop 02",
+      link: "https://applecourses.vercel.app",
     },
   ];
 
@@ -68,16 +72,24 @@ export default function Sidebar() {
               <section className="border-t border-zinc-100  dark:border-gray-800 py-2">
                 <div className="flex flex-col py-1">
                   <p className="text-[16px] tracking-tighter font-bold">
-                    FREE Courses
+                    Testifications
                   </p>
-                  <a href="https://ipremium.vercel.app/free" target="_blank">
+                  <Link href="/landscape">
                     <Button
                       variant="ghost"
                       className="text-[15px] flex items-center font-medium"
                     >
-                      Access Free Courses
+                      Desktop View Demo
                     </Button>
-                  </a>
+                  </Link>
+                  <Link href="/phone">
+                    <Button
+                      variant="ghost"
+                      className="text-[15px] flex items-center font-medium"
+                    >
+                      Mobile View Demo
+                    </Button>
+                  </Link>
                 </div>
               </section>
               <section className="border-t border-zinc-100  dark:border-gray-800 py-2">
@@ -93,6 +105,14 @@ export default function Sidebar() {
                       All latest Courses
                     </Button>
                   </a>
+                  <a href="https://ipremium.vercel.app" target="_blank">
+                    <Button
+                      variant="ghost"
+                      className="text-[15px] flex items-center font-medium"
+                    >
+                      All Free Courses
+                    </Button>
+                  </a>
                 </div>
               </section>
 
@@ -105,39 +125,16 @@ export default function Sidebar() {
                     <a href={prev.link} key={index} target="_blank">
                       <Button
                         variant="ghost"
-                        className="text-[15px] flex items-center font-medium lowercase"
+                        className="text-[15px] flex items-center font-medium capitalize"
                       >
-                        {prev.name} old site
+                        {prev.name}
                       </Button>
                     </a>
                   ))}
                 </div>
               </section>
 
-              <section className="border-t border-zinc-100  dark:border-gray-800 py-2">
-                <p className="text-[16px] font-bold tracking-tight">
-                  Important links
-                </p>
-                <div className="flex flex-col py-1">
-                  <a
-                    href="https://www.facebook.com/applecourses.netlify.app5"
-                    target="_blank"
-                  >
-                    <Button variant="ghost" className="text-[15px] font-medium">
-                      Facebook page
-                    </Button>
-                  </a>
-
-                  <a
-                    href="https://www.facebook.com/groups/applecourses"
-                    target="_blank"
-                  >
-                    <Button variant="ghost" className="text-[15px] font-medium">
-                      Facebook group
-                    </Button>
-                  </a>
-                </div>
-              </section>
+             
 
               <section className="border-t p-2 border-zinc-100 dark:border-zinc-800">
                 <p className="flex items-center font-sans font-bold text-[17px] gap-0 justify-start">

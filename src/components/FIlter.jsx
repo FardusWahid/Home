@@ -1,5 +1,5 @@
 "use client";
-import { Files } from "@/app/showcase/file";
+import { Files } from "@/app/[view]/file";
 import React, { Suspense, useState } from "react";
 import {
   Select,

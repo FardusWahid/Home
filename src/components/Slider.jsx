@@ -1,5 +1,5 @@
 "use client";
-import { Slide } from "../app/showcase/file";
+import { Slide } from "../app/[view]/file";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -47,9 +47,14 @@ function Slider() {
               </div>
               <aside>
                 <Link href={`/courses/${file.id}`}>
-                  <p className={clsx(one.className,"capitalize text-center bg-zinc-50 dark:bg-nine py-2 md:py-2 text-lg md:text-[20px] font-sans font-bold mt-1 truncate")}>
+                  <p
+                    className={clsx(
+                      one.className,
+                      "capitalize text-center bg-zinc-50 dark:bg-nine py-2 md:py-2 text-lg md:text-[20px] font-sans font-bold mt-1 truncate"
+                    )}
+                  >
                     {file.title}
-                </p>
+                  </p>
                 </Link>
               </aside>
             </CarouselItem>

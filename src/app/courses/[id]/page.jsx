@@ -1,13 +1,13 @@
 import { Inbox } from "@/components/inbox";
 import Login from "@/components/Login";
 import { Button } from "@/components/ui/button";
-import { Files } from "@/app/showcase/file";
+import { Files } from "@/app/[view]/file";
 import { one, space } from "@/lib/fonts";
 import clsx from "clsx";
 import { MessageCircleQuestion, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
+import Count from "@/components/count";
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const OS = Files.find((file) => file.id === parseInt(id));
@@ -47,7 +47,8 @@ export default async function Cool({ params }) {
             />
           </section>
           <p className="text-start font-sans font-bold tracking-tighter text-[13px] dark:text-cyan-100 pl-1 md:text-[15px] py-3">
-            If the course labeled as FREE then just hit the LOG-IN Button to Continue! 
+            If the course labeled as FREE then just hit the LOG-IN Button to
+            Continue!
           </p>
           <section className="flex justify-around md:justify-between gap-3 pt-4 pb-5">
             <Inbox />
@@ -55,14 +56,17 @@ export default async function Cool({ params }) {
           </section>
         </aside>
 
-        <aside className="w-full lg:w-[50%] xl:w-[50%] min-[500px]:pl-5 pt-8">
+        <aside className="w-full lg:w-[50%] xl:w-[50%] min-[500px]:pl-5 pt-7">
           <div>
-            <p className="flex items-center font-semibold">
-              Demo ScreenShots & records
-              <Button variant="outline" className="h-8 ml-1">
-                <Link href={"/showcase"}>view</Link>
+            <p className="font-semibold text-xl">SEE Demo<span className="max-sm:hidden">, ScreenShots</span> & Enrolled Students</p>
+            <div className="flex items-center py-2 gap-2">
+              <Button className="h-8 ml-1 cool">
+                <Link href="/phone">Mobile view</Link>
               </Button>
-            </p>
+              <Button variant="secondary" className="h-8 ml-1 cool">
+                <Link href="/landscape">Desktop view</Link>
+              </Button>
+            </div>
             <p
               className={clsx(
                 space.className,
@@ -80,6 +84,10 @@ export default async function Cool({ params }) {
               {OS.features.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
+              <li>
+                And Best of all, You can install it as Mobile or Desktop App.
+                
+              </li>
             </ol>
             <p className=" text-start font-sans font-bold tracking-tight text-[15px] pl-1 md:text-[17px] py-3 flex items-center gap-1">
               <MessageCircleQuestion />
@@ -101,12 +109,13 @@ export default async function Cool({ params }) {
                 constantly trying to keep it as minimal as possible
               </li>
             </ol>
+
           </div>
         </aside>
       </main>
 
       <section>
-                
+        <Count />
         <br />
       </section>
     </div>

@@ -46,16 +46,16 @@ export default function Login() {
                 Use any of the server below to Access your purchased course.
               </li>
             </ol>
-            <div className="flex justify-start dark:text-gray-100 text-[16px] font-bold tracking-tighter px-3 pt-5 gap-7 pb-2">
+            <div className="flex justify-around dark:text-gray-100 text-[16px] font-bold tracking-tighter px-3 pt-5 gap-7 pb-2">
               <a
                 href="https://ipremium.vercel.app"
-                className="px-7 lg:px-9 lg:py-3 py-2 flex justify-center bn rounded-sm dark:bg-nine"
+                className="px-8 lg:px-9 lg:py-3 py-[10px] flex justify-center bn bg-yellow-300 rounded-lg dark:bg-nine"
               >
                 Server 1
               </a>
               <a
                 href="https://ipremium.vercel.app"
-                className="px-7 py-2 lg:px-9 lg:py-3 flex justify-center bn rounded-sm dark:bg-nine"
+                className="px-8 py-[10px] lg:px-9 lg:py-3 flex bg-pink-300 justify-center bn rounded-lg dark:bg-nine"
               >
                 Server 2
               </a>

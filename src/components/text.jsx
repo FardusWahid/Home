@@ -27,16 +27,16 @@ export default function Text() {
           </span>
         </h1>
 
-        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6 md:mb-8 max-w-xl">
+        <p className="text-base md:text-lg text-gray-600 max-sm:hidden dark:text-gray-300 mb-6 md:mb-8 max-w-xl">
           Tired of spending thousands on courses or getting scammed by random
           dude online? Give Apple Courses a try!
         </p>
         <div className="flex flex-col sm:flex-row gap-5">
           <Link
-            href="/courses?cat=free"
-            className="sm:w-[240px] w-full bn group bg-[#192a56] lg:hover:bg-white text-white lg:hover:text-black dark:bg-[hsl(75,90%,62%)] lg:dark:hover:bg-black dark:text-black lg:dark:hover:text-white lg:dark:hover:ring-white rounded-[1px_10px_1px_10px] px-8 py-3 text-base font-semibold"
+            href="https://ipremium.vercel.app"
+            className="sm:w-[240px] w-full bn group bg-[#192a56]  text-white dark:bg-yellow-500 dark:lg:bg-blue-500 dark:text-black rounded-[1px_10px_1px_10px] px-8 py-3 text-base font-semibold"
           >
-            <span className="flex justify-center items-center gap-2">
+            <span className="flex justify-center items-center  gap-2">
               <Sparkles className="w-5 h-5 lg:group-hover:scale-110 lg:transition-transform lg:ease-in-out lg:duration-100" />
               Free Courses
               <ChevronRight size={28} />
