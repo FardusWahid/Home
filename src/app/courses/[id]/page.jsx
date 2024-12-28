@@ -60,11 +60,11 @@ export default async function Cool({ params }) {
           <div>
             <p className="font-semibold text-xl">SEE Demo<span className="max-sm:hidden">, ScreenShots</span> & Enrolled Students</p>
             <div className="flex items-center py-2 gap-2">
-              <Button className="h-8 ml-1 cool">
-                <Link href="/phone">Mobile view</Link>
+              <Button className="h-8 ml-1 px-5">
+                <Link href="/phone" className="cool">Mobile view</Link>
               </Button>
-              <Button variant="secondary" className="h-8 ml-1 cool">
-                <Link href="/landscape">Desktop view</Link>
+              <Button variant="secondary" className="h-8 ml-1 px-5">
+                <Link href="/landscape" className="cool">Desktop view</Link>
               </Button>
             </div>
             <p

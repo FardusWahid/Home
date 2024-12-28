@@ -18,7 +18,7 @@ export function Inbox() {
         <button
           className={clsx(
             one.className,
-            "uppercase bg-[#f0fafa] bn px-5 py-2 md:py-3 md:w-[52%] dark:bg-eight rounded-md"
+            "uppercase bg-[#f0fafa] bn w-1/2 py-2 md:py-3  dark:bg-eight rounded-md"
           )}
         >
           I am ready to buy

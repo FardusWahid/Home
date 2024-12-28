@@ -7,13 +7,13 @@ export const Slide = [
   },
   {
     id: 2,
-    title: "acs varsity private batch 2024",
+    title: "acs varsity 2024 for 499 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218902/var_bai4aw.webp",
   },
   {
     id: 1,
-    title: "acs engineering private batch 2024",
+    title: "acs engineering 2024 for 499 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218862/eng24_odmkog.webp",
   },

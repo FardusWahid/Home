@@ -17,7 +17,7 @@ export default function Login() {
         <button
           className={clsx(
             one.className,
-            "px-6 md:text-lg py-1 flex justify-center items-center gap-1 font-extrabold tracking-tight bn rounded-sm bg-[#f0fafa] dark:bg-nine"
+            "w-[40%] md:text-lg py-2 md:py-3 flex justify-center items-center gap-1 tracking-tight bn rounded-md bg-[#f0fafa] dark:bg-nine tra"
           )}
         >
           LOG-IN <LogIn className="w-5 h-5" />
@@ -27,8 +27,11 @@ export default function Login() {
         className={clsx(space.className, "py-5 border-b-0 border-t-0")}
       >
         <DialogHeader>
-          <DialogTitle className="text-center text-lg pt-2 font-bold tracking-tighter capitalize lg:text-[19px]">
-            SignIn Only if you are Enrolled
+          <DialogTitle
+            className="text-center text-lg pt-2 font-bold font-sans
+           capitalize lg:text-[19px]"
+          >
+            Login to our main webapp
           </DialogTitle>
         </DialogHeader>
         <DialogDescription asChild className="text-black dark:text-white">
@@ -49,7 +52,7 @@ export default function Login() {
             <div className="flex justify-around dark:text-gray-100 text-[16px] font-bold tracking-tighter px-3 pt-5 gap-7 pb-2">
               <a
                 href="https://ipremium.vercel.app"
-                className="px-8 lg:px-9 lg:py-3 py-[10px] flex justify-center bn bg-yellow-300 rounded-lg dark:bg-nine"
+                className="px-8 lg:px-9 lg:py-3 py-[10px] flex justify-center bn bg-pink-300 rounded-lg dark:bg-nine"
               >
                 Server 1
               </a>

@@ -8,7 +8,7 @@ export default function Home() {
         <section>
           <Slider />
         </section>
-        <aside className="mt-4 md:mt-0">
+        <aside className="mt-3 sm:mt-4 md:mt-0">
           <Text />
         </aside>
       </div>
