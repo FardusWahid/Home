@@ -46,7 +46,7 @@ export const Files = [
     year: 2024,
     type: "admission",
     status: "running",
-    name: "acs engineering private batch 2024",
+    name: "Acs Engineering Private Batch 2024",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218862/eng24_odmkog.webp",
     demo: "",
@@ -74,7 +74,7 @@ export const Files = [
     year: 2024,
     status: "running",
     type: "admission",
-    name: "acs varsity private batch 2024",
+    name: "Acs Varsity Private Batch 2024",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218902/var_bai4aw.webp",
     demo: "",
@@ -130,7 +130,7 @@ export const Files = [
     year: 2025,
     status: "running",
     type: "academic",
-    name: "acs physics all cycles 2025",
+    name: "Acs Physics All Cycles 2025",
     image: "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218896/HSC-25_kmodpt.webp",
     demo: "",
     features: [
@@ -156,7 +156,7 @@ export const Files = [
     year: 2025,
     status: "running",
     type: "academic",
-    name: "acs chemistry all cycles 2025",
+    name: "Acs Chemistry All Cycles 2025",
     image: "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218859/chee1_f8yzwe.jpg",
     demo: "",
     features: [
@@ -182,7 +182,7 @@ export const Files = [
     year: 2025,
     status: "completed",
     type: "academic",
-    name: "BP Engish winner 4.0",
+    name: "BP Engish Winner 4.0",
     image: "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218862/e4_mowc5r.webp",
     demo: "",
     features: [
@@ -246,11 +246,11 @@ export const Files = [
   },
   {
     id: 9,
-    year: 2026,
-    status: "running",
+    year: 2025,
+    status: "completed",
     type: "academic",
-    name: "acs ict decoders 2026",
-    image: "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218898/ict26_g5k4mk.webp",
+    name: "Final Revision Batch 2024",
+    image: "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218863/frb_zqucyi.webp",
     demo: "",
     features: [
       "Class গুলো Live করতে পারবে না। Recorded করতে হবে।",
@@ -261,13 +261,13 @@ export const Files = [
       "আমাদের WEBAPP যেকোনো regular app এর চেয়ে 10X Faster.",
       "No Support for this course",
       "Instant access, NO payment required",
-      "study materials only available for elit members",
+      "FREE Lectures & Practice Sheets",
     ],
     price: "free",
     tags: [
-      "Classes 45+",
+      "Classes 100+",
       "Webapp recorded",
-      "2025 full archive",
+      "Science Sub Only",
       "study materials",
     ],
   },
