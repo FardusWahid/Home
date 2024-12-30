@@ -500,4 +500,32 @@ export const Files = [
       "study materials",
     ],
   },
+   {
+    id: 18,
+    year: 2025,
+    status: "running",
+    type: "academic",
+    name: "BP HSC Powerplay 2025 + 2024 archive",
+    image:
+      "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732220695/169k_m8ofii.webp",
+    demo: "",
+    features: [
+      "Class গুলো Live করতে পারবে না। Recorded করতে হবে।",
+      "Course এর Exams গুলো দিতে পারবে না, Just Solution PDFs পাবে।",
+      "Exam এর জন্য Alternate Site provide করা হবে।",
+      "Classes & PDFs Download করতে পারবে।",
+      "Previous year এর archive(classes & materials) থাকবে।",
+      "Course এর সকল Content আমাদের lightning fast WEBAPP এ থাকবে SO, Soicial media TimeWaste এর possibility নেই।",
+      "আমাদের WEBAPP যেকোনো regular app এর চেয়ে 10X Faster.",
+      "24/7 Support on Facebook messenger.",
+      "Instant access, usually pay করার 3mins এর মধ্যেই।",
+    ],
+    price: 499,
+    tags: [
+      "Classes 130+",
+      "Webapp recorded",
+      "2024 full archive",
+      "study materials",
+    ],
+  },
 ];
