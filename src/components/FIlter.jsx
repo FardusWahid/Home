@@ -66,7 +66,7 @@ export default function FilterSelectors() {
             )}
             <Suspense fallback={<CardsLoading />}>
               {filteredFiles.map((file) => (
-                <Card key={file.id} file={file} />
+                <Card key={file.slug} file={file} />
               ))}
             </Suspense>
           </div>

@@ -69,7 +69,3 @@ body {
 .cool {
   @apply hover:scale-110 active:scale-95 transition-transform duration-200 ease-in-out;
 }
-
-
-
-

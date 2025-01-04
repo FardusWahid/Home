@@ -1,4 +1,6 @@
 import { Suspense } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 // Separate data fetching into its own component
 const ProfileImages = async () => {
@@ -44,13 +46,34 @@ const LoadingSkeleton = () => (
 
 export default function Count() {
   return (
-    <section className="mt-10 pl-3 lg:pl-5 mx-auto">
-      <h2 className="text-[15px] sm:text-lg font-semibold mb-4">
-        Enrolled Students: 326 [live from database]
-      </h2>
-      <Suspense fallback={<LoadingSkeleton />}>
-        <ProfileImages />
-      </Suspense>
-    </section>
+    <div className="my-5">
+      <div className="flex items-center justify-around sm:justify-normal sm:gap-5 py-3 gap-2">
+        <Link href="/phone">
+          <Button
+            variant="outline"
+            className="h-8 px-4 md:px-5 font-bold shadow-md shadow-zinc-100 dark:bg-gray-800 dark:shadow-zinc-900 rounded-[12px]"
+          >
+            View Mobile Demo
+          </Button>
+        </Link>
+
+        <Link href="/landscape">
+          <Button
+            variant="outline"
+            className="h-8 px-4 font-bold md:px-5 shadow-md shadow-zinc-100 dark:bg-gray-800 dark:shadow-zinc-900 rounded-[12px]"
+          >
+            View Desktop Demo
+          </Button>
+        </Link>
+      </div>
+
+      <h2 className="ml-3 text-lg font-bold">Enrolled Students: 326+</h2>
+
+      <section className="pl-3 lg:pl-5 my-1 mx-auto">
+        <Suspense fallback={<LoadingSkeleton />}>
+          <ProfileImages />
+        </Suspense>
+      </section>
+    </div>
   );
 }

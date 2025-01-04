@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import { Card } from "./Card";
 
-const CourseCategoryPills = ({ cat }) => {
+const CourseCategoryPills = () => {
   const categories = [
     { label: "All", value: "all" },
     { label: "Free", value: "free" },
@@ -15,7 +15,7 @@ const CourseCategoryPills = ({ cat }) => {
     { label: "Admission", value: "admission" },
   ];
 
-  const [selectedCategory, setSelectedCategory] = useState(cat);
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [filteredFiles, setFilteredFiles] = useState(Files);
 
   useEffect(() => {
@@ -35,7 +35,9 @@ const CourseCategoryPills = ({ cat }) => {
         filtered = Files.filter((file) => file.year === 2026);
         break;
       case "admission":
-        filtered = Files.filter((file) => file.type === "admission");
+        filtered = Files.filter(
+          (file) => file.type === "admission" || file.type === "Admission"
+        );
         break;
       default:
         filtered = Files;
@@ -54,7 +56,7 @@ const CourseCategoryPills = ({ cat }) => {
       >
         {categories.map((category) => (
           <Button
-            key={category.value}
+            key={category.label}
             variant={
               selectedCategory === category.value ? "default" : "secondary"
             }
@@ -72,7 +74,7 @@ const CourseCategoryPills = ({ cat }) => {
         )}
         <Suspense>
           {filteredFiles.map((file) => (
-            <Card key={file.id} file={file} />
+            <Card key={file.slug} file={file} />
           ))}
         </Suspense>
       </div>

@@ -13,7 +13,7 @@ export default function Navbar() {
       >
         <Image
           src="/applesv.svg"
-          alt="logo"
+          alt="ACS Shop"
           width={47}
           height={46}
           priority={true}

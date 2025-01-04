@@ -33,20 +33,20 @@ function Slider() {
           {Slide.map((file, index) => (
             <CarouselItem key={index}>
               <div className="overflow-hidden rounded-sm">
-                <Link href={`/courses/${file.id}`}>
+                <Link href={`/courses/${file.slug}`}>
                   <Image
                     src={file.image}
+                    alt={file.alt}
                     width={850}
                     height={800}
-                    priority={index <= 1}
-                    loading={index <= 1 ? "eager" : "lazy"}
-                    alt={file.title}
+                    priority={index < 2}
+                    loading={index < 2 ? "eager" : "lazy"}
                     className="object-cover aspect-video hover:scale-110 transition-transform duration-200 ease-in-out"
                   />
                 </Link>
               </div>
               <aside>
-                <Link href={`/courses/${file.id}`}>
+                <Link href={`/courses/${file.slug}`}>
                   <p
                     className={clsx(
                       one.className,

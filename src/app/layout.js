@@ -7,6 +7,8 @@ import clsx from "clsx";
 export const metadata = {
   title: "Apple Courses",
   description: "ACS Free Courses",
+  keywords:
+    "ACS Courses, ACS Shop, Free Courses, apple courses, Apple Courses ACS",
 };
 
 export default function RootLayout({ children }) {
@@ -14,7 +16,10 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.webmanifest" />
-        <meta name="google-site-verification" content="5A6r0nl48WzkentBg3bhahhCZxhXM90Bl2_eQ6q9vzk" />
+        <meta
+          name="google-site-verification"
+          content="5A6r0nl48WzkentBg3bhahhCZxhXM90Bl2_eQ6q9vzk"
+        />
       </head>
       <body className={clsx(poppins.className, "select-none")}>
         <ThemeProvider
