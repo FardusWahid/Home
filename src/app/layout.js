@@ -20,6 +20,10 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="5A6r0nl48WzkentBg3bhahhCZxhXM90Bl2_eQ6q9vzk"
         />
+        <meta
+          name="google-site-verification"
+          content="pzjPH8_CD-6eaqtuSfa0LLyheyNR-_h681efe85itDc"
+        />
       </head>
       <body className={clsx(poppins.className, "select-none")}>
         <ThemeProvider
