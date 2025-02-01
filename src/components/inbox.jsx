@@ -18,10 +18,10 @@ export function Inbox() {
         <button
           className={clsx(
             one.className,
-            "uppercase bg-[#f0fafa] bn w-1/2 py-2 md:py-3  dark:bg-eight rounded-md"
+            "uppercase buy-button w-[180px] tracking-tighter sm:w-1/2"
           )}
         >
-          I am ready to buy
+         <span className="button_top"> I am ready to buy</span>
         </button>
       </DialogTrigger>
       <DialogContent>

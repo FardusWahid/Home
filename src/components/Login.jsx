@@ -17,10 +17,10 @@ export default function Login() {
         <button
           className={clsx(
             one.className,
-            "w-[40%] md:text-lg py-2 md:py-3 flex justify-center items-center gap-1 tracking-tight bn rounded-md bg-[#f0fafa] dark:bg-nine tra"
+            "buy-button w-[150px] sm:w-1/3"
           )}
         >
-          LOG-IN <LogIn className="w-5 h-5" />
+        <span className="flex flex-shrink-0 justify-center items-center button_top gap-1 ">LOG-IN<LogIn className="w-5 h-5" /></span>
         </button>
       </DialogTrigger>
       <DialogContent

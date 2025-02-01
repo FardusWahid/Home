@@ -1,88 +1,82 @@
-"use client";
+'use client';
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { AlignLeft, Menu } from "lucide-react";
 import { ModeToggle } from "./mode";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function Sidebar() {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
+  const [isOpen, setIsOpen] = useState(false);
 
   const prevs = [
-    {
-      name: "Facebook Page",
-      link: "https://www.facebook.com/applecourses.netlify.app5",
-    },
-    {
-      name: "Facebook Group",
-      link: "https://www.facebook.com/groups/applecourses",
-    },
-    {
-      name: "Apple Shop 01",
-      link: "https://applecourses.netlify.app",
-    },
-    {
-      name: "Apple Shop 02",
-      link: "https://applecourses.vercel.app",
-    },
-  ];
+        {
+          name: "Facebook Page",
+          link: "https://www.facebook.com/applecourses.netlify.app5",
+        },
+        {
+          name: "Facebook Private Group",
+          link: "https://www.facebook.com/groups/applecourses",
+        },
+        {
+          name:"Facebook Public Group (new)",
+          link:"https://www.facebook.com/groups/applecourses.vercel.appp"
+        },
+        {
+          name: "Apple Shop 01",
+          link: "https://applecourses.netlify.app",
+        },
+        {
+          name: "Apple Shop 02",
+          link: "https://applecourses.vercel.app",
+        },
+      ];
 
   return (
     <div>
-      <section className="flex flex-shrink-0 mx-5">
+      <section className="flex flex-shrink-0 mx-2 md:mx-5">
         <Button
           variant="ghost"
           size="icon"
-          onClick={toggleSidebar}
-          className="z-20"
+          onClick={() => setIsOpen(!isOpen)}
+          className="z-30"
         >
-          <div className="transition-all duration-200 ease-in-out">
-            {isSidebarOpen ? (
+          <div className="transition-transform duration-100 ease-in-out">
+            {isOpen ? (
               <AlignLeft
                 strokeWidth={2.5}
-                className="size-[30px] transition-transform"
-                aria-label="Close menu"
+                className="!size-[32px]"
+                aria-label="Menu"
               />
             ) : (
               <Menu
                 strokeWidth={2.5}
-                className="size-[27px] transition-transform"
-                aria-label="Open menu"
+                className="!size-[27px]"
+                aria-label="Menu"
               />
             )}
           </div>
         </Button>
       </section>
 
-      {/* Backdrop with fade animation */}
+      {/* Backdrop */}
       <div
-        className={cn(
-          "fixed inset-0 bg-black/20 backdrop-blur-sm z-10",
-          "animate-in fade-in duration-100",
-          "data-[state=closed]:animate-out data-[state=closed]:fade-out",
-          !isSidebarOpen && "hidden"
-        )}
-        onClick={toggleSidebar}
-        data-state={isSidebarOpen ? "open" : "closed"}
+        className={`fixed inset-0 bg-black/20 backdrop-blur-sm z-20 transition-all duration-200 
+          ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        onClick={() => setIsOpen(false)}
       />
 
-      {/* Sidebar with slide animation */}
+      {/* Sidebar */}
       <aside
-        className={cn(
-          "fixed right-0 top-0 h-screen z-10",
-          "w-fit md:pl-5",
-          "bg-white dark:bg-nine",
-          "shadow-lg shadow-zinc-100/20 dark:shadow-gray-800/20",
-          "animate-in fade-in duration-0 ease-in",
-          "data-[state=closed]:animate-out data-[state=closed]:slide-out-to-right",
-          !isSidebarOpen && "hidden"
-        )}
-        data-state={isSidebarOpen ? "open" : "closed"}
+        className={`fixed right-0 top-0 h-screen w-72 bg-white dark:bg-nine z-20
+          shadow-lg shadow-zinc-100/20 dark:shadow-gray-800/20
+          transform transition-transform duration-100 ease-in-out
+          ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="py-4 pl-[10px] font-sans mt-12 overflow-y-auto max-h-[calc(100vh-3rem)]">
-          <section className="border-t border-zinc-100 dark:border-gray-800 py-2">
+        <div
+          className="py-4 px-4 mt-12 overflow-y-auto transition-none scroll-auto max-h-[calc(100vh-3rem)]"
+          style={{ scrollbarWidth: "none" }}
+        >
+               <section className="border-t border-zinc-100 dark:border-gray-800 py-2">
             <div className="flex flex-col py-1">
               <p className="text-[16px] tracking-tighter font-bold">
                 Testifications
@@ -130,9 +124,10 @@ export default function Sidebar() {
             </div>
           </section>
 
+
           <section className="border-t border-zinc-100 dark:border-gray-800 py-2">
             <p className="text-[16px] font-bold tracking-tight">
-              Previous sites
+              Useful Links
             </p>
             <div className="flex flex-col py-1">
               {prevs.map((prev, index) => (
@@ -148,8 +143,9 @@ export default function Sidebar() {
             </div>
           </section>
 
-          <section className="border-t p-2 border-zinc-100 dark:border-zinc-800">
-            <p className="flex items-center font-sans font-bold text-[17px] gap-0 justify-start">
+
+          <section className="border-t px-2 pb-5 border-zinc-100 dark:border-zinc-800 dark:border-opacity-50">
+            <p className="flex items-center font-semibold tracking-tight text-[16px] gap-0 justify-start">
               Switch theme <ModeToggle />
             </p>
           </section>
@@ -158,3 +154,5 @@ export default function Sidebar() {
     </div>
   );
 }
+
+

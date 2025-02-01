@@ -51,7 +51,7 @@ export default function Count() {
         <Link href="/phone">
           <Button
             variant="outline"
-            className="h-8 px-4 md:px-5 font-bold shadow-md shadow-zinc-100 dark:bg-gray-800 dark:shadow-zinc-900 rounded-[12px]"
+            className="h-8 px-3 sm:px-4 md:px-5 font-bold shadow-md shadow-zinc-100 dark:bg-gray-800 dark:shadow-zinc-900 rounded-[12px]"
           >
             View Mobile Demo
           </Button>
@@ -60,7 +60,7 @@ export default function Count() {
         <Link href="/landscape">
           <Button
             variant="outline"
-            className="h-8 px-4 font-bold md:px-5 shadow-md shadow-zinc-100 dark:bg-gray-800 dark:shadow-zinc-900 rounded-[12px]"
+            className="h-8 px-3 sm:px-4 font-bold md:px-5 shadow-md shadow-zinc-100 dark:bg-gray-800 dark:shadow-zinc-900 rounded-[12px]"
           >
             View Desktop Demo
           </Button>

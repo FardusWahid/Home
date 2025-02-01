@@ -20,7 +20,7 @@ export default function Navbar() {
           loading="eager"
           className="dark:invert object-cover flex-shrink-0"
         />
-        <span className="text-[29px] tracking-tight ml-[-2px] relative top-[4.5px]">
+        <span className="text-[29px] dark:text-cyan-50 tracking-tight ml-[-2px] relative top-[4.5px]">
           Premium
         </span>
       </Link>

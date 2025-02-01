@@ -18,6 +18,10 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/manifest.webmanifest" />
         <meta
           name="google-site-verification"
+          content="TcPRyeIhClDj72ukKF9fJ6yxNREcpj7BFNzxYiWYyTM"
+        />
+        <meta
+          name="google-site-verification"
           content="5A6r0nl48WzkentBg3bhahhCZxhXM90Bl2_eQ6q9vzk"
         />
         <meta

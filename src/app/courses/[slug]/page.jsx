@@ -17,53 +17,94 @@ export async function generateStaticParams() {
   }));
 }
 
-// Generate Metadata
 export async function generateMetadata({ params }) {
-  const course = getProduct(params.slug);
+  const { slug } = await params;
+  const course = getProduct(slug);
+
   if (!course) {
     return notFound();
   }
+
+  // Construct structured data for the course
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: course.name,
+    description: course.seo.metaDescription,
+    provider: {
+      "@type": "Organization",
+      name: "ACS Shop",
+      sameAs: "https://applecourses.vercel.app",
+    },
+    inLanguage: "bn-BD",
+    courseMode: "online",
+    price: course.price,
+    priceCurrency: "BDT",
+    image: course.image.url,
+    url: `https://applecourses.vercel.app/courses/${course.slug}`,
+  };
+
   return {
     title: course.seo.metaTitle,
     description: course.seo.metaDescription,
     keywords: course.seo.keywords.join(","),
+    alternates: {
+      canonical: `https://applecourses.vercel.app/courses/${course.slug}`,
+    },
     openGraph: {
       title: course.seo.metaTitle,
       description: course.seo.metaDescription,
-      images: [course.image.url],
+      images: [
+        {
+          url: course.image.url,
+          width: 1200,
+          height: 630,
+          alt: course.name,
+          type: "image/jpeg",
+        },
+      ],
       url: `https://applecourses.vercel.app/courses/${course.slug}`,
       locale: "bn_BD",
       type: "website",
+      siteName: "ACS Shop",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: course.seo.metaTitle,
+      description: course.seo.metaDescription,
+      images: [course.image.url],
+      creator: "https://web.facebook.com/applecourses.netlify.app5",
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+    verification: {
+      google: "TcPRyeIhClDj72ukKF9fJ6yxNREcpj7BFNzxYiWYyTM",
+    },
+    // Adding structured data
+    other: {
+      structuredData: JSON.stringify(structuredData),
     },
   };
 }
 
-export default async function Cool({ params }) {
-  const course = getProduct(params.slug);
+export default async function CourseDetail({ params }) {
+  // More semantic name than 'Cool'
+  const { slug } = await params;
+  const course = getProduct(slug);
   if (!course) {
     return notFound();
   }
 
-  return (
-    <div>
-      {/* SEO Optimized Head Tags */}
-      <Head>
-        <title>{course.seo.metaTitle}</title>
-        <meta name="description" content={course.seo.metaDescription} />
-        <meta name="keywords" content={course.seo.keywords.join(",")} />
-        <meta property="og:title" content={course.seo.metaTitle} />
-        <meta property="og:description" content={course.seo.metaDescription} />
-        <meta property="og:image" content={course.image.url} />
-        <meta
-          property="og:url"
-          content={`https://applecourses.vercel.app/courses/${course.slug}`}
-        />
-        <link
-          rel="canonical"
-          href={`https://applecourses.vercel.app/courses/${course.slug}`}
-        />
-      </Head>
+  // Remove Head tags since you're using generateMetadata
 
+  return (
+    <div className="container mx-auto px-4">
       <h1
         className={clsx(
           oswald.className,
@@ -73,117 +114,138 @@ export default async function Cool({ params }) {
         {course.name}
       </h1>
 
-      <main className="lg:flex lg:flex-row-reverse lg:justify-around  w-full">
-        <aside className="w-full lg:w-[42%] xl:p-5 max-w-[700px] mx-auto shadow-inner shadow-zinc-100 dark:shadow-black py-3 px-2 rounded-md overflow-hidden">
-          <section className="rounded-md overflow-hidden">
+      <main className="lg:flex lg:flex-row-reverse lg:justify-around lg:gap-8 w-full">
+        {/* Course Media Section */}
+        <aside
+          className="w-full lg:w-[42%] xl:p-5 max-w-[700px] mx-auto shadow-[4px_-4px_8px,-4px_-4px_8px]
+ shadow-zinc-50 dark:shadow-gray-900 py-3 px-2 rounded-md overflow-hidden"
+        >
+          <figure className="rounded-md overflow-hidden">
             <Image
               src={course.image.url}
               alt={course.image.alt}
               width={700}
-              height={100}
+              height={500}
               priority={true}
               loading="eager"
               className="object-cover aspect-video"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 42vw, 700px"
             />
-          </section>
-          <p className="text-start font-sans font-bold text-[14px] dark:text-cyan-100 pl-1 md:text-[15px] py-3">
-            If the course labeled as FREE then just hit the LOG-IN Button to
-            Continue!
-          </p>
-          <section className="flex justify-around md:justify-between gap-3 pt-4 pb-5">
-            <Inbox />
-            <Login />
-          </section>
+          </figure>
+          <div className="mt-3">
+            <p
+              className="text-start font-sans font-bold text-[14px] dark:text-cyan-100 pl-1 md:text-[15px] py-3"
+              role="note"
+            >
+              If the course labeled as FREE then just hit the LOG-IN Button to
+              Continue!
+            </p>
+            <section className="flex justify-around md:justify-between gap-3 pt-4 pb-5">
+              <Inbox aria-label="Contact support" />
+              <Login aria-label="Log in to access course" />
+            </section>
+          </div>
         </aside>
 
+        {/* Course Details Section */}
         <article
           itemScope
-          itemType="http://schema.org/Product"
+          itemType="https://schema.org/Course"
           className="w-full lg:w-[50%] xl:w-[50%] min-[500px]:pl-5 pt-5 md:pt-2 lg:pt-1"
         >
-          <meta itemProp="name" content={course.name} />
-          <meta itemProp="description" content={course.description} />
-          <meta itemProp="image" content={course.image.url} />
-          <meta itemProp="price" content={course.price} />
-          <meta itemProp="priceCurrency" content="BDT" />
+          {/* Add more comprehensive schema.org markup */}
+          <meta itemProp="provider" content="ACS Shop" />
+          <meta itemProp="courseMode" content="online" />
+          <meta itemProp="inLanguage" content="bn-BD" />
+          <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
+            <meta itemProp="price" content={course.price} />
+            <meta itemProp="priceCurrency" content="BDT" />
+            <meta
+              itemProp="availability"
+              content="https://schema.org/InStock"
+            />
+          </div>
 
-          <div>
-           
-            <p
-              className={clsx(
-                space.className,
-                " font-bold pb-3 pt-3 capitalize text-2xl flex items-center gap-1 tracking-tighter"
-              )}
-            >
-              <Sparkles /> Course Information:
-            </p>
-            <ol
-              className={clsx(
-                space.className,
-                "list-disc pl-5 space-y-3 text-[15px] md:text-base tracking-tighter font-bold dark:text-cyan-100 capitalize"
-              )}
-            >
-              {course.features.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ol>
+          <div className="space-y-6">
+            <section>
+              <h2
+                className={clsx(
+                  space.className,
+                  "font-bold capitalize text-2xl flex items-center gap-1 tracking-tighter"
+                )}
+              >
+                <Sparkles aria-hidden="true" /> Course Information
+              </h2>
+              <ul
+                className={clsx(
+                  space.className,
+                  "mt-3 list-disc pl-5 space-y-3 text-[15px] md:text-base tracking-tighter font-bold dark:text-cyan-100 capitalize"
+                )}
+                itemProp="coursePrerequisites"
+              >
+                {course.features.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </section>
 
-            <hr className="mt-5 dark:border-gray-700" />
+            <hr className="dark:border-gray-700 opacity-30 dark:opacity-50" />
 
-            <p
-              className={clsx(
-                space.className,
-                " font-bold pb-3 pt-3 capitalize text-[19px] flex items-center gap-1 tracking-tighter"
-              )}
-            >
-              <Handshake />
-              Assurance:
-            </p>
-            <ol
-              className={clsx(
-                space.className,
-                "list-disc pl-5 space-y-3 text-[15px] md:text-base tracking-tight font-bold dark:text-cyan-100 capitalize"
-              )}
-            >
-              {course.assurance.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ol>
-            <hr className="mt-5 mb-2 dark:border-gray-700" />
+            <section>
+              <h2
+                className={clsx(
+                  space.className,
+                  "font-bold capitalize text-[19px] flex items-center gap-1 tracking-tighter"
+                )}
+              >
+                <Handshake aria-hidden="true" /> Our Assurance
+              </h2>
+              <ul
+                className={clsx(
+                  space.className,
+                  "mt-3 list-disc pl-5 space-y-3 text-[15px] md:text-base tracking-tight font-bold dark:text-cyan-100 capitalize"
+                )}
+              >
+                {course.assurance.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </section>
 
-            <p
-              className={clsx(
-                space.className,
-                "font-bold pb-3 pt-3 capitalize text-[19px] flex items-center gap-1 tracking-tighter"
-              )}
-            >
-              <MessageCircleQuestion />
-              Caution:
-            </p>
-            <ol
-              className={clsx(
-                space.className,
-                "list-disc pl-5 space-y-3 text-[15px] md:text-base tracking-tight font-bold dark:text-cyan-100 capitalize"
-              )}
-            >
-              <li>
-                This Site completely independent and not affiliated with any Ed
-                tech company.
-              </li>
-              <li>
-                Since we&apos;re a third party provider, There&apos;ll be a
-                minimum amount of delay updating the course content. we&apos;re
-                constantly trying to keep it as minimal as possible
-              </li>
-            </ol>
+            <hr className="dark:border-gray-700 opacity-30 dark:opacity-50" />
+
+            <section>
+              <h2
+                className={clsx(
+                  space.className,
+                  "font-bold capitalize text-[19px] flex items-center gap-1 tracking-tighter"
+                )}
+              >
+                <MessageCircleQuestion aria-hidden="true" /> Important Notice
+              </h2>
+              <ul
+                className={clsx(
+                  space.className,
+                  "mt-3 list-disc pl-5 space-y-3 text-[15px] md:text-base tracking-tight font-bold dark:text-cyan-100 capitalize"
+                )}
+              >
+                <li>
+                  This site is completely independent and not affiliated with
+                  any EdTech company.
+                </li>
+                <li>
+                  As a third-party provider, there may be a brief delay in
+                  course content updates. We strive to minimize these delays.
+                </li>
+              </ul>
+            </section>
           </div>
         </article>
       </main>
 
-      <section>
+      <footer className="mt-8">
         <Count />
-        <br />
-      </section>
+      </footer>
     </div>
   );
 }
