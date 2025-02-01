@@ -83,7 +83,6 @@ export const Card = ({ file }) => {
           <span
             className="font-bold text-2xl uppercase"
             itemProp="offers"
-            itemScope
             itemType="https://schema.org/Offer"
           >
             <meta itemProp="priceCurrency" content="BDT" />
