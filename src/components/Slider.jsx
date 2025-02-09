@@ -21,7 +21,7 @@ function Slider() {
   };
 
   return (
-    <div className="w-[98%] mx-auto sm:w-[95%] lg:w-[500px] min-[1110px]:w-[550px] xl:w-[700px] min-[1750px]:w-[850px] xl:pr-5 2xl:pr-7 lg:pr-2">
+    <div className="w-[98%] mx-auto  sm:w-[95%] lg:w-[500px] min-[1110px]:w-[550px] xl:w-[700px] min-[1750px]:w-[850px] xl:pr-5 2xl:pr-7 lg:pr-2">
       <Carousel
         opts={{
           loop: true,
@@ -50,7 +50,7 @@ function Slider() {
                   <p
                     className={clsx(
                       one.className,
-                      "capitalize text-center bg-zinc-50 dark:bg-nine py-2 md:py-2 text-lg md:text-[20px] font-sans font-bold mt-1 truncate"
+                      "capitalize text-center dark:bg-nine py-2 md:py-2 text-lg md:text-[20px] font-sans font-bold mt-1 truncate"
                     )}
                   >
                     {file.title}

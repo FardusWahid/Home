@@ -17,8 +17,8 @@ export default function FilterSelectors() {
   const filteredFiles = Files.filter((file) => {
     const yearMatch =
       selectedYear === "all" || file.year === parseInt(selectedYear);
-    const typeMatch = selectedType === "all" || file.type === selectedType;
-    return yearMatch && typeMatch;
+    const typeMatch = selectedType === "all" || file.type.toLowerCase() === selectedType;
+    return typeMatch && yearMatch;
   });
 
   return (

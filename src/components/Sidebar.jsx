@@ -1,35 +1,40 @@
-'use client';
+"use client";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { AlignLeft, Menu } from "lucide-react";
+import { AlignLeft, Menu, Share2 } from "lucide-react";
 import { ModeToggle } from "./mode";
 import Link from "next/link";
+import CopyDialog from "./copy";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const prevs = [
-        {
-          name: "Facebook Page",
-          link: "https://www.facebook.com/applecourses.netlify.app5",
-        },
-        {
-          name: "Facebook Private Group",
-          link: "https://www.facebook.com/groups/applecourses",
-        },
-        {
-          name:"Facebook Public Group (new)",
-          link:"https://www.facebook.com/groups/applecourses.vercel.appp"
-        },
-        {
-          name: "Apple Shop 01",
-          link: "https://applecourses.netlify.app",
-        },
-        {
-          name: "Apple Shop 02",
-          link: "https://applecourses.vercel.app",
-        },
-      ];
+    {
+      name: "All Free Courses",
+      link: "/free",
+    },
+    {
+      name: "Facebook Page",
+      link: "https://www.facebook.com/applecourses.netlify.app5",
+    },
+    {
+      name: "Facebook Private Group",
+      link: "https://www.facebook.com/groups/applecourses",
+    },
+    {
+      name: "Facebook Public Group (new)",
+      link: "https://www.facebook.com/groups/applecourses.vercel.appp",
+    },
+    {
+      name: "Apple Shop 01",
+      link: "https://applecourses.netlify.app",
+    },
+    {
+      name: "Apple Shop 02",
+      link: "https://applecourses.vercel.app",
+    },
+  ];
 
   return (
     <div>
@@ -76,7 +81,7 @@ export default function Sidebar() {
           className="py-4 px-4 mt-12 overflow-y-auto transition-none scroll-auto max-h-[calc(100vh-3rem)]"
           style={{ scrollbarWidth: "none" }}
         >
-               <section className="border-t border-zinc-100 dark:border-gray-800 py-2">
+          <section className="border-t border-zinc-100 dark:border-gray-800 py-2">
             <div className="flex flex-col py-1">
               <p className="text-[16px] tracking-tighter font-bold">
                 Testifications
@@ -110,7 +115,7 @@ export default function Sidebar() {
                   variant="ghost"
                   className="text-[15px] flex items-center font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800"
                 >
-                  All latest Courses
+                  Premium Course Login
                 </Button>
               </a>
               <a href="https://ipremium.vercel.app" target="_blank">
@@ -118,17 +123,14 @@ export default function Sidebar() {
                   variant="ghost"
                   className="text-[15px] flex items-center font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800"
                 >
-                  All Free Courses
+                  Premium App Login
                 </Button>
               </a>
             </div>
           </section>
 
-
           <section className="border-t border-zinc-100 dark:border-gray-800 py-2">
-            <p className="text-[16px] font-bold tracking-tight">
-              Useful Links
-            </p>
+            <p className="text-[16px] font-bold tracking-tight">Useful Links</p>
             <div className="flex flex-col py-1">
               {prevs.map((prev, index) => (
                 <a href={prev.link} key={index} target="_blank">
@@ -141,18 +143,20 @@ export default function Sidebar() {
                 </a>
               ))}
             </div>
+            <CopyDialog
+              links={[{ id: "app", url: "https://applecourses.vercel.app" }]}
+              buttonName="Copy Sharable link"
+            />
           </section>
 
-
-          <section className="border-t px-2 pb-5 border-zinc-100 dark:border-zinc-800 dark:border-opacity-50">
-            <p className="flex items-center font-semibold tracking-tight text-[16px] gap-0 justify-start">
-              Switch theme <ModeToggle />
-            </p>
+          <section className="border-t px-2 border-zinc-100 dark:border-zinc-800 dark:border-opacity-50">
+            <div className="flex items-center font-semibold tracking-tight text-[16px] gap-0 justify-start">
+              Switch theme to <ModeToggle />
+            </div>
           </section>
+          <section className="mt-2 p-0"></section>
         </div>
       </aside>
     </div>
   );
 }
-
-

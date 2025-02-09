@@ -17,7 +17,7 @@ export default function Text() {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
           <span className="block">Get Your Favourite Courses</span>
           <span className="block">
-            <span className="text-purple-800 dark:text-yellow-500">
+            <span className="text-purple-700 dark:text-yellow-500">
               For a Fraction
             </span>{" "}
             OF the
@@ -33,7 +33,7 @@ export default function Text() {
         </p>
         <div className="flex flex-col sm:flex-row gap-5">
           <Link
-            href="https://ipremium.vercel.app"
+            href="/free"
             className="sm:w-[240px] w-full bn group bg-[#192a56] text-white dark:bg-yellow-500 dark:lg:bg-blue-500 dark:text-black rounded-[1px_10px_1px_10px] px-8 py-3 text-base font-semibold"
             aria-label="Access free courses"
           >
@@ -95,7 +95,11 @@ export default function Text() {
             >
               (HD) Video Resolutions
             </div>
+            
           </div>
+
+
+          
         </div>
       </div>
     </div>

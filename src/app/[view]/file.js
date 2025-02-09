@@ -1,52 +1,67 @@
 export const Slide = [
   {
+    slug: "acs-ict-decoders-2026",
+    title: "Completely For FREE",
+    image:
+      "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1738987523/dec_ikpys3.webp",
+    alt: "ACS FREE ICT DECODER 2026 & 2025 Archive",
+    tag: "ICT Decoder 26 FREE"
+  },
+  {
     slug: "acs-final-revision-batch-2025-science",
     title: "GET it for 299 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218654/Frb25_hhccka.webp",
-      alt: "Acs Final Revision Batch 2025, Science - Classes Lecture & Practice Sheets",
+    alt: "Acs Final Revision Batch 2025, Science - Classes Lecture & Practice Sheets",
+    tag: "FRB 2025 acs"
   },
   {
     slug: "acs-varsity-private-batch-2024",
     title: "acs varsity 2024 for 499 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218902/var_bai4aw.webp",
-      alt: "Acs Varsity Private Batch 2024 - Classes Lecture & Practice Sheets",
+    alt: "Acs Varsity Private Batch 2024 - Classes Lecture & Practice Sheets",
+    tag: "ACS varsity 2024"
   },
   {
     slug: "acs-engineering-private-batch-2024",
     title: "acs engineering 2024 for 499 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218862/eng24_odmkog.webp",
-      alt: "ACS Engineering Private Batch 2024 - Classes Lecture & Practice Sheets",
+    alt: "ACS Engineering Private Batch 2024 - Classes Lecture & Practice Sheets",
+    tag: "ACS Engineering 2024"
   },
   {
     slug: "acs-physics-all-cycles-2026",
     title: "physics all cycles 2026 for 799 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218700/hsc26_zrernc.webp",
-      alt: "Acs Physics All Cycles 2026 with 2025 archive - Classes Lecture & Practice Sheets",
+    alt: "Acs Physics All Cycles 2026 with 2025 archive - Classes Lecture & Practice Sheets",
+    tag: "Physics cycles 26 acs"
   },
   {
     slug: "acs-chemistry-all-cycles-2026",
     title: "chemistry all cycles 2026 for 799 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218700/hsc26_zrernc.webp",
-      alt: "Acs Chemistry All Cycles 2026 with 2025 archive - Classes Lecture & Practice Sheets",
+    alt: "Acs Chemistry All Cycles 2026 with 2025 archive - Classes Lecture & Practice Sheets",
+    tag: "Chemistry cycles 26 acs"
   },
   {
     slug: "acs-math-all-cycles-2026",
     title: "math all cycles 2026 for 799 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218700/hsc26_zrernc.webp",
-      alt: "Acs Math All Cycles 2026 with 2025 archive - Classes Lecture & Practice Sheets",
+    alt: "Acs Math All Cycles 2026 with 2025 archive - Classes Lecture & Practice Sheets",
+    tag: "Math cycles 26 acs"
   },
   {
     slug: "acs-biology-all-cycles-2026",
     title: "Biology all cycles 2026 for 799 only",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218700/hsc26_zrernc.webp",
-      alt: "Acs Biology All Cycles 2026 with 2025 archive - Classes Lecture & Practice Sheets",
+    alt: "Acs Biology All Cycles 2026 with 2025 archive - Classes Lecture & Practice Sheets",
+    tag: "Biology cycles 26 acs"
   },
 ];
 
@@ -499,22 +514,22 @@ export const Files = [
   },
 
   {
-    slug: "acs-ict-decoders-2025",
-    year: 2025,
+    slug: "acs-ict-decoders-2026",
+    year: 2026,
     status: "completed",
     type: "academic",
-    name: "Acs Ict Decoders 2025",
+    name: "Acs Ict Decoders 2026",
     image: {
-      url: "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1732218898/ict_zb3jlz.jpg",
-      alt: "Acs Ict Decoders 2025 - Classes Lecture & Practice Sheets",
+      url: "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1738987523/dec_ikpys3.webp",
+      alt: "Acs Ict Decoders 2026 + HSC 2025 archive - Classes Lecture & Practice Sheets",
     },
     description: `
-       Acs Ict Decoders 2025. All Recorded classes, Lecture & Practice Sheets with Archive. Enroll now for 499 Taka only
+       Acs Ict Decoders 2026. All Recorded classes, Lecture & Practice Sheets with Archive, completely for FREE
     `,
     features: [
-      "GET Access all latest ICT Decoder 2025 classes anytime, anywhere.",
+      "GET Access all latest ICT Decoder 2026 classes anytime, anywhere.",
       "যতো ইচ্ছে ততো Device access, No restrictions",
-      "No downloads and practice sheets available",
+      "Lecture & practice sheets available (free)",
       "Recorded Class - Same day upload!",
       "Lightning-fast webapp, which you can Install as a Mobile or a Desktop App",
       "No social media distractions with a dedicated WEBAPP.",
@@ -525,26 +540,28 @@ export const Files = [
       "No dedicated support",
       "No extra features",
     ],
-    targetAudience: "FOR HSC 2025 Ict Decoders", // Helps SEO and targeting
+    targetAudience: "FOR HSC 2026 Ict Decoders", // Helps SEO and targeting
     price: "free",
-    tags: ["Classes 45+", "Webapp recorded", "Exam website", "study materials"],
+    tags: ["Classes 45+", "Webapp recorded", "2025 archive", "study materials"],
     seo: {
       metaTitle: "Acs Ict Decoders 2025 - ACS Shop",
       metaDescription:
         "Acs Ict Decoders 2025. All Recorded classes, Lecture & Practice Sheets with Archive. Enroll now for 499 Taka only",
       keywords: [
-        "Acs Ict Decoders 2025",
-        "HSC 2025 Ict Decoders",
+        "Acs Ict Decoders 2026",
+        "HSC 2026 Ict Decoders",
         "Acs Ict",
         "Acs Shop",
         "ACS Bangladesh",
-        "HSC 25",
+        "HSC 26",
         "Ict Decoders",
-        "Acs Ict Decoders 2025 webapp",
-        "Acs Ict Decoders 2025 webapp access",
+        "Acs Ict Decoders 2026 webapp",
+        "Acs Ict Decoders 2026 webapp access",
+        "Acs Ict Decoders 2026 webapp download",
+        "Acs Ict Decoders 2026 webapp download",
         "Acs Ict Decoders 2025 webapp download",
-        "Acs Ict Decoders 2025 webapp download",
-        "Acs Ict Decoders 2025 webapp download",
+        "ACS HSC 26 cycles",
+        "ICT Archive 25",
       ],
     },
   },

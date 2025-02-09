@@ -13,7 +13,7 @@ export const Card = ({ file }) => {
   return (
     <div
       key={file.slug}
-      className="p-2 w-full md:max-w-[420px] mx-auto  min-[1600px]:max-w-[440px] rounded-md shadow-[5px_-6px_8px_1px,_-5px_-6px_8px_1px] shadow-zinc-100 dark:shadow-nine"
+      className="p-2 w-full md:max-w-[420px] mx-auto  min-[1600px]:max-w-[440px] rounded-md shadow-[-2px_-5px_5px] shadow-zinc-200/40 dark:shadow-gray-800/60"
       itemScope
       itemType="https://schema.org/Course"
       itemID={`https://applecourses.netlify.app/courses/${file.slug}`}

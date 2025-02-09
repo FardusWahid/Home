@@ -6,10 +6,13 @@ import clsx from "clsx";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between items-center p-2 px-0 md:px-2 w-full bg-white shadow-md shadow-zinc-50 dark:shadow-nine dark:bg-eight">
-     <Link
+    <div className="flex justify-between bg-white dark:bg-gray-950 items-center p-2 px-0 md:px-2 w-full shadow-md shadow-zinc-100/70 dark:shadow-gray-800/50 ">
+      <Link
         href="/"
-        className={clsx(oswald.className, "flex gap-0 group items-center md:ml-2 lg:scale-110 cool")}
+        className={clsx(
+          oswald.className,
+          "flex gap-0 group items-center md:ml-2 lg:scale-110 cool"
+        )}
       >
         <Image
           src="/applesv.svg"
@@ -24,7 +27,6 @@ export default function Navbar() {
           Premium
         </span>
       </Link>
-
 
       <section>
         <Sidebar />

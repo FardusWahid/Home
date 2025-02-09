@@ -1,16 +1,21 @@
 import { Files } from "@/app/[view]/file";
 import { Inbox } from "@/components/inbox";
-import Login from "@/components/Login";
 import { oswald, space } from "@/lib/fonts";
 import clsx from "clsx";
-import { Handshake, MessageCircleQuestion, Sparkles } from "lucide-react";
+import {
+  Copy,
+  Handshake,
+  MessageCircleQuestion,
+  Share2,
+  Sparkles,
+} from "lucide-react";
 import Image from "next/image";
 import Count from "@/components/count";
 import { notFound } from "next/navigation";
 import { getProduct } from "@/app/[view]/file";
-import Head from "next/head";
+import Link from "next/link";
+import CopyDialog from "@/components/copy";
 
-// Generate Static Params
 export async function generateStaticParams() {
   return Files.map((file) => ({
     slug: file.slug,
@@ -22,7 +27,7 @@ export async function generateMetadata({ params }) {
   const course = getProduct(slug);
 
   if (!course) {
-    return notFound();
+    return {};
   }
 
   // Construct structured data for the course
@@ -94,14 +99,11 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function CourseDetail({ params }) {
-  // More semantic name than 'Cool'
   const { slug } = await params;
   const course = getProduct(slug);
   if (!course) {
     return notFound();
   }
-
-  // Remove Head tags since you're using generateMetadata
 
   return (
     <div className="container mx-auto px-4">
@@ -117,8 +119,8 @@ export default async function CourseDetail({ params }) {
       <main className="lg:flex lg:flex-row-reverse lg:justify-around lg:gap-8 w-full">
         {/* Course Media Section */}
         <aside
-          className="w-full lg:w-[42%] xl:p-5 max-w-[700px] mx-auto shadow-[4px_-4px_8px,-4px_-4px_8px]
- shadow-zinc-50 dark:shadow-gray-900 py-3 px-2 rounded-md overflow-hidden"
+          className="w-full lg:w-[42%] xl:p-5 max-w-[700px] mx-auto shadow-[-2px_-5px_5px]  shadow-zinc-100
+          dark:shadow-gray-900 py-3 px-2 rounded-md overflow-hidden h-fit"
         >
           <figure className="rounded-md overflow-hidden">
             <Image
@@ -132,18 +134,54 @@ export default async function CourseDetail({ params }) {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 42vw, 700px"
             />
           </figure>
-          <div className="mt-3">
+          <div className="mt-3 pb-5">
             <p
-              className="text-start font-sans font-bold text-[14px] dark:text-cyan-100 pl-1 md:text-[15px] py-3"
+              className="text-start font-sans italic font-bold text-[14px] dark:text-cyan-100 pl-1 md:text-[15px] py-3"
               role="note"
             >
-              If the course labeled as FREE then just hit the LOG-IN Button to
-              Continue!
+              {course.price === "free" ? (
+                <span className="flex items-center justify-center gap-2">
+                  {
+                    "Yehh!! This Course is completely FREE. No need to Login. Just share with your Friends!!"
+                  }{" "}
+                  <CopyDialog
+                    links={[
+                      { id: "app", url: "https://applecourses.vercel.app" },
+                    ]}
+                  />
+                </span>
+              ) : (
+                <span>
+                  {
+                    "Still skeptical..Whether you should buy it or not??  Haven't tried out course before ?? Here's some"
+                  }{" "}
+                  <Link
+                    className="text-purple-900 text-[15px] md:text-[16px] hover:underline active:underline dark:text-purple-200 font-extrabold"
+                    href="/free"
+                  >
+                    {" @Free Course as Demo !!"}
+                  </Link>{" "}
+                </span>
+              )}
             </p>
-            <section className="flex justify-around md:justify-between gap-3 pt-4 pb-5">
-              <Inbox aria-label="Contact support" />
-              <Login aria-label="Log in to access course" />
-            </section>
+            {course.price === "free" ? (
+              <section className="py-3 flex button_top justify-center items-center m-auto">
+                <Link
+                  href="/free"
+                  className={clsx(
+                    "buy-button w-[75%]  font-extrabold text-lg",
+                    oswald.className
+                  )}
+                  itemProp="url"
+                >
+                  <span className="button_top">Continue For Free</span>
+                </Link>
+              </section>
+            ) : (
+              <section className="flex justify-center items-center pt-4 pb-5">
+                <Inbox aria-label="Contact support" />
+              </section>
+            )}
           </div>
         </aside>
 

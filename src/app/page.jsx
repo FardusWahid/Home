@@ -14,7 +14,7 @@ const structuredData = {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "availability": "http://schema.org/InStock"
+      "availability": "https://schema.org/InStock"
     }
   }
 };

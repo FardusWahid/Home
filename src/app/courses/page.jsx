@@ -51,7 +51,7 @@ export default async function Courses() {
       />
       <main>
         <h1 className="sr-only">HSC and Admission Courses - ACS Shop BD</h1>
-        <Suspense fallback={<div>Loading courses...</div>}>
+        <Suspense fallback={<div className="flex h-[calc(100vh-80px)] lg:h-[calc(100vh-65px)] justify-center items-center">please wait...</div>}>
           <CourseCategoryPills />
         </Suspense>
       </main>
