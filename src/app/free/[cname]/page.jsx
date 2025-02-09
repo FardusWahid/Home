@@ -7,10 +7,6 @@ import { free } from "../file2";
 import { getProduct } from "@/app/[view]/file";
 import { getDataset } from "@/components/ui/malware";
 
-// Increase revalidation time for better performance if data doesn't change frequently
-export const revalidate = 86400; // 24 hours
-
-// Generate static paths at build time
 export async function generateStaticParams() {
   return free.map((course) => ({
     cname: course.title,
