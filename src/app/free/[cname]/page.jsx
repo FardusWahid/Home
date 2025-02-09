@@ -3,12 +3,12 @@ import { Suspense } from "react";
 import { Category } from "@/components/categorypills";
 import Feed from "@/components/Feed";
 import Sidebar2 from "@/components/ui/side";
-import { free } from "../file2";
 import { getProduct } from "@/app/[view]/file";
 import { getDataset } from "@/components/ui/malware";
+import { Freecourse } from "@/components/ui/malware";
 
 export async function generateStaticParams() {
-  return free.map((course) => ({
+  return Freecourse.map((course) => ({
     cname: course.title,
   }));
 }
@@ -102,7 +102,7 @@ export default async function Front({ params }) {
     notFound();
   }
 
-  const { systemlogs = [], mats = [] } = system32;
+  const { systemlogs, mats } = system32;
 
   if (!Array.isArray(systemlogs) || systemlogs.length === 0) {
     console.error(`No systemlogs found for key: ${cname}`);
