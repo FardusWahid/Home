@@ -1,6 +1,6 @@
 export const Slide = [
   {
-    slug: "acs-ict-decoders-2026",
+    slug: "ictdecoder26",
     title: "Completely For FREE",
     image:
       "https://res.cloudinary.com/dcxmbqwzo/image/upload/v1738987523/dec_ikpys3.webp",
@@ -514,7 +514,7 @@ export const Files = [
   },
 
   {
-    slug: "acs-ict-decoders-2026",
+    slug: "ictdecoder26",
     year: 2026,
     status: "completed",
     type: "academic",
@@ -566,7 +566,7 @@ export const Files = [
     },
   },
   {
-    slug: "final-revision-batch-2024",
+    slug: "frb2024",
     year: 2024,
     status: "completed",
     type: "academic",
