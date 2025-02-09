@@ -1,4 +1,3 @@
-import { c3po } from "@/components/ui/malware";
 import { notFound } from "next/navigation";
 import { Category } from "@/components/categorypills";
 import Feed from "@/components/Feed";
@@ -6,74 +5,65 @@ import Sidebar2 from "@/components/ui/side";
 import { free } from "../file2";
 import { Suspense } from "react";
 import { getProduct } from "@/app/[view]/file";
+import { getCachedData, prefetchData } from "@/components/ui/malware";
 
-// Cache configuration
-const inMemoryCache = {};
-const CACHE_TTL_MS = 3600000; // 1 hour
-
-// Set revalidation time
+// Enable ISR
 export const revalidate = 3600; // 1 hour
 
-// Optimized getData function
+// Memory cache configuration
+const MEMORY_CACHE = new Map();
+const CACHE_TTL_MS = 3600000; // 1 hour
+
 async function getData(cname) {
-  // Check in-memory cache first
-  if (
-    inMemoryCache[cname] &&
-    Date.now() - inMemoryCache[cname].timestamp < CACHE_TTL_MS
-  ) {
-    console.log(`Cache hit for ${cname}`);
-    return inMemoryCache[cname].data;
+  // Check memory cache
+  const cached = MEMORY_CACHE.get(cname);
+  if (cached && Date.now() - cached.timestamp < CACHE_TTL_MS) {
+    return cached.data;
   }
 
   try {
-    const redisData = await c3po.get(cname);
+    // Use React cached Redis getter
+    const data = await getCachedData(cname);
 
-    if (!redisData) {
-      console.warn(`Redis cache miss for ${cname}`);
-      return null;
-    }
+    if (!data) return null;
 
-    const parsedData =
-      typeof redisData === "string" && redisData.startsWith("{")
-        ? JSON.parse(redisData)
-        : redisData;
+    // Parse if needed
+    const parsedData = typeof data === "string" ? JSON.parse(data) : data;
 
-    // Update in-memory cache
-    inMemoryCache[cname] = { data: parsedData, timestamp: Date.now() };
+    // Update memory cache
+    MEMORY_CACHE.set(cname, {
+      data: parsedData,
+      timestamp: Date.now(),
+    });
 
     return parsedData;
   } catch (error) {
-    console.error(`Error fetching data for ${cname}: ${error.message}`);
-    
-    // Fallback to stale cache if available
-    if (inMemoryCache[cname]) {
-      console.warn(`Returning stale cache for ${cname}`);
-      return inMemoryCache[cname].data;
-    }
-
-    return null;
+    console.error(`Data fetch error for ${cname}:`, error);
+    return cached?.data || null;
   }
 }
 
-// Pre-fetch data during build time
 export async function generateStaticParams() {
   const courses = free.map((course) => ({
     cname: course.title,
   }));
 
-  // Prefetch and cache data for all courses during build
-  await Promise.all(
-    courses.map(async ({ cname }) => {
-      try {
-        const data = await getData(cname);
+  // Prefetch data at build time
+  try {
+    await Promise.all(
+      courses.map(async ({ cname }) => {
+        const data = await prefetchData(cname);
         if (data) {
-          inMemoryCache[cname] = { data, timestamp: Date.now() };
+          MEMORY_CACHE.set(cname, {
+            data: typeof data === "string" ? JSON.parse(data) : data,
+            timestamp: Date.now(),
+          });
         }
-      } catch (error) {
-        console.error(`Failed to prefetch ${cname}:`, error);
-      }
-    })
-  );
+      })
+    );
+  } catch (error) {
+    console.error("Prefetch error:", error);
+  }
 
   return courses;
 }
@@ -82,9 +72,7 @@ export async function generateMetadata({ params }) {
   const { cname } = await params;
   const course = getProduct(cname);
 
-  if (!course) {
-    return {};
-  }
+  if (!course) return {};
 
   return {
     title: course.seo.metaTitle,
