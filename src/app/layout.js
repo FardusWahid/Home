@@ -3,7 +3,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { poppins } from "@/lib/fonts";
 import Navbar from "@/components/navbar";
 import clsx from "clsx";
-import { PostHogProvider } from "@/lib/posthog";
 export const metadata = {
   title: "Apple Courses",
   description: "ACS Free Courses",
@@ -30,7 +29,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={clsx(poppins.className, "select-none")}>
-        <PostHogProvider>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -42,7 +40,6 @@ export default function RootLayout({ children }) {
           </section>
           {children}
         </ThemeProvider>
-        </PostHogProvider>
       </body>
     </html>
   );

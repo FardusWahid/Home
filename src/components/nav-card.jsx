@@ -13,7 +13,6 @@ export default function Card2({ name, title }) {
     <div className="w-[95%] mx-auto dark:text-cyan-50">
       <Link
         href={`/free/${title}`}
-        prefetch={true}
         className="ty shadow-[5px_3px_1px_2px] shadow-zinc-100 dark:shadow-gray-900 active:shadow-none transition-all ease-in-out duration-150  group w-full flex justify-between items-center gap-6 px-5 md:px-7 py-4 md:py-4 bg-cyan-50  dark:bg-gray-950 relative overflow-hidden rounded-lg"
       >
         <div className="relative overflow-hidden z-[1] text-left">
