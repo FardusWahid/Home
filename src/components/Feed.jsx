@@ -81,7 +81,7 @@ const VideoCard = ({ video, name, index }) => {
           <Link
             prefetch={true}
             href={{
-              pathname: `/premium/${name}/${video.malloc}`,
+              pathname: `/free/${name}/${video.malloc}`,
               query: { passcode: video.stuxnet },
             }}
             className="text-[15px] pl-2 line-clamp-2 font-bold"
