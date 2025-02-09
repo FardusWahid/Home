@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const course = getProduct(cname);
 
   if (!course) {
-    return notFound();
+    return {};
   }
 
   // Construct structured data for the course

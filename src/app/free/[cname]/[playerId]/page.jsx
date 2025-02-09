@@ -1,13 +1,14 @@
 import { getProduct } from "@/app/[view]/file";
 import CopyDialog from "@/components/copy";
 import Player from "@/components/player";
+import { Suspense } from "react";
 
 export async function generateMetadata({ params, searchParams }) {
   const { cname, playerId } = await params;
   const course = getProduct(cname);
 
   if (!course) {
-    return notFound();
+    return {}
   }
   const { passcode } = await searchParams;
   const videoTitle = passcode;
@@ -90,13 +91,17 @@ export default async function PlayerPage({ params, searchParams }) {
       <div className="pb-1 shadow-md z-40 shadow-zinc-100 dark:shadow-gray-800"></div>
       <section className="z-0 mt-2 relative">
         <Player Id={playerId} />
-
-        <h1 className="text-[16px] lg:text-[18px] font-semibold md:font-bold tracking-tight p-2">
-          {videoTitle}
-        </h1>
+        <Suspense fallback={<div>Loading...</div>}>
+          <h1 className="text-[16px] lg:text-[18px] font-semibold md:font-bold tracking-tight p-2">
+            {videoTitle}
+          </h1>
+        </Suspense>
 
         <aside className="lg:absolute lg:right-0 lg:top-0 pr-5 flex justify-end">
-          <CopyDialog links={[{id:"app", url: "https://applecourses.verce.app"}]} buttonName="Copy link"/>
+          <CopyDialog
+            links={[{ id: "app", url: "https://applecourses.verce.app" }]}
+            buttonName="Copy link"
+          />
         </aside>
       </section>
     </div>
